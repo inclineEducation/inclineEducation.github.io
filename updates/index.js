@@ -7,7 +7,7 @@
 function UpdateTitle() {
     return (
         <div>
-            Incline UR Education
+            Incline Your Education
         </div>
     )
 }
