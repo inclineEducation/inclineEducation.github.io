@@ -1,0 +1,4 @@
+# redirects from what the browser requests to what is served
+/home              /
+/teacherSurvey     https://forms.gle/8uNjQ2AV5bH2UHtV9
+/studentSurvey     https://forms.gle/LTucpsvXc2jUCrKH7
