@@ -7,7 +7,7 @@
 function UpdateTitle() {
     return (
         <div>
-            Incline Your Education
+            Incline Education
         </div>
     )
 }
@@ -16,7 +16,7 @@ function UpdateTitle() {
 function UpdateSubTitle() {
     return (
         <div>
-            From Kindergarten to University
+            We Help High School Students Succeed
         </div>
     )
 }
