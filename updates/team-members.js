@@ -7,12 +7,6 @@ LIST OF ALL MEMBERS HERE:
 
     Each member has DESCRIPTION <string>
 
-LIST OF ALL TESTIMONIALS HERE:
-
-    Testimonial has NAME
-
-    Testimonial has DESCRIPTION
-
 */ 
 
 

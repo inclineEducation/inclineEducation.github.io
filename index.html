@@ -31,7 +31,7 @@
   <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script src = "updates/index.js" type="text/babel"></script>
+  <script src = "updates/home-page.js" type="text/babel"></script>
 </head>
 
 <body>
@@ -89,7 +89,7 @@
     <div class="container">
       <div class="row slider-text align-items-center justify-content-center">
         <div class="col-lg-12 text-center col-sm-12">
-          <p data-aos="fade-up" data-aos="fade-up" data-aos-delay=""><div id = "subtitle"></div></p> <!--subtitle-->
+          <h2 data-aos="fade-up" data-aos="fade-up" data-aos-delay="" style="color: white;"><div id = "subtitle"></div></h2> <!--subtitle-->
           <h1 class="mb-4" data-aos="fade-up" data-aos-delay="100"><div id = "title"></div></h1> <!--title-->
           <div class="btn-play-wrap mx-auto" data-aos="fade-up" data-aos-delay="200">
             <a href="https://www.youtube.com/watch?v=_VnYSoMI-9Q" data-fancybox data-ratio="2"
@@ -109,25 +109,81 @@
     <div class="container">
       <div class="row mb-5 justify-content-center" data-aos="fade-up">
         <div class="col-md-8 text-center">
-          <h2 class="mb-4 section-title">Latest Work</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusamus perferendis
-            libero accusantium nisi.</p>
-          <p><a href="#">View All Portfolio</a></p>
+          <h2 class="mb-4 section-title">Upcoming Events</h2>
+          <p>We administer high school talks where each member shares their experience in University and their transition going from high school to University. Our team consists of people from a wide range of faculties such as Computer Science, Business, Engineering, Pharmacy, and Arts.</p>
+          <!-- <p><a href="#">View All Portfolio</a></p> -->
         </div>
       </div>
     </div>
+
+<style>
+.work-thumb {
+	 display: block;
+	 position: relative;
+}
+ .work-thumb img {
+	 border: 10px solid #fff;
+}
+ .work-thumb .work-text {
+	 text-align: center;
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 width: 90%;
+	 margin-top: 20px;
+	 transition: 0.3s all ease;
+	 opacity: 1;
+	 visibility: visible;
+	 transform: translate(-50%, -50%);
+}
+ .work-thumb .work-text h2 {
+	 color: #fff;
+	 font-weight: 300;
+	 margin-bottom: 0;
+	 font-size: 1.5rem;
+}
+ .work-thumb .work-text p {
+	 color: rgba(255, 255, 255, .5);
+}
+ .work-thumb:before {
+	 content: "";
+	 background: rgba(0, 0, 0, .5);
+	 position: absolute;
+	 transition: 0.3s all ease;
+	 opacity: 1;
+	 visibility: visible;
+	 top: 10px;
+	 left: 10px;
+	 right: 10px;
+	 bottom: 10px;
+}
+ .work-thumb:hover .work-text {
+	 margin-top: 0px;
+	 opacity: 1;
+	 visibility: visible;
+}
+ .work-thumb:hover:before {
+	 opacity: 1;
+	 visibility: visible;
+}
+</style>
+
     <div class="container-fluid">
       <div class="row mb-5 no-gutters">
+
+
+
         <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="100">
           <a href="portfolio-single.html" class="work-thumb">
             <div class="work-text">
-              <h2>Startup Brand</h2>
-              <p>Business</p>
+              <h2>Event 1</h2>
+              <p>Vancouver Learning Fare Yes</p>
             </div>
             <img src="images/work_1.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
 
+        
         <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="200">
           <a href="portfolio-single.html" class="work-thumb">
             <div class="work-text">
@@ -157,8 +213,8 @@
             <img src="images/work_4.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-
       </div>
+      
       
       <div class="row mt-5">
         <div class="col-12 text-center">

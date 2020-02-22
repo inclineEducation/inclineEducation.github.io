@@ -1542,7 +1542,8 @@ figure {
 	img {
 		border: 10px solid $white;
 	}
-	.work-text {
+	
+    .work-text {
 		text-align: center;
 		position: absolute;
 		top: 50%;
@@ -1550,8 +1551,8 @@ figure {
 		width: 90%;
 		margin-top: 20px;
 		transition: .3s all ease;
-		opacity: 0;
-		visibility: hidden;
+		opacity: 1;
+		visibility: visible;
 		transform: translate(-50%, -50%);
 		h2 {
 			color: $white;
@@ -1563,13 +1564,14 @@ figure {
 			color: rgba($white, .5);
 		}
 	}
+    
 	&:before {
 		content: "";
 		background: rgba($black, .5);
 		position: absolute;
 		transition: .3s all ease;
-		opacity: 0;
-		visibility: hidden;
+		opacity: 1;
+		visibility: visible;
 		top: 10px; left: 10px; right: 10px; bottom: 10px;
 	}
 	&:hover {
@@ -1584,6 +1586,7 @@ figure {
 		}
 	}
 }
+
 .divider {
 	width: 70px;
 	height: 6px;
