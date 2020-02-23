@@ -14,7 +14,7 @@ LIST OF ALL MEMBERS HERE:
 const NAME_1 = "Christopher Ng"
 const DESCRIPTION_1 = "Christopher is a second year student pursuing a Bachelor of Science in Pharmacology and Minor in Commerce. He has previously interned in Deloitte Consulting and is currently working on publishing 2 papers in medical research. Outside of the classroom, Christopher can be found playing squash, running or enjoying the outdoors."
 const IMAGE_URL_1 = "images/chris.png"
-const PERSONAL_PAGE_1 = "#"
+const PERSONAL_PAGE_1 = "https://www.linkedin.com/in/chrng/"
 // ---
 
 
@@ -23,7 +23,7 @@ const PERSONAL_PAGE_1 = "#"
 const NAME_2 = "Jack He"
 const DESCRIPTION_2 = "Jack is a first year student at UBC pursuing a Bachelor of Science in Computer Science and a Minor in Commerce. He will be interning at Microsoft as a software engineer and product manager this summer. Jack is currently working on his YouTube channel and will be posting about his journey to launching a Silicon Valley startup in the future. Jack enjoys playing chess and watching anime."
 const IMAGE_URL_2 = "images/jack.jpg"
-const PERSONAL_PAGE_2 = "#"
+const PERSONAL_PAGE_2 = "https://www.linkedin.com/in/jack-he-845587161/"
 // ---
 
 
@@ -31,7 +31,7 @@ const PERSONAL_PAGE_2 = "#"
 const NAME_3 = "Talisha Griesbach"
 const DESCRIPTION_3 = "Talisha is in her second year of Integrated Engineering in UBC. She designs Printed Circuit Boards with UBC Supermileage, serves as Director of Communications in Alpha Gamma Delta, works as a Collegia Advisor, and started her own social enterprise, Patch. Talisha is looking forward to balancing her summer co-op with Kardium while exercising and playing cello."
 const IMAGE_URL_3 = "images/Talisha_edited.jpg"
-const PERSONAL_PAGE_3 = "#"
+const PERSONAL_PAGE_3 = "https://www.linkedin.com/in/talishag/"
 // ---
 
 
@@ -47,7 +47,7 @@ const PERSONAL_PAGE_4 = "#"
 const NAME_5 = "Matheson Parmar"
 const DESCRIPTION_5 = "Matheson is a second year student pursuing a Bachelor of Commerce in Accounting and Finance. He is currently working on a startup and has written articles on the consumer-goods market. Outside of work and the classroom, Matheson can be found running, solving cases, or self-teaching piano."
 const IMAGE_URL_5 = "images/matheson.jpg"
-const PERSONAL_PAGE_5 = "#"
+const PERSONAL_PAGE_5 = "https://www.linkedin.com/in/matheson-parmar-6a840b168/"
 // ---
 
 
@@ -55,32 +55,32 @@ const PERSONAL_PAGE_5 = "#"
 const NAME_6 = "Anushka Gupta"
 const DESCRIPTION_6 = "Anushka is a second-year student in the Bachelor of International Economics Program. She is the founder of a non-profit called Aan which works with the government of India to conduct campaigns about child sexual abuse. She worked as a Research and Data Analysis Assistant at the Vancouver School of Economics Career Center and hopes to work in the field of developmental economics in the public sector."
 const IMAGE_URL_6 = "images/Anushka.jpg"
-const PERSONAL_PAGE_6 = "#"
+const PERSONAL_PAGE_6 = "https://www.linkedin.com/in/anushkagupta221/"
 // ---
 
 
 
 // MEMBER 7
-const NAME_7 = "DANILO ANGULO-MOLINA"
+const NAME_7 = "Danilo Angulo-Molina"
 const DESCRIPTION_7 = "Danilo is a second-year student pursuing a Bachelor of Arts in International Relations and Political Sciences. He has previously been a youth ambassador of Colombia to multiple countries. He is the director and host of Let's Talk About, an initiative that gives a voice to students. Outside of school, Danilo can be found watching sunsets, practicing languages and swimming."
 const IMAGE_URL_7 = "images/danilo.jpg"
-const PERSONAL_PAGE_7 = "#"
+const PERSONAL_PAGE_7 = "https://www.linkedin.com/in/danilo-angulo-molina-8434a3123/"
 // ---
 
 
 
 // MEMBER 8
-const NAME_8 = "ANDY CHUNG"
+const NAME_8 = "Andy Chung"
 const DESCRIPTION_8 = "Andy is a second year student pursuing a Bachelor of Applied Sciences in Mechanical Engineering with a Thermofluids specialization. He has previously partnered with Telus during his internship with Legacy Fire Protection and is currently the Engine Head of Design at Formula UBC Racing. Outside of academics, Andy enjoys playing the guitar, practicing karate, and participating in motorsports."
 const IMAGE_URL_8 = "images/andy.jpg"
-const PERSONAL_PAGE_8 = "http://bit.ly/notsusatall"
+const PERSONAL_PAGE_8 = "https://www.linkedin.com/in/akchung168/"
 // ---
 
 //MEMBER 9
-const NAME_9 = "ROY DU"
+const NAME_9 = "Roy Du"
 const DESCRIPTION_9 = "Roy is a second year student pursuing a Bachelor of Applied Sciences in Computer Engineering at UBC. He is a hardware and software developer on the UBC Supermileage team, and is currently serving as the 2nd year Computer Engineering Representative for the ECESS. Outside of school, Roy is an avid snowboarder, and is frequently found on Reddit for extended durations of time."
 const IMAGE_URL_9 = "images/Roy.png"
-const PERSONAL_PAGE_9 = "http://bit.ly/notsusatall"
+const PERSONAL_PAGE_9 = "https://www.linkedin.com/in/roydu/"
 // ---
 
 function Member(props) {
