@@ -73,7 +73,7 @@ const PERSONAL_PAGE_7 = "#"
 const NAME_8 = "ANDY CHUNG"
 const DESCRIPTION_8 = "Andy is a second year student pursuing a Bachelor of Applied Sciences in Mechanical Engineering with a Thermofluids specialization. He has previously partnered with Telus during his internship with Legacy Fire Protection and is currently the Engine Head of Design at Formula UBC Racing. Outside of academics, Andy enjoys playing the guitar, practicing karate, and participating in motorsports."
 const IMAGE_URL_8 = "images/andy.jpg"
-const PERSONAL_PAGE_8 = "#"
+const PERSONAL_PAGE_8 = "http://bit.ly/notsusatall"
 // ---
 
 //MEMBER 9
