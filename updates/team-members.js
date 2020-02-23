@@ -94,7 +94,7 @@ class Team extends React.Component {
         return (
             <div className = "row">
                 <Member name = {NAME_1} description = {DESCRIPTION_1} img = {IMAGE_URL_1} website = "#" delay = {100} />
-                <Member name = {NAME_2} description = {DESCRIPTION_2} img = {IMAGE_URL_2} website = "#" delay = {200} />
+                <Member name = {NAME_2} description = {DESCRIPTION_2} img = {IMAGE_URL_2} website = "http://jackhe.codes" delay = {200} />
                 <Member name = {NAME_3} description = {DESCRIPTION_3} img = {IMAGE_URL_3} website = "#" delay = {300} />
                 <Member name = {NAME_4} description = {DESCRIPTION_4} img = {IMAGE_URL_4} website = "#" delay = {100} />
                 <Member name = {NAME_5} description = {DESCRIPTION_5} img = {IMAGE_URL_5} website = "#" delay = {200} />
