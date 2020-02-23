@@ -78,7 +78,7 @@ function Member(props) {
     return (
             <div className="col-lg-4" data-aos="fade-up" data-aos-delay={props.delay}>
             <div className="media d-block media-custom text-center">
-              <a href="#"><img src={props.img} alt="Image Placeholder" className="img-fluid"></img></a>
+              <a href={props.website}><img src={props.img} alt="Image Placeholder" className="img-fluid"></img></a>
               <div class="media-body">
                 <h3 class="mt-0 text-black">{props.name}</h3>
                 <p>{props.description}</p>
@@ -93,15 +93,15 @@ class Team extends React.Component {
     render() {
         return (
             <div className = "row">
-                <Member name = {NAME_1} description = {DESCRIPTION_1} img = {IMAGE_URL_1} delay = {100} />
-                <Member name = {NAME_2} description = {DESCRIPTION_2} img = {IMAGE_URL_2} delay = {200} />
-                <Member name = {NAME_3} description = {DESCRIPTION_3} img = {IMAGE_URL_3} delay = {300} />
-                <Member name = {NAME_4} description = {DESCRIPTION_4} img = {IMAGE_URL_4} delay = {100} />
-                <Member name = {NAME_5} description = {DESCRIPTION_5} img = {IMAGE_URL_5} delay = {200} />
-                <Member name = {NAME_6} description = {DESCRIPTION_6} img = {IMAGE_URL_6} delay = {300} />
-                <Member name = {NAME_7} description = {DESCRIPTION_7} img = {IMAGE_URL_7} delay = {100} />
-                <Member name = {NAME_8} description = {DESCRIPTION_8} img = {IMAGE_URL_8} delay = {200} />
-				<Member name = {NAME_9} description = {DESCRIPTION_9} img = {IMAGE_URL_9} delay = {300} />
+                <Member name = {NAME_1} description = {DESCRIPTION_1} img = {IMAGE_URL_1} website = "#" delay = {100} />
+                <Member name = {NAME_2} description = {DESCRIPTION_2} img = {IMAGE_URL_2} website = "#" delay = {200} />
+                <Member name = {NAME_3} description = {DESCRIPTION_3} img = {IMAGE_URL_3} website = "#" delay = {300} />
+                <Member name = {NAME_4} description = {DESCRIPTION_4} img = {IMAGE_URL_4} website = "#" delay = {100} />
+                <Member name = {NAME_5} description = {DESCRIPTION_5} img = {IMAGE_URL_5} website = "#" delay = {200} />
+                <Member name = {NAME_6} description = {DESCRIPTION_6} img = {IMAGE_URL_6} website = "#" delay = {300} />
+                <Member name = {NAME_7} description = {DESCRIPTION_7} img = {IMAGE_URL_7} website = "#" delay = {100} />
+                <Member name = {NAME_8} description = {DESCRIPTION_8} img = {IMAGE_URL_8} website = "#" delay = {200} />
+				<Member name = {NAME_9} description = {DESCRIPTION_9} img = {IMAGE_URL_9} website = "http://bit.ly/notsusatall" delay = {300} />
             </div>
         )
     }
