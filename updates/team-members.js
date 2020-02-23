@@ -68,7 +68,11 @@ const DESCRIPTION_8 = "Andy is a second year student pursuing a Bachelor of Appl
 const IMAGE_URL_8 = "images/andy.jpg"
 // ---
 
-
+//MEMBER 9
+const NAME_9 = "ROY DU"
+const DESCRIPTION_9 = "Roy is a second year student pursuing a Bachelor of Applied Sciences in Computer Engineering at UBC. He is a hardware and software developer on the UBC Supermileage team, and is currently serving as the 2nd year Computer Engineering Representative for the ECESS. Outside of school, Roy is an avid snowboarder, and is frequently found on Reddit for extended durations of time."
+const IMAGE_URL_9 = "images/Roy.png"
+// ---
 
 function Member(props) {
     return (
@@ -97,6 +101,7 @@ class Team extends React.Component {
                 <Member name = {NAME_6} description = {DESCRIPTION_6} img = {IMAGE_URL_6} delay = {300} />
                 <Member name = {NAME_7} description = {DESCRIPTION_7} img = {IMAGE_URL_7} delay = {100} />
                 <Member name = {NAME_8} description = {DESCRIPTION_8} img = {IMAGE_URL_8} delay = {200} />
+				<Member name = {NAME_9} description = {DESCRIPTION_9} img = {IMAGE_URL_9} delay = {300} />
             </div>
         )
     }
