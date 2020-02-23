@@ -87,7 +87,7 @@ function Member(props) {
     return (
             <div className="col-lg-4" data-aos="fade-up" data-aos-delay={props.delay}>
             <div className="media d-block media-custom text-center">
-              <a href={props.website}><img src={props.img} alt="Image Placeholder" className="img-fluid"></img></a>
+              <a href={props.website}><img src={props.img} alt={'Image of ' + props.name} className="img-fluid"></img></a>
               <div class="media-body">
                 <h3 class="mt-0 text-black">{props.name}</h3>
                 <p>{props.description}</p>
