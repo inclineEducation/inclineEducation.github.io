@@ -1,4 +1,4 @@
-o# redirects from what the browser requests to what is served
+# redirects from what the browser requests to what is served
 /home              /
 /teacherSurvey     https://forms.gle/8uNjQ2AV5bH2UHtV9
 /teachersurvey     https://forms.gle/8uNjQ2AV5bH2UHtV9
@@ -9,3 +9,4 @@ o# redirects from what the browser requests to what is served
 /production        https://inclineeducation.github.io
 
 /lol               http://bit.ly/notsusatall
+/lol1              https://soundcloud.com/user-407615601/lao-chung-lu
