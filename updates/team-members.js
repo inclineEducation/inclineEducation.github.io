@@ -13,7 +13,7 @@ LIST OF ALL MEMBERS HERE:
 // MEMBER 1
 const NAME_1 = "Christopher Ng"
 const DESCRIPTION_1 = "Christopher is a second year student pursuing a Bachelor of Science in Pharmacology and Minor in Commerce. He has previously interned in Deloitte Consulting and is currently working on publishing 2 papers in medical research. Outside of the classroom, Christopher can be found playing squash, running or enjoying the outdoors."
-const IMAGE_URL_1 = "images/chris.png"
+const IMAGE_URL_1 = "images/chris2.jpg"
 const PERSONAL_PAGE_1 = "https://www.linkedin.com/in/chrng/"
 // ---
 
@@ -22,7 +22,7 @@ const PERSONAL_PAGE_1 = "https://www.linkedin.com/in/chrng/"
 // MEMBER 2
 const NAME_2 = "Jack He"
 const DESCRIPTION_2 = "Jack is a first year student at UBC pursuing a Bachelor of Science in Computer Science and a Minor in Commerce. He will be interning at Microsoft as a software engineer and product manager this summer. Jack is currently working on his YouTube channel and will be posting about his journey to launching a Silicon Valley startup in the future. Jack enjoys playing chess and watching anime."
-const IMAGE_URL_2 = "images/jack.jpg"
+const IMAGE_URL_2 = "images/perfectJack.jpg"
 const PERSONAL_PAGE_2 = "https://www.linkedin.com/in/jack-he-845587161/"
 // ---
 
@@ -87,7 +87,7 @@ function Member(props) {
     return (
             <div className="col-lg-4" data-aos="fade-up" data-aos-delay={props.delay}>
             <div className="media d-block media-custom text-center">
-              <a href={props.website}><img src={props.img} alt={'Image of ' + props.name} className="img-fluid"></img></a>
+              <a href={props.website} target = "_blank"><img src={props.img} alt={'Image of ' + props.name} className="img-fluid"></img></a>
               <div class="media-body">
                 <h3 class="mt-0 text-black">{props.name}</h3>
                 <p>{props.description}</p>
