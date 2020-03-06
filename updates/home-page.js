@@ -21,5 +21,6 @@ function UpdateSubTitle() {
     )
 }
 
+
 ReactDOM.render(<UpdateTitle />, document.getElementById("title"))
 ReactDOM.render(<UpdateSubTitle />, document.getElementById("subtitle"))
