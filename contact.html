@@ -112,7 +112,7 @@
 
         <div class="col-12 mb-5 order-2">
 		  <!-- add action="#" to change redirect after submitting-->
-          <form name="contact" method="post" data-netlify="true">
+          <form name="contact" method="post" data-netlify-recaptcha="true" data-netlify="true">
             <div class="row">
               <div class="col-md-6 form-group">
                 <label for="name">Name</label>
@@ -140,6 +140,7 @@
                 <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
               </div>
             </div>
+			<div class = "row" data-netlify-recaptcha="true"></div>
             <div class="row">
               <div class="col-md-6 form-group">
                 <input type="submit" value="Send Message" class="btn btn-outline-black px-3 py-3">
