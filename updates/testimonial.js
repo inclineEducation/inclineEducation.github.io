@@ -11,11 +11,6 @@ LIST ALL TESTIMONIALS HERE:
 
 const testimonials = [
     {
-        name: "Chris Ng",
-        status:"Founder",
-        description: "I want to make YOU succeed.",
-        imgUrl:"images/chris.jpg"
-    }, {
         name: "Tiffany Anderson",
         status: "Templeton Secondary Teacher",
         imgUrl:"images/Tiffany.jpg",
