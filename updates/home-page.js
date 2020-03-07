@@ -13,31 +13,7 @@ const ALL_UPCOMING_EVENTS = [
         "time":"6pm - 8pm",
         "imageUrl":"images/highschool.jpg",
         "url":""
-    }, 
-    {
-        "title":"YOUR EVENT HERE",
-        "location":"YOUR SCHOOL HERE",
-        "date":"Whenever you're available",
-        "time":"Whenever you're available",
-        "imageUrl":"images/highschool.jpg",
-        "url":"contact.html"
-    },
-    {
-        "title":"YOUR EVENT HERE",
-        "location":"YOUR SCHOOL HERE",
-        "date":"Whenever you're available",
-        "time":"Whenever you're available",
-        "imageUrl":"images/highschool.jpg",
-        "url":"contact.html"
-    },,
-    {
-        "title":"YOUR EVENT HERE",
-        "location":"YOUR SCHOOL HERE",
-        "date":"Whenever you're available",
-        "time":"Whenever you're available",
-        "imageUrl":"images/highschool.jpg",
-        "url":"contact.html"
-    },
+    }
 ]
 
 
