@@ -7,11 +7,11 @@
 
 const ALL_UPCOMING_EVENTS = [
     {
-        "title":"dick measuring contest",
-        "location":"John Oliver Secondary School",
+        "title":"Vancouver Learning Network Panel Discussion",
+        "location":"John Oliver Secondary School, East 41st Avenue, Vancouver, BC",
         "date":"March 12, 2020",
         "time":"6pm - 8pm",
-        "imageUrl":"images/work_1.jpg",
+        "imageUrl":"images/highschool.jpg",
         "url":""
     }, 
     {
@@ -19,24 +19,24 @@ const ALL_UPCOMING_EVENTS = [
         "location":"YOUR SCHOOL HERE",
         "date":"Whenever you're available",
         "time":"Whenever you're available",
-        "imageUrl":"images/work_1.jpg",
-        "url":""
+        "imageUrl":"images/highschool.jpg",
+        "url":"contact.html"
     },
     {
         "title":"YOUR EVENT HERE",
         "location":"YOUR SCHOOL HERE",
         "date":"Whenever you're available",
         "time":"Whenever you're available",
-        "imageUrl":"images/work_1.jpg",
-        "url":""
+        "imageUrl":"images/highschool.jpg",
+        "url":"contact.html"
     },,
     {
         "title":"YOUR EVENT HERE",
         "location":"YOUR SCHOOL HERE",
         "date":"Whenever you're available",
         "time":"Whenever you're available",
-        "imageUrl":"images/work_1.jpg",
-        "url":""
+        "imageUrl":"images/highschool.jpg",
+        "url":"contact.html"
     },
 ]
 
