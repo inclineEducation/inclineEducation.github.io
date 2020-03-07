@@ -73,26 +73,5 @@ function Container() {
     )
 }
 
-function Test() {
-    return (
-        <div className="item">
-          <div className="block-33 h-100">
-            <div className="vcard d-flex mb-3">
-              <div className="image align-self-center"><img src="images/person_2.jpg" alt="Person here"></img></div>
-              <div className="name-text align-self-center">
-                <h2 className="heading">John Smith</h2>
-                <span className="meta">Customer Corp.</span>
-              </div>
-            </div>
-            <div className="text">
-              <blockquote>
-                <p>&rdquo; Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, accusamus? Porro fugit culpa
-                  consequuntur dolorum. &ldquo;</p>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-    )
-}
 
 ReactDOM.render(<Container />, document.getElementById("Testimonials"));
