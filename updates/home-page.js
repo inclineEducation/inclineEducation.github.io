@@ -57,7 +57,7 @@ function Event(props) {
     )
 }
  
-function Container(props) {
+function ContainerForEvents(props) {
     return (
         <div>
             {props.listOfEvents.map((event) => {
@@ -92,4 +92,4 @@ function UpdateSubTitle() {
 
 ReactDOM.render(<UpdateTitle />, document.getElementById("title"))
 ReactDOM.render(<UpdateSubTitle />, document.getElementById("subtitle"))
-ReactDOM.render(<Container listOfEvents = {ALL_UPCOMING_EVENTS}/>, document.getElementById("events"))
+ReactDOM.render(<ContainerForEvents listOfEvents = {ALL_UPCOMING_EVENTS}/>, document.getElementById("events"))
