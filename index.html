@@ -32,7 +32,9 @@
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script src = "updates/home-page.js" type="text/babel"></script>
-  
+  <script src = "updates/testimonial.js" type="text/babel"></script>
+
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158958448-1"></script>
   <script>
@@ -66,14 +68,16 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">Meet the team</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown"
+
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="dropdown04" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">Services</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-                <a class="dropdown-item" href="#">Mentorship program</a>
-                <a class="dropdown-item" href="#">High school talks</a>
+                <a class="dropdown-item" href="mentorship.html">Mentorship program</a>
+                <a class="dropdown-item" href="highschool.html">High school talks</a>
               </div>
-            </li>
+            </li> -->
+
             <!-- <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Projects</a>
             </li> -->
@@ -82,12 +86,14 @@
             </li>
           </ul>
 
+		  <!-- search bar - implement with google?
           <div class="navbar-nav ml-auto">
             <form method="post" class="search-form">
               <span class="icon ion ion-search"></span>
               <input type="text" class="form-control" placeholder="Search...">
             </form>
           </div>
+		  -->
 
         </div>
       </div>
@@ -95,25 +101,25 @@
   </header>
   <!-- END header -->
 
+
   <div class="slider-item overlay" data-stellar-background-ratio="0.5"
-    style="background-image: url('images/hero_2.jpg');">
+    style="background-image: url('images/group.jpg');">
     <div class="container">
       <div class="row slider-text align-items-center justify-content-center">
         <div class="col-lg-12 text-center col-sm-12">
           <h2 data-aos="fade-up" data-aos="fade-up" data-aos-delay="" style="color: white;"><div id = "subtitle"></div></h2> <!--subtitle-->
           <h1 class="mb-4" data-aos="fade-up" data-aos-delay="100"><div id = "title"></div></h1> <!--title-->
+		  <!-- that weird play button
           <div class="btn-play-wrap mx-auto" data-aos="fade-up" data-aos-delay="200">
             <a href="https://www.youtube.com/watch?v=_VnYSoMI-9Q" data-fancybox data-ratio="2"
                 class="btn-play"><span class="ion ion-ios-play"></span></a>
           </div>
+		  -->
 
         </div>
       </div>
     </div>
   </div>
-
-  
-
   
 
   <div class="section portfolio-section">
@@ -182,18 +188,19 @@
     <div class="container-fluid">
       <div class="row mb-5 no-gutters">
 
-
-
+        <div id = "events"></div>
+<!-- 
         <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="100">
           <a href="portfolio-single.html" class="work-thumb">
             <div class="work-text">
               <h2>Event 1</h2>
               <p>Vancouver Learning Fare Yes</p>
+              <p>March 12, 2020</p>
+              <p>6pm - 8pm</p>
             </div>
             <img src="images/work_1.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
-
         
         <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="200">
           <a href="portfolio-single.html" class="work-thumb">
@@ -223,14 +230,8 @@
             </div>
             <img src="images/work_4.jpg" alt="Image" class="img-fluid">
           </a>
-        </div>
-      </div>
-      
-      
-      <div class="row mt-5">
-        <div class="col-12 text-center">
-          <p><a href="portfolio.html" class="btn btn-outline-white px-4 py-3">More Portfolio</a></p>
-        </div>
+        </div> -->
+
       </div>
     </div>
   </div>
@@ -240,16 +241,16 @@
       <div class="row">
         <div class="col-lg-5 ml-auto mb-5 order-2">
           <span class="d-block text-uppercase text-primary">Who We Are</span>
-          <h2 class="mb-4 section-title">Do Things That Matters. Plan. Create. Grow.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id autem temporibus blanditiis accusamus perferendis libero accusantium nisi itaque tempore, harum aliquid aut, sapiente dolor tenetur. Tempora corrupti suscipit delectus perspiciatis!</p>
-          <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus.</p>
-          <p><a href="#" class="btn btn-outline-black">Learn More</a></p>
+          <h2 class="mb-4 section-title">Hit your post-secondary freshman year running!</h2>
+          <p>At Incline Education, we recognize that the transition into post-secondary isn't easy.</p>
+          <p class="mb-5">Our goal is to help turn one of the most stressful parts of your education into the exciting journey that it should be!</p>
+          <p><a href="about.html" class="btn btn-outline-black">Learn More</a></p>
         </div>
         <div class="col-lg-6 order-1">
           <figure class="img-dotted-bg">
-            <img src="images/about_1.jpg" alt="Image" class="img-fluid">
+            <img src="images/group1.jpg" alt="Image" class="img-fluid">
 
-            <img src="images/work_1.jpg" alt="Image" class="img-fluid img-absolute" data-aos="fade-left">
+            <img src="images/capThrowing.jpg" alt="Image" class="img-fluid img-absolute" data-aos="fade-left">
 
           </figure>
 
@@ -263,18 +264,20 @@
       <div class="row">
         <div class="col-lg-3 mb-4">
           <div class="service" data-aos="fade-up" data-aos-delay="">
-            <span class="icon icon-magnet mb-4 d-block"></span>
-            <h3>Designing</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias id volume amet.</p>
+            <span class="icon icon-people mb-4 d-block"></span>
+            <h3>Panels</h3>
+            <p>Diverse panels of successful post-secondary students to address any and every concern.</p>
           </div>
         </div>
         <div class="col-lg-3 mb-4">
           <div class="service" data-aos="fade-up" data-aos-delay="100">
-            <span class="icon icon-screen-desktop mb-4 d-block"></span>
-            <h3>Branding Identity</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias id volume amet.</p>
+            <span class="icon icon-user mb-4 d-block"></span>
+            <h3>Mentorship</h3>
+            <p>One on one mentorship with a hand-picked upper year for approachable and reliable guidance.</p>
           </div>
         </div>
+		
+		<!--
         <div class="col-lg-3 mb-4">
           <div class="service" data-aos="fade-up" data-aos-delay="200">
             <span class="icon icon-screen-smartphone mb-4 d-block"></span>
@@ -289,96 +292,16 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias id volume amet.</p>
           </div>
         </div>
+		-->
       </div>
     </div>
   </div>
 
-  <div class="section bg-light block-11">
-    <div class="container">
-      <div class="row justify-content-center mb-5">
-        <div class="col-md-8 text-center">
-          <h2 class="mb-4 section-title">Testimonial</h2>
-        </div>
-      </div>
-      <div class="nonloop-block-11 owl-carousel">
-        <div class="item">
-          <div class="block-33 h-100">
-            <div class="vcard d-flex mb-3">
-              <div class="image align-self-center"><img src="images/person_1.jpg" alt="Person here"></div>
-              <div class="name-text align-self-center">
-                <h2 class="heading">Carl Smith</h2>
-                <span class="meta">Customer Corp.</span>
-              </div>
-            </div>
-            <div class="text">
-              <blockquote>
-                <p>&rdquo; Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat qui, ipsum debitis id
-                  reprehenderit ut soluta possimus consectetur asperiores totam veniam quasi molestiae. Animi doloribus
-                  accusamus eius ex laudantium vitae? &ldquo;</p>
-              </blockquote>
-            </div>
-          </div>
-        </div>
 
-        <div class="item">
-          <div class="block-33 h-100">
-            <div class="vcard d-flex mb-3">
-              <div class="image align-self-center"><img src="images/person_2.jpg" alt="Person here"></div>
-              <div class="name-text align-self-center">
-                <h2 class="heading">Craig Darren</h2>
-                <span class="meta">Customer Corp.</span>
-              </div>
-            </div>
-            <div class="text">
-              <blockquote>
-                <p>&rdquo; Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, ut enim error molestias maxime
-                  deserunt voluptate doloribus nihil nesciunt id perferendis, doloremque earum architecto ab incidunt
-                  sunt
-                  corrupti. Consequuntur qui ullam voluptates sapiente quod esse eum. &ldquo;</p>
-              </blockquote>
-            </div>
-          </div>
-        </div>
 
-        <div class="item">
-          <div class="block-33 h-100">
-            <div class="vcard d-flex mb-3">
-              <div class="image align-self-center"><img src="images/person_1.jpg" alt="Person here"></div>
-              <div class="name-text align-self-center">
-                <h2 class="heading">John Smith</h2>
-                <span class="meta">Customer Corp.</span>
-              </div>
-            </div>
-            <div class="text">
-              <blockquote>
-                <p>&rdquo; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, ab? Asperiores dolore
-                  blanditiis quis sapiente soluta aliquid officiis. &ldquo;</p>
-              </blockquote>
-            </div>
-          </div>
-        </div>
+<div id = "Testimonials"></div>
 
-        <div class="item">
-          <div class="block-33 h-100">
-            <div class="vcard d-flex mb-3">
-              <div class="image align-self-center"><img src="images/person_2.jpg" alt="Person here"></div>
-              <div class="name-text align-self-center">
-                <h2 class="heading">John Smith</h2>
-                <span class="meta">Customer Corp.</span>
-              </div>
-            </div>
-            <div class="text">
-              <blockquote>
-                <p>&rdquo; Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, accusamus? Porro fugit culpa
-                  consequuntur dolorum. &ldquo;</p>
-              </blockquote>
-            </div>
-          </div>
-        </div>
 
-      </div>
-    </div>
-  </div>
   <!-- END .block-4 -->
   </div>
 
@@ -417,13 +340,17 @@
           <div class="mb-5">
             <h3 class="mb-4">Contact Info</h3>
             <ul class="list-unstyled footer-link quick-contact">
-              <li class="d-block">
+              <!--
+			  <li class="d-block">
                 <span class="d-block caption">Address:</span>
                 <span class="caption-text">34 Street Name, City Name Here, United States</span>
               </li>
+			  -->
+			  <!--
               <li class="d-block">
                 <span class="d-block caption">Telephone:</span><span class="caption-text">+1 242 4942 290</span>
               </li>
+			  -->
               <li class="d-block">
                 <span class="d-block caption">Email:</span><span class="caption-text">contact@inclineedu.org</span>
               </li>
@@ -435,10 +362,12 @@
         <div class="col-md-3 mb-5">
           <h3 class="mb-4">Quick Links</h3>
           <ul class="list-unstyled footer-link">
+			<!--
             <li><a href="#">About</a></li>
             <li><a href="#">Terms of Use</a></li>
             <li><a href="#">Disclaimers</a></li>
-            <li><a href="#">Contact</a></li>
+			-->
+            <li><a href="mailto:contact@inclineedu.org">Contact</a></li>
           </ul>
         </div>
         <div class="col-md-3">
