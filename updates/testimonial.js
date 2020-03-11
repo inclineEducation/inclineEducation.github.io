@@ -11,14 +11,9 @@ LIST ALL TESTIMONIALS HERE:
 
 const testimonials = [
     {
-        name: "Chris Ng",
-        status:"Founder",
-        description: "I learned a lot! This is some Testimonial! blah blah blah blah blah",
-        imgUrl:"images/person_1.jpg"
-    }, {
         name: "Tiffany Anderson",
         status: "Templeton Secondary Teacher",
-        imgUrl:"images/chris.png",
+        imgUrl:"images/Tiffany.jpg",
         description: "Chris and his colleagues were professional, fun, and very informative. My students thoroughly enjoyed their visit!"
     }
 ]
