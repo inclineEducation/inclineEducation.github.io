@@ -10,7 +10,7 @@ const ALL_UPCOMING_EVENTS = [
         "title":"Vancouver Learning Network Panel Discussion",
         "location":"John Oliver Secondary School, East 41st Avenue, Vancouver, BC",
         "date":"March 12, 2020",
-        "time":"6pm - 8pm",
+        "time":"6:30pm - 8pm",
         "imageUrl":"images/highschool.jpg",
         "url":"contact.html"
     }
@@ -60,7 +60,7 @@ function UpdateTitle() {
 function UpdateSubTitle() {
     return (
         <div>
-            We Help High School Students Succeed
+            Helping Students Find Lasting Success
         </div>
     )
 }

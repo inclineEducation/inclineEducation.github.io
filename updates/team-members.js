@@ -21,8 +21,8 @@ const PERSONAL_PAGE_1 = "https://www.linkedin.com/in/chrng/"
 
 // MEMBER 2
 const NAME_2 = "Jack He"
-const DESCRIPTION_2 = "Jack is a first year student at UBC pursuing a Bachelor of Science in Computer Science and a Minor in Commerce. He will be interning at Microsoft as a software engineer and product manager this summer. Jack is currently working on his YouTube channel and will be posting about his journey to launching a Silicon Valley startup in the future. Jack enjoys playing chess and watching anime."
-const IMAGE_URL_2 = "images/perfectJack.jpg"
+const DESCRIPTION_2 = "Jack is a first year student at UBC pursuing a Bsc major in Computer Science and a minor in Commerce. He will be interning at Microsoft as a software engineer and product manager this summer. Jack is currently working on his YouTube channel and will be posting about his journey to launching a Silicon Valley startup in the future. Outside the classroom, Jack enjoys playing chess and watching anime. Jack built this website using React and bootstrap."
+const IMAGE_URL_2 = "images/amazingJack3.jpg"
 const PERSONAL_PAGE_2 = "https://www.linkedin.com/in/jack-he-845587161/"
 // ---
 
@@ -45,7 +45,7 @@ const PERSONAL_PAGE_4 = "#"
 
 // MEMBER 5
 const NAME_5 = "Matheson Parmar"
-const DESCRIPTION_5 = "Matheson is a second year student pursuing a Bachelor of Commerce in Accounting and Finance. He is currently working on a startup and has written articles on the consumer-goods market. Outside of work and the classroom, Matheson can be found running, solving cases, or self-teaching piano."
+const DESCRIPTION_5 = "Matheson is a second-year student pursuing a Bachelor of Commerce in Accounting and Finance. He has previously written articles on the consumer goods market and offered pro-bono consulting services to local BC businesses. This summer, he will be interning at a fintech firm called Cinchy. Outside of work and the classroom, Matheson can be found running, following the NBA, or self-teaching piano."
 const IMAGE_URL_5 = "images/matheson.jpg"
 const PERSONAL_PAGE_5 = "https://www.linkedin.com/in/matheson-parmar-6a840b168/"
 // ---
@@ -78,7 +78,7 @@ const PERSONAL_PAGE_8 = "https://www.linkedin.com/in/akchung168/"
 
 //MEMBER 9
 const NAME_9 = "Roy Du"
-const DESCRIPTION_9 = "Roy is a second year student pursuing a Bachelor of Applied Sciences in Computer Engineering at UBC. He is a hardware and software developer on the UBC Supermileage team, and is currently serving as the 2nd year Computer Engineering Representative for the ECESS. Outside of school, Roy is an avid snowboarder, and is frequently found on Reddit for extended durations of time."
+const DESCRIPTION_9 = "Roy is a second year student pursuing a Bachelor of Applied Sciences in Computer Engineering at UBC. He is a hardware and software developer on the UBC Supermileage team, and is currently serving as the 2nd year Computer Engineering Representative for the ECESS. Outside of school, Roy is an avid snowboarder, and is frequently found on Reddit for extended durations of time. Roy contributed to the backend of this website."
 const IMAGE_URL_9 = "images/Roy.png"
 const PERSONAL_PAGE_9 = "https://www.linkedin.com/in/roydu/"
 // ---
