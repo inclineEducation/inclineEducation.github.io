@@ -19,7 +19,7 @@ const ALL_UPCOMING_EVENTS = [
 
 function Event(props) {
     return (
-        <div className="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="100" style = {{float:"left", margin:"auto"}}>
+        <div className="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="100" style = {{float:"left"}}>
           <a href= {props.url} className="work-thumb">
             <div className="work-text">
               <h2>{props.title}</h2>
