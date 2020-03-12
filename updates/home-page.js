@@ -60,7 +60,7 @@ function UpdateTitle() {
 function UpdateSubTitle() {
     return (
         <div>
-            We Help High School Students Succeed
+            Helping Students Find Lasting Success
         </div>
     )
 }
