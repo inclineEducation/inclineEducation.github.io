@@ -18,5 +18,3 @@
 /lol               http://bit.ly/notsusatall
 
 # redirects added by team members
-/ImmutableMultiDict([('user_id',    /u'UUD7S060K'), ('response_url', u'https://hooks.slack.com/commands/TUF3LN2C8/1002167863863/TxykUf5TxH34Ch9M7zUPYkha'), ('text', u'1 1'), ('token', u'K9wwkO48A3P8pCx58Nk7PS82'), ('trigger_id', u'999848427012.967122750416.7be6230c1038532a567b31c6af3cf5d4'), ('channel_id', u'CV2FFKAUT'), ('team_id', u'TUF3LN2C8'), ('command', u'/link'), ('team_domain', u'inclineeducation'), ('user_name', u'zeleidu'), ('channel_name', u'bottest')])
-/1    /1
