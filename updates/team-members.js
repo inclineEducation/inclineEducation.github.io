@@ -21,8 +21,8 @@ const PERSONAL_PAGE_1 = "https://www.linkedin.com/in/chrng/"
 
 // MEMBER 2
 const NAME_2 = "Jack He"
-const DESCRIPTION_2 = "Jack is a first year student at UBC pursuing a Bsc major in Computer Science and a minor in Commerce. He will be interning at Microsoft as a software engineer and product manager this summer. Jack is currently working on his YouTube channel and will be posting about his journey to launching a Silicon Valley startup in the future. Outside the classroom, Jack enjoys playing chess and watching anime. Jack built this website using React and bootstrap."
-const IMAGE_URL_2 = "images/amazingJack3.jpg"
+const DESCRIPTION_2 = "Jack is a first year student at UBC pursuing a Bsc major in Computer Science and a minor in Commerce. He will be interning at Microsoft as a software engineer and product manager this summer. Jack is currently working on his YouTube channel and will be posting about his journey to launching a Silicon Valley startup in the future. Outside the classroom, Jack can be found playing chess."
+const IMAGE_URL_2 = "images/amazingJack4.jpg"
 const PERSONAL_PAGE_2 = "https://www.linkedin.com/in/jack-he-845587161/"
 // ---
 
@@ -78,7 +78,7 @@ const PERSONAL_PAGE_8 = "https://www.linkedin.com/in/akchung168/"
 
 //MEMBER 9
 const NAME_9 = "Roy Du"
-const DESCRIPTION_9 = "Roy is a second year student pursuing a Bachelor of Applied Sciences in Computer Engineering at UBC. He is a hardware and software developer on the UBC Supermileage team, and is currently serving as the 2nd year Computer Engineering Representative for the ECESS. Outside of school, Roy is an avid snowboarder, and is frequently found on Reddit for extended durations of time. Roy contributed to the backend of this website."
+const DESCRIPTION_9 = "Roy is a second year student pursuing a Bachelor of Applied Sciences in Computer Engineering at UBC. He is a hardware and software developer on the UBC Supermileage team, and is currently serving as the 2nd year Computer Engineering Representative for the ECESS. Outside of school, Roy is an avid snowboarder, and is frequently found on Reddit for extended durations of time."
 const IMAGE_URL_9 = "images/Roy.png"
 const PERSONAL_PAGE_9 = "https://www.linkedin.com/in/roydu/"
 // ---
