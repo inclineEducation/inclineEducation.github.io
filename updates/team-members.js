@@ -79,7 +79,7 @@ const PERSONAL_PAGE_8 = "https://www.linkedin.com/in/akchung168/"
 //MEMBER 9
 const NAME_9 = "Roy Du"
 const DESCRIPTION_9 = "Roy is a second year student pursuing a Bachelor of Applied Sciences in Computer Engineering at UBC. He is a hardware and software developer on the UBC Supermileage team, and is currently serving as the 2nd year Computer Engineering Representative for the ECESS. Outside of school, Roy is an avid snowboarder, and is frequently found on Reddit for extended durations of time."
-const IMAGE_URL_9 = "images/team/Roy.png"
+const IMAGE_URL_9 = "images/team/Roy.jpg"
 const PERSONAL_PAGE_9 = "https://www.linkedin.com/in/roydu/"
 // ---
 
