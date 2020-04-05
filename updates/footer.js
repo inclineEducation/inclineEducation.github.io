@@ -1,5 +1,5 @@
 
-function reactFooter(props){
+function reactFooter(){
     return(
     <footer class="site-footer" role="contentinfo" style="padding: 1em; padding-top: 7em;">
         <div class="container">
