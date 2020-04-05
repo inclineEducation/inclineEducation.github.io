@@ -5,7 +5,7 @@ const e = React.createElement;
 
 function reactFooter(props){
     return(
-        <footer class="site-footer" role="contentinfo" style="padding: 1em; padding-top: 7em;">
+<footer class="site-footer" role="contentinfo" style="padding: 1em; padding-top: 7em;">
     <div class="container">
       <div class="row">
         <div class="col-md-4 mb-3">
@@ -46,7 +46,7 @@ function reactFooter(props){
         </div>
       </div>
     </div>
-  </footer>
+</footer>
     )
 }
 
