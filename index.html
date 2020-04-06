@@ -3,6 +3,8 @@
 
 <head>
   <title>Incline Education</title>
+  <meta name="keywords" content="incline,education,mentorship,panel,discussions,secondary,education,school,
+  post,high,students,teachers,parents,community,advancing,charity,blog,university,panel">
   <!-- <script type="text/javascript">
     window.location.href = "https://educationincline.wixsite.com/home"
   </script> -->
@@ -34,6 +36,7 @@
   <script src = "updates/home-page.js" type="text/babel"></script>
   <script src = "updates/testimonial.js" type="text/babel"></script>
 
+  <script src = "js/include-html.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158958448-1"></script>
@@ -68,9 +71,14 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">About us</a>
             </li>
+			      <li class="nav-item">
+              <a class="nav-link" href="mentorship.html">Mentorship</a>
+            </li>
+            
             <li class="nav-item">
-              <a class="nav-link" href="team.html">Meet the team</a>
-            </li> 
+              <a class="nav-link" href="team.html">Meet our team</a>
+            </li>
+          
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
@@ -212,9 +220,9 @@
         </div>
         <div class="col-lg-6 order-1">
           <figure class="img-dotted-bg">
-            <img src="images/group1.jpg" alt="Image" class="img-fluid">
+            <img src="images\event\vln11032020\25\vln5.JPG" alt="Image" class="img-fluid">
 
-            <img src="images/capThrowing.jpg" alt="Image" class="img-fluid img-absolute" data-aos="fade-left">
+            <img src="images\event\vln11032020\25\vln3.jpg" alt="Image" class="img-fluid img-absolute" data-aos="fade-left">
 
           </figure>
         </div>
@@ -303,70 +311,7 @@
     </div>
   </div>
 
-  
-
-  <footer class="site-footer" role="contentinfo" style="padding: 1em; padding-top: 7em;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <h3 class="mb-4">About Incline Education</h3>
-          <p class="mb-5">We are a team of university students from various faculties who have come together for the 
-		  sole purpose of helping students achieve more out of their university experience and beyond. </p>
-          <ul class="list-unstyled footer-link d-flex footer-social">
-            <!--<li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
-            <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>-->
-            <li><a href="https://linkedin.com/company/inclineeducation/" class="p-2"><span class="fa fa-linkedin"></span></a></li>
-            <li><a href="https://www.instagram.com/incline_education/" class="p-2"><span class="fa fa-instagram"></span></a></li>
-			<li><a href="https://www.facebook.com/incline.education/" class="p-2"><span class="fa fa-facebook"></span></a></li>
-          </ul>
-
-        </div>
-
-        
-        <div class="col-md-5 mb-3 pl-md-5">
-          <div class="mb-5">
-            <h3 class="mb-4">Contact Info</h3>
-            <ul class="list-unstyled footer-link quick-contact">
-              <!--
-			  <li class="d-block">
-                <span class="d-block caption">Address:</span>
-                <span class="caption-text">34 Street Name, City Name Here, United States</span>
-              </li>
-			  -->
-			  <!--
-              <li class="d-block">
-                <span class="d-block caption">Telephone:</span><span class="caption-text">+1 242 4942 290</span>
-              </li>
-			  -->
-              <li class="d-block">
-                <span class="d-block caption">Email:</span><span class="caption-text">contact@inclineedu.org</span>
-              </li>
-            </ul>
-          </div>
-
-          
-        </div>
-        <div class="col-md-3 mb-3">
-          <h3 class="mb-4">Quick Links</h3>
-          <ul class="list-unstyled footer-link">
-			<!--
-            <li><a href="#">About</a></li>
-			--->
-            <li><a href="terms.html">Terms of Use</a></li>
-			<li><a href="privacy.html">Privacy Policy</a></li>
-            <!---
-			<li><a href="#">Disclaimers</a></li>
-			-->
-            <li><a href="mailto:contact@inclineedu.org">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- END footer -->
+  <div include-html="snippets/footer.html"></div>
 
   <!-- loader -->
   <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
@@ -374,6 +319,7 @@
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
         stroke="#ffc107" /></svg></div>
 
+  <script src="js/include-html.js"></script>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
