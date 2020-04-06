@@ -37,7 +37,7 @@ const PERSONAL_PAGE_3 = "https://www.linkedin.com/in/talishag/"
 
 // MEMBER 4
 const NAME_4 = "Michelle Lin"
-const DESCRIPTION_4 = "Michelle is a 2nd year Biomedical Engineering Student at UBC. She previously served as the First Year Council President at UBC Engineering. She has been an ambassador of Engineering Stories underneath the Dean’s Office and has also started her own fundraising initiative that funds elementary schools. Outside of school, her passions are playing Tennis and Film making."
+const DESCRIPTION_4 = "Michelle is a second year Biomedical Engineering Student at UBC. She previously served as the First Year Council President at UBC Engineering. She has been an ambassador of Engineering Stories underneath the Dean’s Office and has also started her own fundraising initiative that funds elementary schools. Outside of school, her passions are playing Tennis and Film making."
 const IMAGE_URL_4 = "images/team/300_80/Michelle.jpg"
 const PERSONAL_PAGE_4 = "#"
 // ---
@@ -45,7 +45,7 @@ const PERSONAL_PAGE_4 = "#"
 
 // MEMBER 5
 const NAME_5 = "Matheson Parmar"
-const DESCRIPTION_5 = "Matheson is a second-year student pursuing a Bachelor of Commerce in Accounting and Finance. He has previously written articles on the consumer goods market and offered pro-bono consulting services to local BC businesses. This summer, he will be interning at a fintech firm called Cinchy. Outside of work and the classroom, Matheson can be found running, following the NBA, or self-teaching piano."
+const DESCRIPTION_5 = "Matheson is a second year student pursuing a Bachelor of Commerce in Accounting and Finance. He has previously written articles on the consumer goods market and offered pro-bono consulting services to local BC businesses. This summer, he will be interning at a fintech firm called Cinchy. Outside of work and the classroom, Matheson can be found running, following the NBA, or self-teaching piano."
 const IMAGE_URL_5 = "images/team/300_80/matheson.jpg"
 const PERSONAL_PAGE_5 = "https://www.linkedin.com/in/matheson-parmar-6a840b168/"
 // ---
@@ -53,7 +53,7 @@ const PERSONAL_PAGE_5 = "https://www.linkedin.com/in/matheson-parmar-6a840b168/"
 
 // MEMBER 6
 const NAME_6 = "Anushka Gupta"
-const DESCRIPTION_6 = "Anushka is a second-year student in the Bachelor of International Economics Program. She is the founder of a non-profit called Aan which works with the government of India to conduct campaigns about child sexual abuse. She worked as a Research and Data Analysis Assistant at the Vancouver School of Economics Career Center and hopes to work in the field of developmental economics in the public sector."
+const DESCRIPTION_6 = "Anushka is a second year student in the Bachelor of International Economics Program. She is the founder of a non-profit called Aan which works with the government of India to conduct campaigns about child sexual abuse. She worked as a Research and Data Analysis Assistant at the Vancouver School of Economics Career Center and hopes to work in the field of developmental economics in the public sector."
 const IMAGE_URL_6 = "images/team/300_80/Anushka.jpg"
 const PERSONAL_PAGE_6 = "https://www.linkedin.com/in/anushkagupta221/"
 // ---
@@ -62,7 +62,7 @@ const PERSONAL_PAGE_6 = "https://www.linkedin.com/in/anushkagupta221/"
 
 // MEMBER 7
 const NAME_7 = "Danilo Angulo-Molina"
-const DESCRIPTION_7 = "Danilo is a second-year student pursuing a Bachelor of Arts in International Relations and Political Sciences. He has previously been a youth ambassador of Colombia to multiple countries. He is the director and host of Let's Talk About, an initiative that gives a voice to students. Outside of school, Danilo can be found watching sunsets, practicing languages and swimming."
+const DESCRIPTION_7 = "Danilo is a second year student pursuing a Bachelor of Arts in International Relations and Political Sciences. He has previously been a youth ambassador of Colombia to multiple countries. He is the director and host of Let's Talk About, an initiative that gives a voice to students. Outside of school, Danilo can be found watching sunsets, practicing languages and swimming."
 const IMAGE_URL_7 = "images/team/300_80/danilo.jpg"
 const PERSONAL_PAGE_7 = "https://www.linkedin.com/in/danilo-angulo-molina-8434a3123/"
 // ---
