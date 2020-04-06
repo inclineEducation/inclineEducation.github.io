@@ -6,6 +6,7 @@
 
 
 const ALL_UPCOMING_EVENTS = [
+    /*
     {
         "title":"Vancouver Learning Network Panel Discussion",
         "location":"John Oliver Secondary School, East 41st Avenue, Vancouver, BC",
@@ -14,6 +15,7 @@ const ALL_UPCOMING_EVENTS = [
         "imageUrl":"images/highschool.jpg",
         "url":"contact.html"
     }
+    */
 ]
 
 
