@@ -1,0 +1,6 @@
+# robots.txt for http://www.inclineedu.org/ etc.
+#
+# PLEASE RESPECT THESE RULES. THANK YOU.
+
+User-agent: *
+Disallow: /images
