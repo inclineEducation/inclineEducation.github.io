@@ -1,6 +1,9 @@
 # redirects from what the browser requests to what is served
 /home              /
 
+# admin
+/mailadmin		   https://my.ionos.ca/
+
 # Survey redirects
 /teacherSurvey     https://forms.gle/8uNjQ2AV5bH2UHtV9
 /teachersurvey     https://forms.gle/8uNjQ2AV5bH2UHtV9
@@ -8,6 +11,8 @@
 /studentsurvey     https://forms.gle/LTucpsvXc2jUCrKH7
 /parentsurvey      https://forms.gle/duKmwA42Ub8SCVm16
 /parentSurvey      https://forms.gle/duKmwA42Ub8SCVm16
+/mentee    		   https://forms.gle/DCUok5vn3xwiGV6u8     # added by: talishagriesbach
+/mentor   		   https://forms.gle/2Qp7tf56RkdxCf5SA     # added by: talishagriesbach
 
 # analyics tools
 /analytics         https://analytics.google.com/analytics/web/#/report-home/a158958448w223443638p212005635
@@ -20,8 +25,7 @@
 /lol               http://bit.ly/notsusatall
 
 #chris messed up here
-/mentorship.      /mentorship
+/mentorship.       /mentorship
 
 # redirects added by team members
-/mentee    https://forms.gle/DCUok5vn3xwiGV6u8     # added by: talishagriesbach
-/mentor    https://forms.gle/2Qp7tf56RkdxCf5SA     # added by: talishagriesbach
+
