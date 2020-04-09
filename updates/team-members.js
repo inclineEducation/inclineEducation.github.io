@@ -84,10 +84,10 @@ const PERSONAL_PAGE_9 = "https://www.linkedin.com/in/roydu/"
 // ---
 
 // MEMBER 10
-const NAME_9 = "Varun Nair"
-const DESCRIPTION_9 = ""
-const IMAGE_URL_9 = "images/team/300_80/Varun.jpg"
-const PERSONAL_PAGE_9 = "https://www.linkedin.com/in/varun-nair/"
+const NAME_10 = "Varun Nair"
+const DESCRIPTION_10 = ""
+const IMAGE_URL_10 = "images/team/300_80/Varun.jpg"
+const PERSONAL_PAGE_10 = "https://www.linkedin.com/in/varun-nair/"
 // ---
 
 function Member(props) {
