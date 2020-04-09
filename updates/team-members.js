@@ -125,7 +125,7 @@ const PERSONAL_PAGE_10 = "https://www.linkedin.com/in/varun-nair/"
 
 function Member(props) {
     return (
-            <div className="col-lg-4" data-aos="fade-up" data-aos-delay={props.delay}>
+            <div className="col-lg-4" data-aos="fade-up" data-aos-delay={props.delay} style={{marginLeft: "auto", marginRight: "auto"}}>
             <div className="media d-block media-custom text-center">
               <a href={props.website} target = "_blank"><img src={props.img} alt={props.name} className="img-fluid"></img></a>
               <div class="media-body">
