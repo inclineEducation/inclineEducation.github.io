@@ -114,7 +114,11 @@ const PERSONAL_PAGE_9 = "https://www.linkedin.com/in/roydu/"
 
 // MEMBER 10
 const NAME_10 = "Varun Nair"
-const DESCRIPTION_10 = ""
+const DESCRIPTION_10 = "Varun is in his second year in Integrated Sciences. He is passionate about being \
+involved in the UBC community through various organizations, including Wellness Peers and the Integrated \
+Sciences Students Association. Varun also assists with clinical research at BC Children’s Hospital, where \
+he will be leading his own projects this summer. Outside of school, Varun enjoys watching sports, like \
+soccer and basketball, and keeping up with global current affairs."
 const IMAGE_URL_10 = "images/team/300_80/Varun.jpg"
 const PERSONAL_PAGE_10 = "https://www.linkedin.com/in/varun-nair/"
 // ---
@@ -147,6 +151,7 @@ class Team extends React.Component {
                 <Member name = {NAME_7} description = {DESCRIPTION_7} img = {IMAGE_URL_7} website = {PERSONAL_PAGE_7} delay = {100} />
                 <Member name = {NAME_8} description = {DESCRIPTION_8} img = {IMAGE_URL_8} website = {PERSONAL_PAGE_8} delay = {200} />
 				<Member name = {NAME_9} description = {DESCRIPTION_9} img = {IMAGE_URL_9} website = {PERSONAL_PAGE_9} delay = {300} />
+                <Member name = {NAME_10} description = {DESCRIPTION_10} img = {IMAGE_URL_10} website = {PERSONAL_PAGE_10} delay = {100} />
             </div>
         )
     }
