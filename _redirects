@@ -21,6 +21,7 @@
 
 # general tools
 /mail			   https://mail.ionos.ca/
+mail.inclineedu.org/*      https://mail.ionos.ca/:splat
    
 /lol               http://bit.ly/notsusatall
 
