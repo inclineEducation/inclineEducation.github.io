@@ -105,7 +105,7 @@ const PERSONAL_PAGE_8 = "https://www.linkedin.com/in/akchung168/"
 // MEMBER 9
 const NAME_9 = "Roy Du"
 const DESCRIPTION_9 = "Roy is a third year student pursuing a Bachelor of Applied Sciences in Computer \
-Engineering at UBC. He is a hardware and software developer on the UBC Supermileage team, and\
+Engineering at UBC. He is a hardware and software developer on the UBC Supermileage team, and \
 served as the 2nd year Computer Engineering Representative for the ECESS. Outside of school, Roy is an \
 avid snowboarder, and is frequently found on Reddit for extended durations of time."
 const IMAGE_URL_9 = "images/team/300_80/Roy.jpg"
@@ -117,8 +117,8 @@ const NAME_10 = "Varun Nair"
 const DESCRIPTION_10 = "Varun is in his third year in Integrated Sciences. He is passionate about being \
 involved in the UBC community through various organizations, including Wellness Peers and the Integrated \
 Sciences Students Association. Varun is also involved with clinical research at BC Children’s Hospital, where \
-he will be leading his own research this fall. Outside of school, Varun enjoys watching sports and keeping up \
-with global current affairs."
+he will be leading his own research this fall. Outside of school, Varun enjoys watching sports and keeping up with global current affairs."
+const IMAGE_URL_10 = "images/team/300_80/Varun.jpg"
 const PERSONAL_PAGE_10 = "https://www.linkedin.com/in/varun-nair/"
 // ---
 
