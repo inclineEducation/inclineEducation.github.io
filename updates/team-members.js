@@ -116,10 +116,9 @@ const PERSONAL_PAGE_9 = "https://www.linkedin.com/in/roydu/"
 const NAME_10 = "Varun Nair"
 const DESCRIPTION_10 = "Varun is in his third year in Integrated Sciences. He is passionate about being \
 involved in the UBC community through various organizations, including Wellness Peers and the Integrated \
-Sciences Students Association. Varun also assists with clinical research at BC Children’s Hospital, where \
-he will be leading his own projects this summer. Outside of school, Varun enjoys watching sports, like \
-soccer and basketball, and keeping up with global current affairs."
-const IMAGE_URL_10 = "images/team/300_80/Varun.jpg"
+Sciences Students Association. Varun is also involved with clinical research at BC Children’s Hospital, where \
+he will be leading his own research this fall. Outside of school, Varun enjoys watching sports and keeping up \
+with global current affairs."
 const PERSONAL_PAGE_10 = "https://www.linkedin.com/in/varun-nair/"
 // ---
 
