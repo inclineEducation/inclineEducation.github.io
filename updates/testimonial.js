@@ -30,7 +30,6 @@ const testimonials = [
 
 function Testimonials(props) {
     return (
-        <div>
             {props.listOfTestimonials.map((testimonial) => {
                 return (
                     <div className="item">
@@ -54,7 +53,6 @@ function Testimonials(props) {
                     </div>
                 )
             })}
-        </div>
     )
 }
 
