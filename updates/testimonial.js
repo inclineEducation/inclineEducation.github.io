@@ -78,7 +78,7 @@ class Container extends React.Component {
 		)
 	}
 	
-	Testimonials(this.props) {
+	Testimonials(props) {
     return (
         <>
             {props.listOfTestimonials.map((testimonial) => {
