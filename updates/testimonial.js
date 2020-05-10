@@ -27,7 +27,7 @@ const testimonials = [
     }
 ]
 
-
+/*
 function Testimonials(props) {
     return (
         <>
@@ -57,7 +57,7 @@ function Testimonials(props) {
         </>
     )
 }
-
+*/
 
 class Container extends React.Component {
 	render(){
@@ -77,6 +77,36 @@ class Container extends React.Component {
 			</div>
 		)
 	}
+	
+	Testimonials(props) {
+    return (
+        <>
+            {props.listOfTestimonials.map((testimonial) => {
+                return (
+                    <div className="item">
+                        <div className="block-33 h-100">
+                            <div className="vcard d-flex mb-3">
+                            <div className="image align-self-center"><img src={testimonial.imgUrl} alt="Person here"></img></div>
+                            <div className="name-text align-self-center">
+                                <h2 className="heading">{testimonial.name}</h2>
+                                <span className="meta">{testimonial.status}</span>
+                            </div>
+                            </div>
+                            <div className="text">
+                            <blockquote>
+                                <p>&ldquo;{testimonial.description}&rdquo;</p>
+                            </blockquote>
+                            </div>
+                        </div>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                    </div>
+                )
+            })}
+        </>
+    )
+}
 	
 }
 
