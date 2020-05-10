@@ -119,6 +119,7 @@ and Global Health. He is passionately immersed in the UBC community through vari
 Wellness Peers and the Integrated Sciences Students Association. Varun is also involved with clinical research \
 at BC Children’s Hospital, where he will be leading his own research this fall. In his free time, Varun enjoys \
 watching sports and taking lengthy walks."
+const IMAGE_URL_10 = "images/team/300_80/Varun.jpg"
 const PERSONAL_PAGE_10 = "https://www.linkedin.com/in/varun-nair/"
 // ---
 
