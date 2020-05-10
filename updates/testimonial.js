@@ -15,6 +15,15 @@ const testimonials = [
         status: "Templeton Secondary Teacher",
         imgUrl:"images/Tiffany.jpg",
         description: "Chris and his colleagues were professional, fun, and very informative. My students thoroughly enjoyed their visit!"
+    },
+	{
+        name: "Daniel Wang",
+        status: "Incline Education Mentor",
+        imgUrl:"images/Daniel_Wang.jpg",
+        description: "Prospective university freshmen like me often have too many questions and are usually confused about the process of \
+		transitioning from high school to university life. IE Mentorship was able to tailor to my needs and quickly match a requested mentor \
+		that has similar interests, backgrounds, and career interests as me. As a completely free service made by students for students, \
+		IE Mentorship is a valuable platform to help you out and make friends that would benefit you long afterwards!"
     }
 ]
 
