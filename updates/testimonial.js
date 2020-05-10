@@ -59,7 +59,7 @@ function Testimonials(props) {
 }
 */
 
-class Container() extends React.Component {
+class Container extends React.Component {
 	render(){
 		return (
 			<div className="section bg-light block-11">
