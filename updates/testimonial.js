@@ -69,7 +69,7 @@ function Container() {
                         <h2 className="mb-4 section-title">Testimonials</h2>
                     </div>
                 </div>
-                <div className="nonloop-block-11">
+                <div className="nonloop-block-11 owl-carousel">
                         <Testimonials listOfTestimonials = {testimonials}/>
                 </div>
             </div>
