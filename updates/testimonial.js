@@ -30,6 +30,7 @@ const testimonials = [
 
 function Testimonials(props) {
     return (
+        <div>
             {props.listOfTestimonials.map((testimonial) => {
                 return (
                     <div className="item">
@@ -53,6 +54,7 @@ function Testimonials(props) {
                     </div>
                 )
             })}
+        </div>
     )
 }
 
@@ -67,7 +69,7 @@ function Container() {
                         <h2 className="mb-4 section-title">Testimonials</h2>
                     </div>
                 </div>
-                <div className="nonloop-block-11 owl-carousel">
+                <div className="nonloop-block-11">
                         <Testimonials listOfTestimonials = {testimonials}/>
                 </div>
             </div>
