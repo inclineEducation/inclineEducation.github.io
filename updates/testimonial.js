@@ -44,7 +44,7 @@ function Testimonials(props) {
                             </div>
                             <div className="text">
                             <blockquote>
-                                <p>&ldquo; {testimonial.description} &rdquo;</p>
+                                <p>&ldquo;{testimonial.description}&rdquo;</p>
                             </blockquote>
                             </div>
                         </div>
