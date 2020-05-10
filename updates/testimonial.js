@@ -18,7 +18,7 @@ const testimonials = [
     },
 	{
         name: "Daniel Wang",
-        status: "Incline Education Mentor",
+        status: "Incline Education Mentee",
         imgUrl:"images/Daniel_Wang.jpg",
         description: "Prospective university freshmen like me often have too many questions and are usually confused about the process of \
 		transitioning from high school to university life. IE Mentorship was able to tailor to my needs and quickly match a requested mentor \
