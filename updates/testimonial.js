@@ -60,21 +60,23 @@ function Testimonials(props) {
 
 
 function Container() {
-    return (
-        <div className="section bg-light block-11">
+	render(){
+		return (
+			<div className="section bg-light block-11">
 
-            <div className="container">
-                <div className="row justify-content-center mb-5">
-                    <div className="col-md-8 text-center">
-                        <h2 className="mb-4 section-title">Testimonials</h2>
-                    </div>
-                </div>
-                <div className="nonloop-block-11">
-                        <Testimonials listOfTestimonials = {testimonials}/>
-                </div>
-            </div>
-        </div>
-    )
+				<div className="container">
+					<div className="row justify-content-center mb-5">
+						<div className="col-md-8 text-center">
+							<h2 className="mb-4 section-title">Testimonials</h2>
+						</div>
+					</div>
+					<div className="nonloop-block-11">
+							<Testimonials listOfTestimonials = {testimonials}/>
+					</div>
+				</div>
+			</div>
+		)
+	}
 }
 
 
