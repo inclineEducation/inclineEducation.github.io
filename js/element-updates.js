@@ -19,7 +19,6 @@ $(document).ready(function(){
     var canvas = document.getElementsByClassName('nav-link');
     if (canvas) {
         updateNavbar();
-        return;
     } else {
         var observer = new MutationObserver(function (mutations, me) {
             var canvas = document.getElementsByClassName('nav-link');
@@ -29,10 +28,11 @@ $(document).ready(function(){
                 return;
             }
         });
+        observer.observe(document, {
+            childList: true,
+            subtree: true
+        });
     }
 
-    observer.observe(document, {
-        childList: true,
-        subtree: true
-    });
+    
 });
