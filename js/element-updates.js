@@ -12,7 +12,7 @@ $(document).ready(function(){
                 }
             });
 
-            me.disconnect;
+            me.disconnect();
             return;
         }
     });
