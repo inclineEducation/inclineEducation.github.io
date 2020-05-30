@@ -32,6 +32,13 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script src = "./updates/team-members.js" type="text/babel"></script>
   <script src = "./updates/testimonial.js" type="text/babel"></script>
+
+  <!-- JQuery Source -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Jquery Scripts -->
+  <script src="js/element-updates.js"></script>
+  
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158958448-1"></script>
   <script>
@@ -46,52 +53,7 @@
 
 <body>
 
-  <header role="banner">
-    <nav class="navbar navbar-expand-lg  bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand " href="index.html">Incline Education</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
-          aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-   
-        <div class="collapse navbar-collapse" id="navbarsExample05">
-          <ul class="navbar-nav pl-md-5 ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About us</a>
-            </li>
-			      <li class="nav-item">
-              <a class="nav-link" href="mentorship.html">Mentorship</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link active" href="team.html">Meet our team</a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            
-          </ul>
-    
-		  <!-- search bar - implement with google?
-          <div class="navbar-nav ml-auto">
-            <form method="post" class="search-form">
-              <span class="icon ion ion-search"></span>
-              <input type="text" class="form-control" placeholder="Search...">
-            </form>
-          </div>
-		  -->
-
-        </div>
-      </div>
-    </nav>
-  </header>
+  <div include-html="snippets/navbar.html"></div>
   <!-- END header -->
 
   <div class="slider-item overlay" data-stellar-background-ratio="0.5"
