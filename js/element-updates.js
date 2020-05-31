@@ -4,9 +4,10 @@
 */
 function updateNavbar(){
     $('.nav-link').each(function() {
-        if (($(this).attr('href').split('.html')[0] == location.href.split("/").slice(-1)[0].split('.html')[0]) ||
-        ($(this).attr('href').split('.html')[0] == 'index' && location.href.split("/").slice(-1)[0].split('.html')[0] == '') || 
-        ($(this).attr('href').split('.html')[0] == $("meta[name='navPage']").attr("content"))){
+        console.log($(this).attr('href').split('.html')[0].split('/')[1]);
+        if (($(this).attr('href').split('.html')[0].split('/')[1] == location.href.split("/").slice(-1)[0].split('.html')[0]) ||
+        ($(this).attr('href').split('.html')[0].split('/')[1] == 'index' && location.href.split("/").slice(-1)[0].split('.html')[0] == '') || 
+        ($(this).attr('href').split('.html')[0].split('/')[1] == $("meta[name='navPage']").attr("content"))){
              $(this).addClass('active');
         }
     });
