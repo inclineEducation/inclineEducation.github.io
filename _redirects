@@ -1,5 +1,6 @@
 # redirects from what the browser requests to what is served
 /home              /
+/blog			   /blog/landing.html
 
 # admin
 /mailadmin		   https://my.ionos.ca/

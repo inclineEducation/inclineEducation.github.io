@@ -34,6 +34,10 @@
   <script src="./updates/contact-us.js" type = "text/babel"></script>
   <script src = "./updates/testimonial.js" type = "text/babel"></script> -->
 
+  <!-- JQuery Source -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158958448-1"></script>
   <script>
@@ -48,63 +52,7 @@
 
 <body>
 
-  <header role="banner">
-    <nav class="navbar navbar-expand-lg  bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand " href="index.html">Incline Education</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
-          aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-   
-        <div class="collapse navbar-collapse" id="navbarsExample05">
-          <ul class="navbar-nav pl-md-5 ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About us</a>
-            </li>
-			      <li class="nav-item">
-              <a class="nav-link" href="mentorship.html">Mentorship</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="team.html">Meet our team</a>
-            </li>
-          
-            <li class="nav-item">
-            <a class="nav-link active" href="contact.html">Contact</a>
-            </li>
-            
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">Services</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown04">
-                <a class="dropdown-item" href="#">Mentorship program</a>
-                <a class="dropdown-item" href="#">High school talks</a>
-              </div>
-            </li> -->
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Projects</a>
-            </li> -->
-          </ul>
-
-		  <!-- search bar - implement with google
-          <div class="navbar-nav ml-auto">
-            <form method="post" class="search-form">
-              <span class="icon ion ion-search"></span>
-              <input type="text" class="form-control" placeholder="Search...">
-            </form>
-          </div>
-		  -->
-
-        </div>
-      </div>
-    </nav>
-  </header>
+  <div include-html="snippets/navbar.html"></div>
   <!-- END header -->
 
   <div class="slider-item overlay" data-stellar-background-ratio="0.5"
@@ -247,6 +195,7 @@
         stroke="#ffc107" /></svg></div>
 
   <script src="js/include-html.js"></script>
+  <script src="js/element-updates.js"></script>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>

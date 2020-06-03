@@ -3,6 +3,9 @@
 
 <head>
   <title>Incline Education</title>
+  <meta name="title" content="Incline Education - Helping Students Find Lasting Success">
+  <meta name="description" content= "Incline Education is a team of university students from various faculties who have come together for the sole purpose of helping high
+  school students achieve more out of their post-secondary experience.">
   <meta name="keywords" content="incline,education,mentorship,panel,discussions,secondary,education,school,
   post,high,students,teachers,parents,community,advancing,charity,blog,university,panel">
   <!-- <script type="text/javascript">
@@ -32,12 +35,16 @@
 
   <!-- React Scripts -->
   <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script src = "updates/home-page.js" type="text/babel"></script>
   <script src = "updates/testimonial.js" type="text/babel"></script>
 
   <script src = "js/include-html.js"></script>
+
+  <!-- JQuery Source -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158958448-1"></script>
@@ -53,65 +60,7 @@
 
 <body>
 
-  <header role="banner">
-    <nav class="navbar navbar-expand-lg  bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand " href="index.html">Incline Education</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
-          aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-   
-        <div class="collapse navbar-collapse" id="navbarsExample05">
-          <ul class="navbar-nav pl-md-5 ml-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About us</a>
-            </li>
-			      <li class="nav-item">
-              <a class="nav-link" href="mentorship.html">Mentorship</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="team.html">Meet our team</a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="dropdown04" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">Services</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown04">
-                <a class="dropdown-item" href="mentorship.html">Mentorship program</a>
-                <a class="dropdown-item" href="highschool.html">High school talks</a>
-              </div>
-            </li> -->
-
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Projects</a>
-            </li> -->
-          
-          </ul>
-
-		  <!-- search bar - implement with google?
-          <div class="navbar-nav ml-auto">
-            <form method="post" class="search-form">
-              <span class="icon ion ion-search"></span>
-              <input type="text" class="form-control" placeholder="Search...">
-            </form>
-          </div>
-		  -->
-
-        </div>
-      </div>
-    </nav>
-  </header>
+  <div include-html="snippets/navbar.html"></div>
   <!-- END header -->
 
 
@@ -323,6 +272,7 @@
         stroke="#ffc107" /></svg></div>
 
   <script src="js/include-html.js"></script>
+  <script src="js/element-updates.js"></script>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
