@@ -30,7 +30,7 @@ const testimonials = [
 
 function Testimonials(props) {
     return (
-        <>
+        <div>
             {props.listOfTestimonials.map((testimonial) => {
                 return (
                     <div className="item">
@@ -54,30 +54,27 @@ function Testimonials(props) {
                     </div>
                 )
             })}
-        </>
+        </div>
     )
 }
 
 
-class Container extends React.Component {
-	render(){
-		return (
-			<div className="section bg-light block-11">
+function Container() {
+    return (
+        <div className="section bg-light block-11">
 
-				<div className="container">
-					<div className="row justify-content-center mb-5">
-						<div className="col-md-8 text-center">
-							<h2 className="mb-4 section-title">Testimonials</h2>
-						</div>
-					</div>
-					<div className="nonloop-block-11">
-							<Testimonials listOfTestimonials = {testimonials}/>
-					</div>
-				</div>
-			</div>
-		)
-	}
-	
+            <div className="container">
+                <div className="row justify-content-center mb-5">
+                    <div className="col-md-8 text-center">
+                        <h2 className="mb-4 section-title">Testimonials</h2>
+                    </div>
+                </div>
+                <div className="nonloop-block-11">
+                        <Testimonials listOfTestimonials = {testimonials}/>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 
