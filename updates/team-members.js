@@ -13,10 +13,10 @@ LIST OF ALL MEMBERS HERE:
 // MEMBER 1
 const NAME_1 = "Christopher Ng"
 const DESCRIPTION_1 = "Christopher is a third year student pursuing a Bachelor of Science in Pharmacology \
-and Minor in Commerce. He has previously interned in Deloitte Consulting and is currently working on \
-publishing 2 papers in medical research. Outside of the classroom, Christopher can be found playing \
-squash, running or enjoying the outdoors."
-const IMAGE_URL_1 = "/images/team/300_80/chris2.jpg"
+and Minor in Commerce. He has previously interned in Deloitte Consulting and Alberta Health Services \
+as a healthcare consultant and has published 2 papers in medical research. In his free time, Christopher can be found playing \
+squash, running or reading books on social psychology."
+const IMAGE_URL_1 = "/images/team/300_80/chris3.png"
 const PERSONAL_PAGE_1 = "https://www.linkedin.com/in/chrng/"
 // ---
 
@@ -25,8 +25,8 @@ const PERSONAL_PAGE_1 = "https://www.linkedin.com/in/chrng/"
 // MEMBER 2
 const NAME_2 = "Jack He"
 const DESCRIPTION_2 = "Jack is a second year student at UBC pursuing a Bsc major in Computer Science and \
-a minor in Commerce. He will be interning at Microsoft as a software engineer and product manager this \
-summer. Jack is currently working on his YouTube channel and will be posting about his journey to launching \
+a minor in Commerce. He is currently interning at Microsoft as a software engineer and product manager. \
+Jack is currently working on his YouTube channel and will be posting about his journey to launching \
 a Silicon Valley startup in the future. Outside the classroom, Jack can be found playing chess."
 const IMAGE_URL_2 = "/images/team/300_80/amazingJack4.jpg"
 const PERSONAL_PAGE_2 = "https://www.linkedin.com/in/jack-he-845587161/"
@@ -37,8 +37,8 @@ const PERSONAL_PAGE_2 = "https://www.linkedin.com/in/jack-he-845587161/"
 const NAME_3 = "Talisha Griesbach"
 const DESCRIPTION_3 = "Talisha is in her third year of Integrated Engineering in UBC, and pursuing a minor in commerce. \
 She designs Printed Circuit Boards with UBC Supermileage, serves as Director of Communications in Alpha Gamma Delta, \
-works as a Collegia Advisor, and started her own social enterprise, Patch. Talisha is looking forward to \
-balancing her summer co-op with Kardium while exercising and playing cello."
+works as a Collegia Advisor, and started her own social enterprise, Patch. Talisha is currently balancing her summer\
+co-op with Kardium while exercising and playing cello."
 const IMAGE_URL_3 = "/images/team/300_80/Talisha_edited.jpg"
 const PERSONAL_PAGE_3 = "https://www.linkedin.com/in/talishag/"
 // ---
@@ -95,8 +95,8 @@ const PERSONAL_PAGE_7 = "https://www.linkedin.com/in/danilo-angulo-molina-8434a3
 // MEMBER 8
 const NAME_8 = "Andy Chung"
 const DESCRIPTION_8 = "Andy is a third year student pursuing a Bachelor of Applied Sciences in Mechanical \
-Engineering with a Thermofluids specialization. He has previously partnered with Telus during his \
-internship with Legacy Fire Protection and is currently the Engine Head of Design at Formula UBC Racing. \
+Engineering with a Thermofluids specialization. He is currently interning at Legacy Fire Protection \
+and is the Engine Head of Design at Formula UBC Racing. \
 Outside of academics, Andy enjoys playing the guitar, practicing karate, and participating in motorsports."
 const IMAGE_URL_8 = "/images/team/300_80/andy.jpg"
 const PERSONAL_PAGE_8 = "https://www.linkedin.com/in/akchung168/"
@@ -117,8 +117,8 @@ const NAME_10 = "Varun Nair"
 const DESCRIPTION_10 = "Varun is a third year student majoring in Integrated Sciences, integrating Genetics \
 and Global Health. He is passionately immersed in the UBC community through various organizations, including \
 Wellness Peers and the Integrated Sciences Students Association. Varun is also involved with clinical research \
-at BC Children’s Hospital, where he will be leading his own research this fall. In his free time, Varun enjoys \
-watching sports and taking lengthy walks."
+at BC Children’s Hospital, where he will be leading his own research project this fall. In his free time, Varun \
+enjoys watching sports and taking long walks."
 const IMAGE_URL_10 = "/images/team/300_80/Varun.jpg"
 const PERSONAL_PAGE_10 = "https://www.linkedin.com/in/varun-nair/"
 // ---
