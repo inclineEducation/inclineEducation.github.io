@@ -20,6 +20,7 @@ $(document).ready(function(){
     console.log('document ready');
     var canvas = document.getElementsByClassName('nav-link');
     if (canvas) {
+        console.log('non-mutation - navbar loaded');
         updateNavbar();
     } else {
         var observer = new MutationObserver(function (mutations, me) {
