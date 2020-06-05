@@ -25,6 +25,7 @@ $(document).ready(function(){
         var observer = new MutationObserver(function (mutations, me) {
             var canvas = document.getElementsByClassName('nav-link');
             if (canvas) {
+                console.log('mutation - navbar loaded');
                 updateNavbar();
                 me.disconnect();
                 return;
