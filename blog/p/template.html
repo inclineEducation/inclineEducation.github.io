@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="navPage" content="blog">
   
-  <link rel="shortcut icon" href="ftco-32x32.png">
+  <link rel="shortcut icon" href="/ftco-32x32.png">
 
   <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Roboto+Mono&display=swap" rel="stylesheet">
   <link rel="icon" href="/images/favicon.png">
@@ -45,28 +45,7 @@
   <!-- JQuery Source -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<style>
-    h1 {
-        margin-bottom: 1rem!important;
-        font-weight: 500;
-        font-size: 2.75rem;
-        line-height: 100%;
-        color: inherit;
-    }
-    h2 {
-        font-weight: 100;
-        font-size: 1.75rem;
-        line-height: 100%;
-        margin-bottom: 1rem;
-        color: inherit;
-    }
-    a{
-        color: black;
-    }
-    a:hover{
-        color: #ffc107;
-    }
-</style>
+<link rel="stylesheet" href="css/blogpage.css">
 
 
 </head>
@@ -76,48 +55,24 @@
   <!-- END header -->
 
   <div class="slider-item innerp overlay" data-stellar-background-ratio="0.5"
-    style="background-image: url('/images/group.jpg'); height: calc(60vh); min-height: 400px;">
+    style="background-image: url('../i/science-guy.jpg'); height: calc(60vh); min-height: 400px;">
     <div class="container">
-      <div class="row slider-text align-items-center justify-content-center text-center" style="height: calc(60vh); min-height: 400px;">
+      <div class="row slider-text align-items-center justify-content-left text-left" style="height: calc(60vh); min-height: 400px;">
         <div class="col-lg-12 col-sm-12">
-          <h1 class="mb-4" data-aos="fade-up" data-aos-delay="">Incline Blog</h1>
-		  <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><a href="/index.html">Home</a> <span class="mx-3">/</span> Blog</p>
+          <h1 data-aos="fade-up" style="font-size:calc(2rem + 1vw);"> [ TITLE ]</h1>
+          <h2 data-aos="fade-up" style="color: white; font-size: calc(1.15rem + 1.15vw);"> [ SUBTITLE ]</h2>
+          <p data-aos="fade-up" style="font-size: calc(0.5rem + 0.25vw);"><em>Posted by [ NAME ] on [ DATE ], 2020</em></p>
         </div>
       </div>
     </div>
   </div>
-
   
-  <div class="section portfolio-section" style="padding-bottom: 4em; padding-top: 4em;">
-    <div class="container justify-content-center" style="width: calc(50vw);min-width:100px;">
+  <div class="section portfolio-section" style="padding-bottom: 4em; padding-top: 2em;">
+    <div class="container justify-content-center" style="width: calc(30rem + 30vw);max-width:calc(90vw);">
       <div class="row mb-5 justify-content-center">
-        <div class="col-md-25" style="padding: 1em;">
-
-          <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
-            <a href= "p/A_Step_By_Step_Guide_to_Getting_a_Research_Position.html">
-                <h1>A Step-By-Step Guide to Getting a Research Position</h2>
-                <h2 >
-                  Learn how you can join an academic research project with little to no experience.
-                </h2>
-            </a>
-                <p>
-                    <em>Posted by Christopher Ng on June 1st, 2020</em>
-                </p>
-          </div>
-          <hr style="margin-top: 2rem; margin-bottom: 2rem;">
-
-          <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
-            <a href= "p/navigating_first_year_engineering_for_aspiring_female_engineers.html">
-                <h1>Navigating First Year Engineering For Aspiring Female Engineers</h2>
-                <h2>
-                  Learn how to navigate engineering’s toughest workload and schedule with these tips!
-                </h2>
-            </a>
-                <p>
-                    <em>Posted by Michelle Lin on June 8th, 2020</em>
-                </p>
-          </div>
-          <hr style="margin-top: 2rem; margin-bottom: 2rem;">
+        <div class="col-md-25" style="padding: 1em;" data-aos="fade-left" data-aos-offset="-200">
+          
+        <!--CONTENT GOES HERE-->
 
         </div>
       </div>
@@ -203,6 +158,5 @@
   <script src="/js/jquery.stellar.min.js"></script>
   <script src="/js/aos.js"></script>
   <script src="/js/main.js"></script>
-
 </body>
 </html>
