@@ -22,3 +22,6 @@ p, ul {
 ul{
     margin-top: -0.5rem;
 }
+.titleText{
+    padding-top: calc(1rem + 1.25rem + 0.3125rem + 0.3125rem + 20px + 0.5rem);
+}
