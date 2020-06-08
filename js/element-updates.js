@@ -1,3 +1,6 @@
+//Look Ma, I made a javascript!
+//-Roy
+
 /*
 * function updateNavbar()
 * activates current page in navbar
@@ -5,8 +8,7 @@
 function updateNavbar(){
     $('.nav-link').each(function() {
         console.log($(this).attr('href').split('.html')[0].split('/')[1]);
-        if (($(this).attr('href').split('.html')[0].split('/')[1] == location.href.split("/").slice(-1)[0].split('.html')[0]) ||
-        ($(this).attr('href').split('.html')[0].split('/')[1] == 'index' && location.href.split("/").slice(-1)[0].split('.html')[0] == '') || 
+        if (($(this).attr('href').split('.html')[0].split('/')[1] == location.href.split("/").slice(-1)[0].split('.html')[0]) || 
         ($(this).attr('href').split('.html')[0].split('/')[1] == $("meta[name='navPage']").attr("content"))){
              $(this).addClass('active');
         }
@@ -18,6 +20,7 @@ $(document).ready(function(){
     console.log('document ready');
     var canvas = document.getElementsByClassName('nav-link');
     if (canvas) {
+        console.log('non-mutation - navbar loaded');
         updateNavbar();
     }
     var observer = new MutationObserver(function (mutations, me) {
