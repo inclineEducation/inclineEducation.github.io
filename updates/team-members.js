@@ -35,11 +35,11 @@ const PERSONAL_PAGE_2 = "https://www.linkedin.com/in/jack-he-845587161/"
 
 // MEMBER 3
 const NAME_3 = "Talisha Griesbach"
-const DESCRIPTION_3 = "Talisha is in her third year of Integrated Engineering in UBC, and pursuing a Minor in Commerce. \
-She designs Printed Circuit Boards with UBC Supermileage, serves as Director of Communications in Alpha Gamma Delta, \
-works as a Collegia Advisor, and started her own social enterprise, Patch. Talisha is currently balancing her summer \
-co-op at Kardium with exercising and playing cello."
-const IMAGE_URL_3 = "/images/team/300_80/Talisha_edited.jpg"
+const DESCRIPTION_3 = "Talisha is in her third year of Integrated Engineering with a Minor in Commerce in UBC, \
+and the recipient of the 2020 CEMF Women in Engineering Ambassador Award for BC. She is an Electrical Lead at \
+UBC Supermileage, serves as Director of Communications in Alpha Gamma Delta, and started her own social \
+enterprise, Patch. Talisha is currently interning at Kardium and loves exercising and playing cello."
+const IMAGE_URL_3 = "/images/team/300_80/Talisha.jpg"
 const PERSONAL_PAGE_3 = "https://www.linkedin.com/in/talishag/"
 // ---
 
@@ -96,7 +96,7 @@ const PERSONAL_PAGE_7 = "https://www.linkedin.com/in/danilo-angulo-molina-8434a3
 const NAME_8 = "Andy Chung"
 const DESCRIPTION_8 = "Andy is a third year student pursuing a Bachelor of Applied Sciences in Mechanical \
 Engineering with a Thermofluids specialization. He is currently interning at Legacy Fire Protection \
-and is the Engine Head of Design at Formula UBC Racing. \
+and is the Engine Head of Design and Test Driver at Formula UBC. \
 Outside of academics, Andy enjoys playing the guitar, practicing karate, and participating in motorsports."
 const IMAGE_URL_8 = "/images/team/300_80/andy.jpg"
 const PERSONAL_PAGE_8 = "https://www.linkedin.com/in/akchung168/"

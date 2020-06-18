@@ -6,10 +6,13 @@
 * activates current page in navbar
 */
 function updateNavbar(){
+    var page = $("meta[name='navPage']").attr("content");
+    console.log("page:");
+    console.log(page);
     $('.nav-link').each(function() {
-        console.log($(this).attr('href').split('.html')[0].split('/')[1]);
-        if (($(this).attr('href').split('.html')[0].split('/')[1] == location.href.split("/").slice(-1)[0].split('.html')[0]) || 
-        ($(this).attr('href').split('.html')[0].split('/')[1] == $("meta[name='navPage']").attr("content"))){
+        console.log("looking for:")
+        console.log(($(this).attr('href').split('.html')[0].split('/')[1]));
+        if (($(this).attr('href').split('.html')[0].split('/')[1] == $("meta[name='navpage']").attr("content"))){
              $(this).addClass('active');
         }
     });
