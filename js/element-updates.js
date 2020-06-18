@@ -6,7 +6,7 @@
 * activates current page in navbar
 */
 function updateNavbar(){
-    var page = $("meta[name='navPage']").attr("content");
+    var page = $("meta[name='navpage']").attr("content");
     console.log("page:");
     console.log(page);
     $('.nav-link').each(function() {
