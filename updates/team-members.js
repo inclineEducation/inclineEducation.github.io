@@ -69,11 +69,10 @@ const PERSONAL_PAGE_5 = "https://www.linkedin.com/in/matheson-parmar-6a840b168/"
 
 // MEMBER 6
 const NAME_6 = "Anushka Gupta"
-const DESCRIPTION_6 = "Anushka is a third year student in the Bachelor of International Economics \
-Program. She is the founder of a non-profit called Aan which works with the government of India to \
-conduct campaigns about child sexual abuse. She worked as a Research and Data Analysis Assistant at \
-the Vancouver School of Economics Career Center and hopes to work in the field of developmental economics \
-in the public sector."
+const DESCRIPTION_6 = "Anushka is a third year student in the Bachelor of International Economics Program. \
+She is the founder of a non-profit called Aan which works with the government of India to conduct campaigns \
+about child sexual abuse. She is working as a Research Assistant at Vancouver School of Economics and hopes \
+to work in the field of developmental economics in the public sector."
 const IMAGE_URL_6 = "/images/team/300_80/Anushka.jpg"
 const PERSONAL_PAGE_6 = "https://www.linkedin.com/in/anushkagupta221/"
 // ---
@@ -123,6 +122,15 @@ const IMAGE_URL_10 = "/images/team/300_80/Varun.jpg"
 const PERSONAL_PAGE_10 = "https://www.linkedin.com/in/varun-nair/"
 // ---
 
+// MEMBER 11
+const NAME_11 = "Nusair Islam"
+const DESCRIPTION_11 = "Nusair is a third year student pursuing a Bachelor of Applied Sciences in Electrical \
+Engineering. He is currently interning at Rocsol Tech and is a member of the structure sub-team in UBC Orbit. \
+Outside of school, Nusair is enthusiastic about bodybuilding, playing the guitar, and going on hikes."
+const IMAGE_URL_11 = "/images/team/300_80/nusair.jpg"
+const PERSONAL_PAGE_11 = "https://www.linkedin.com/in/nusair-islam-339a39198/"
+// ---
+
 function Member(props) {
     return (
             <div className="col-lg-4" data-aos="fade-up" data-aos-delay={props.delay} style={{marginLeft: "auto", marginRight: "auto"}}>
@@ -154,6 +162,7 @@ class Team extends React.Component {
                 <Member name = {NAME_8} description = {DESCRIPTION_8} img = {IMAGE_URL_8} website = {PERSONAL_PAGE_8} delay = {200} />
 				<Member name = {NAME_9} description = {DESCRIPTION_9} img = {IMAGE_URL_9} website = {PERSONAL_PAGE_9} delay = {300} />
                 <Member name = {NAME_10} description = {DESCRIPTION_10} img = {IMAGE_URL_10} website = {PERSONAL_PAGE_10} delay = {100} />
+                <Member name = {NAME_11} description = {DESCRIPTION_11} img = {IMAGE_URL_11} website = {PERSONAL_PAGE_11} delay = {100} />
             </div>
         )
     }
