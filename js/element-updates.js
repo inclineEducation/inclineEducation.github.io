@@ -11,8 +11,8 @@ function updateNavbar(){
     console.log(page);
     $('.nav-link').each(function() {
         console.log("looking for:")
-        console.log(($(this).attr('href').split('.html')[0].split('/')[1]));
-        if (($(this).attr('href').split('.html')[0].split('/')[1] == $("meta[name='navpage']").attr("content"))){
+        console.log(($(this).attr('navpage')));
+        if (($(this).attr('navpage')) == $("meta[name='navpage']").attr("content")){
              $(this).addClass('active');
         }
     });
