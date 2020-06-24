@@ -3,9 +3,9 @@
 /blog			   /blog/landing
 
 # admin
-/mailadmin		   https://my.ionos.ca/
-/admin			   https://linktr.ee/inclineAdmin	200
-/dash			   https://linktr.ee/inclineAdmin	100
+/mailadmin		   https://my.ionos.ca/ 200
+/admin			   https://linktr.ee/inclineAdmin
+/dash			   https://linktr.ee/inclineAdmin
 
 # Survey redirects
 /teacherSurvey     https://forms.gle/8uNjQ2AV5bH2UHtV9
