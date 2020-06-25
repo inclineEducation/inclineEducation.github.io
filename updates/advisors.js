@@ -14,7 +14,7 @@ LIST OF ALL MEMBERS HERE:
 const ADVISOR_NAME_1 = "Natalia Lumen"
 const ADVISOR_DESCRIPTION_1 = "Natalia is a Founder and CEO of ThyForLife, a HealthTech mobile app platform enabling thyroid patients \
 to improve their health outcomes. She has previously worked at Bain & Company, The World Bank and the European Bank for Reconstruction \
-and Development. Natalia holds an MBA from the Tuck School of Business at Dartmouth, US. Outside of work, she enjoys abstract painting, \
+and Development. Natalia holds an MBA from the Tuck School of Business at Dartmouth College. Outside of work, she enjoys abstract painting, \
 playing drums, learning improvisation theatre and relaxing with yoga. "
 const ADVISOR_IMAGE_URL_1 = "/images/advisors/300_80/natalia.jpg"
 const ADVISOR_PERSONAL_PAGE_1 = "https://www.linkedin.com/in/natalialumen/"
