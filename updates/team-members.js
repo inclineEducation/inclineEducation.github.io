@@ -133,7 +133,7 @@ const PERSONAL_PAGE_11 = "https://www.linkedin.com/in/nusair-islam-339a39198/"
 
 function Member(props) {
     return (
-            <div className="col-lg-4" data-aos="fade-up" data-aos-delay={props.delay} style={{marginLeft: "auto", marginRight: "auto"}}>
+            <div className="col-lg-4 mb-5" data-aos="fade-up" data-aos-delay={props.delay} style={{marginLeft: "auto", marginRight: "auto"}}>
             <div className="media d-block text-center">
               <div className="media-custom">
               <a href={props.website} target = "_blank"><img src={props.img} alt={props.name} className="img-fluid"></img></a>

@@ -32,6 +32,7 @@
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script src = "./updates/team-members.js" type="text/babel"></script>
+  <script src = "./updates/advisors.js" type="text/babel"></script>
   <script src = "./updates/testimonial.js" type="text/babel"></script>
 
   <!-- JQuery Source -->
@@ -87,7 +88,7 @@
     </div>
   </div> -->
   
-  <div class="section">
+  <div class="section" style="padding-bottom: 0;">
     <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="">
@@ -96,9 +97,17 @@
       </div>
       <div class="row">
           <div id = "team"></div>
+          
       </div>
+      <hr style="width: 70%; border-top: 3px double; margin-top: 5em; margin-bottom: 5em;" id="advisors">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="">
+          <h2 class="mb-4 section-title">Advisors</h2>
+        </div> 
+      </div> 
+      <div class="row">
+        <div id = "advisor_list"></div>
       </div>
-  
     </div>
   </div>
   <!-- END section -->
