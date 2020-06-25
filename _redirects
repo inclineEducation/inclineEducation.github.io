@@ -1,9 +1,11 @@
 # redirects from what the browser requests to what is served
 /home              /
-/blog			   /blog/landing.html
+/blog			   /blog/landing
 
 # admin
-/mailadmin		   https://my.ionos.ca/
+/mailadmin		   https://my.ionos.ca/ 200
+/admin			   https://linktr.ee/inclineAdmin
+/dash			   https://linktr.ee/inclineAdmin
 
 # Survey redirects
 /teacherSurvey     https://forms.gle/8uNjQ2AV5bH2UHtV9
