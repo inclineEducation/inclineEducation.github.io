@@ -4,3 +4,4 @@
 
 User-agent: *
 Disallow: /images
+Disallow: /404.html

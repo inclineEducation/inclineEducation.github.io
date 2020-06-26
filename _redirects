@@ -3,9 +3,9 @@
 /blog			   /blog/landing
 
 # admin
-/mailadmin		   https://my.ionos.ca/ 200
-/admin			   https://linktr.ee/inclineAdmin
-/dash			   https://linktr.ee/inclineAdmin
+/mailadmin		   https://my.ionos.ca/
+/admin			   https://dash.inclineedu.org/
+/dash			   https://dash.inclineedu.org/
 
 # Survey redirects
 /teacherSurvey     https://forms.gle/8uNjQ2AV5bH2UHtV9
@@ -23,13 +23,16 @@
 /production        https://inclineeducation.github.io
 
 # general tools
-/mail			   https://mail.ionos.ca/
-https://mail.inclineedu.org/*      https://mail.ionos.ca/:splat
-   
+/mail			   https://mail.inclineedu.org/
+ 
+# a wild bit.ly appeared 
 /lol               http://bit.ly/notsusatall
 
-#chris messed up here
+# Chris messed up here
 /mentorship.       /mentorship
+
+# Wildcards
+/blog/*			   /blog/p/:splat
 
 # redirects added by team members
 
