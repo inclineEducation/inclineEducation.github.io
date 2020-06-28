@@ -61,7 +61,7 @@
 
 <body>
 
-  <?php include "./navbar.html" ?>
+  <?php include "./snippets/navbar.html" ?>
   <!-- END header -->
 
 
