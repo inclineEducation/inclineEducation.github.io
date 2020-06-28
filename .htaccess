@@ -8,3 +8,8 @@ RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^ %{REQUEST_URI}.php [NC,L]
 
 ErrorDocument 404 /404.php
+
+# 301 (permanent redirects)
+Redirect 301 /home /
+Redirect 301 /blog /blog/landing
+
