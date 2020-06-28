@@ -72,7 +72,7 @@
 </head>
 
 <body>
-<?php include "../components/navbar.html" ?>
+<?php include "../components/navbar" ?>
   <!-- END header -->
 
   <div class="slider-item innerp overlay" data-stellar-background-ratio="0.5"
@@ -81,7 +81,7 @@
       <div class="row slider-text align-items-center justify-content-center text-center">
         <div class="col-lg-12 col-sm-12">
           <h1 class="mb-4" data-aos="fade-up" data-aos-delay="">Blog</h1>
-		  <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><a href="/index.html">Home</a> <span class="mx-3">/</span> Blog</p>
+		  <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><a href="/index">Home</a> <span class="mx-3">/</span> Blog</p>
         </div>
       </div>
     </div>
@@ -94,7 +94,7 @@
         <div class="col-md-25" style="padding: 1em;">
 
       <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
-        <a href= "p/women_in_economics.html">
+        <a href= "p/women_in_economics">
             <h1>Women in Economics</h2>
             <h2>
               Never Stop Fighting for What You Believe in
@@ -107,7 +107,7 @@
       <hr style="margin-top: 2rem; margin-bottom: 2rem;">
 		
 			<div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
-        <a href= "p/a_day_in_the_life_of_an_engineering_student.html">
+        <a href= "p/a_day_in_the_life_of_an_engineering_student">
             <h1>A Day in the Life of an Engineering Student</h2>
             <h2>
               Make These the Best 4 Years of Your Life
@@ -120,7 +120,7 @@
       <hr style="margin-top: 2rem; margin-bottom: 2rem;">
 
           <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
-            <a href= "p/navigating_first_year_engineering_for_aspiring_female_engineers.html">
+            <a href= "p/navigating_first_year_engineering_for_aspiring_female_engineers">
                 <h1>Navigating First Year Engineering For Aspiring Female Engineers</h2>
                 <h2>
                   Tips to help you get through the toughest engineering workloads and schedules.
@@ -133,7 +133,7 @@
           <hr style="margin-top: 2rem; margin-bottom: 2rem;">
 		  
 		  <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
-        <a href= "p/A_Step_By_Step_Guide_to_Getting_a_Research_Position.html">
+        <a href= "p/A_Step_By_Step_Guide_to_Getting_a_Research_Position">
             <h1>A Step-By-Step Guide to Getting a Research Position</h2>
             <h2 >
               Learn how you can join an academic research project with little to no experience.
@@ -155,7 +155,7 @@
   
 <!--Services-->
 
-<?php include "../components/services.html" ?>
+<?php include "../components/services" ?>
 
 <div id = "Testimonials"></div>
 
@@ -166,21 +166,21 @@
           <h3 class="text-white mb-2 font-weight-normal">Let's do more together</h3>
 
         
-          <p class="mb-0"><a href="/contact.html" class="btn btn-outline-white px-4 py-3">Get In Touch!</a></p>
+          <p class="mb-0"><a href="/contact" class="btn btn-outline-white px-4 py-3">Get In Touch!</a></p>
         </div>
       </div>
 
     </div>
   </div> 
 
-  <?php include "../components/footer.html" ?>
+  <?php include "../components/footer" ?>
   <!-- loader -->
     <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
       <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
         stroke="#ffc107" /></svg></div> 
 
-  <?php include "../components/commonScripts.html" ?>
+  <?php include "../components/commonScripts" ?>
 
 </body>
 </html>
