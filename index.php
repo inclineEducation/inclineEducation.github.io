@@ -60,7 +60,7 @@
 
 <body>
 
-  <?php include "./snippets/navbar.html" ?>
+  <?php include "./components/navbar.html" ?>
   <!-- END header -->
 
 
@@ -182,7 +182,7 @@
     </div>
   </div>
 
-  <?php include "/snippets/services.html" ?>
+  <?php include "/components/services.html" ?>
 
 
 <div id = "Testimonials"></div>
@@ -206,7 +206,7 @@
     </div>
   </div>
 
-  <?php include "snippets/footer.html" ?>
+  <?php include "components/footer.html" ?>
 
   <!-- loader -->
   <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
@@ -214,7 +214,7 @@
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
         stroke="#ffc107" /></svg></div>
 
-  <?php include "./snippets/commonScripts.html" ?>
+  <?php include "./components/commonScripts.html" ?>
 </body>
 
 </html>

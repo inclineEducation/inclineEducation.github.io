@@ -53,7 +53,7 @@
 
 <body>
 
-  <?php include "snippets/navbar.html" ?>
+  <?php include "components/navbar.html" ?>
   <!-- END header -->
 
   <div class="slider-item overlay" data-stellar-background-ratio="0.5"
@@ -116,7 +116,7 @@
   <!-- END .block-4 -->
   </div>
 
-  <?php include "/snippets/services.html" ?>
+  <?php include "/components/services.html" ?>
   
   <div id = "Testimonials"></div>
   <div class="bg-primary py-5">
@@ -136,7 +136,7 @@
 
 
 
-  <?php include "snippets/footer.html" ?>
+  <?php include "components/footer.html" ?>
 
   <!-- loader -->
   <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
@@ -145,7 +145,7 @@
         stroke="#ffc107" /></svg></div>
 
         
-  <?php include "./snippets/commonScripts.html" ?>
+  <?php include "./components/commonScripts.html" ?>
 </body>
 
 </html>
