@@ -50,7 +50,7 @@
 </head>
 
 <body>
-  <div include-html="/snippets/navbar.html"></div>
+  <div include-html="/components/navbar.html"></div>
   <!-- END header -->
 
   <div class="slider-item innerp overlay" data-stellar-background-ratio="0.5"
@@ -197,7 +197,7 @@
   
 <!--Services-->
 
-<div include-html="/snippets/services.html"></div>
+<div include-html="/components/services.html"></div>
 
 <div id = "Testimonials"></div>
 
@@ -215,7 +215,7 @@
     </div>
   </div> 
 
-  <div include-html="/snippets/footer.html"></div>
+  <div include-html="/components/footer.html"></div>
   <!-- loader -->
     <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
       <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
