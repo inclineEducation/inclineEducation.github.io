@@ -25,8 +25,8 @@ ErrorDocument 404 /404.php
     Redirect /studentsurvey https://forms.gle/LTucpsvXc2jUCrKH7
     Redirect /parentsurvey https://forms.gle/duKmwA42Ub8SCVm16
     Redirect /parentSurvey  https://forms.gle/duKmwA42Ub8SCVm16
-    Redirect /mentee https://forms.gle/DCUok5vn3xwiGV6u8     # added by: talishagriesbach
-    Redirect /mentor https://forms.gle/2Qp7tf56RkdxCf5SA     # added by: talishagriesbach
+    Redirect /mentee https://forms.gle/DCUok5vn3xwiGV6u8
+    Redirect /mentor https://forms.gle/2Qp7tf56RkdxCf5SA
 
     # analytics tools
     Redirect /analytics https://analytics.google.com/analytics/web/#/report-home/a158958448w223443638p212005635
