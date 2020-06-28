@@ -41,7 +41,7 @@
 </head>
 
 <body>
-  <div include-html="snippets/navbar.html"></div>
+  <?php include "snippets/navbar.html" ?>
   <!-- END header -->
 
   <div class="slider-item innerp overlay" data-stellar-background-ratio="0.5"
@@ -74,7 +74,7 @@
 		to our collection of information from other sources.</p>
 		<p data-aos="fade-right" data-aos-delay="">This Privacy Policy, together with the Terms and conditions posted on our Website, set forth the general rules and policies governing your use of our Website. Depending on your activities when visiting our 
 		Website, you may be required to agree to additional terms and conditions.</p>
-
+    
 					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Website Visitors</h3>
 		<p data-aos="fade-right" data-aos-delay="">Like most website operators, Incline Education collects non-personally-identifying information of the sort that web browsers and servers typically make available, such as the browser type, language preference, 
 		referring site, and the date and time of each visitor request. Incline Education's purpose in collecting non-personally identifying information is to better understand how Incline Education's visitors use its website. From time to time, Incline 
@@ -207,7 +207,7 @@
   </div> 
   -->
 
-  <div include-html="snippets/footer.html"></div>
+  <?php include "snippets/footer.html" ?>
   <!-- loader -->
     <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
       <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
@@ -215,18 +215,7 @@
         stroke="#ffc107" /></svg></div> 
 
         
-  <script src="js/include-html.js"></script>
-  <script src="js/element-updates.js"></script>
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/main.js"></script>
+  <?php include "./snippets/commonScripts.html" ?>
 
 </body>
 </html>

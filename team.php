@@ -53,7 +53,7 @@
 
 <body>
 
-  <div include-html="snippets/navbar.html"></div>
+  <?php include "snippets/navbar.html" ?>
   <!-- END header -->
 
   <div class="slider-item overlay" data-stellar-background-ratio="0.5"
@@ -92,7 +92,7 @@
     <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="">
-          <h2 class="mb-4 section-title">The People Behind Incline Education</h2>
+          <h2 class="mb-4 section-title" id="core">The People Behind Incline Education</h2>
         </div>
       </div>
       <div class="row">
@@ -116,7 +116,7 @@
   <!-- END .block-4 -->
   </div>
 
-  <div include-html="/snippets/services.html"></div>
+  <?php include "/snippets/services.html" ?>
   
   <div id = "Testimonials"></div>
   <div class="bg-primary py-5">
@@ -136,7 +136,7 @@
 
 
 
-  <div include-html="snippets/footer.html"></div>
+  <?php include "snippets/footer.html" ?>
 
   <!-- loader -->
   <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
@@ -145,18 +145,7 @@
         stroke="#ffc107" /></svg></div>
 
         
-  <script src="js/include-html.js"></script>
-  <script src="js/element-updates.js"></script>
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/main.js"></script>
+  <?php include "./snippets/commonScripts.html" ?>
 </body>
 
 </html>
