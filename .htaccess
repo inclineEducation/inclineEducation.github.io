@@ -14,7 +14,6 @@ ErrorDocument 404 /404.php
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # General Redirects for pages
     Redirect 301 /home /
-    Redirect 301 /blog /blog/landing
 
     # admin
 
