@@ -88,11 +88,11 @@
     </div>
   </div> -->
   
-  <div class="section" style="padding-bottom: 0;">
+  <div class="section" id="core" style="padding-bottom: 0;">
     <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="">
-          <h2 class="mb-4 section-title" id="core">The People Behind Incline Education</h2>
+          <h2 class="mb-4 section-title">The People Behind Incline Education</h2>
         </div>
       </div>
       <div class="row">
