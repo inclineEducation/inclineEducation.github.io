@@ -144,7 +144,7 @@
 
 <!--Services-->
 
-<?php include "/components/services.html" ?>
+<?php include "./components/services.html" ?>
 
 <div id = "Testimonials"></div>
 

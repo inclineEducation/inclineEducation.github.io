@@ -116,7 +116,7 @@
   <!-- END .block-4 -->
   </div>
 
-  <?php include "/components/services.html" ?>
+  <?php include "./components/services.html" ?>
   
   <div id = "Testimonials"></div>
   <div class="bg-primary py-5">
