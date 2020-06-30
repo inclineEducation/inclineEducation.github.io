@@ -91,6 +91,8 @@
         finishing all my homework as soon as it is assigned to avoid worrying about completing 4 or 5 different assignments simultaneously the day before they are due.
         This means that on days where I do not have much homework, I take some time to relax, surf the web, and go to sleep at around 11:30 PM. On days where I have heavy
         loads of homework, I will usually finish up and tuck in for the night at around 1:30 AM.</p>
+        
+        <img src="../i/2/BS3A79291.jpg" align='right' style='max-width: 30vw; max-height: 70vh; min-width: 320px; height: auto; padding-left: 1vw; padding-right: 1vw;'/>
 
         <p>My weekends are a little different. On Saturdays, I usually wake up at 8:00 AM to go to the gym for 2 hours, after which I head to the building where the
         University’s Formula Racing team meets. I spend most of my day designing, manufacturing, and assembling the components of the car, and head home at around 8:00 PM
