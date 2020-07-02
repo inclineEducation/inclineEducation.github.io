@@ -73,10 +73,10 @@ $password = "Fl@pdc@4@%rJ";
 //connect to MySQL
 $conn = new mysqli($servername, $username, $password);
 $teamTable = $conn->query("SELECT * FROM inclineeducation.team");
-print gettype($teamTable);
 $conn->close();
 
 while ($row = $teamTable->fetch_assoc()) {
+  $var_dump($row);
   $teamCore->addPeople(
     $row['firstName'].' '.$row['lastName'],
     $row['description'],
