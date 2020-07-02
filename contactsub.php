@@ -4,41 +4,45 @@
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
     */
+    if (count($_POST) > 0) {
+      $name = htmlspecialchars($_POST['name']);
+      $email = htmlspecialchars($_POST['email']);
+      $message = htmlspecialchars($_POST['message']);
+      $phone = htmlspecialchars($_POST['phone']);
+      $body="From: $name \nPhone: $phone\nMessage: $message";
+      $subject = "Contact Form Submission From $name";
+  
+      require_once "Mail.php";
+  
+      $from = "Website Contact Form <education.incline@gmail.com>";
+      $to = "Contact <contact@inclineedu.org>";
+  
+      $host = 'smtp.gmail.com:587';
+      $username = 'education.incline@gmail.com';
+      $password = 'abc123ABC123';
+  
+      $headers = array('from' => $from,
+                      'To' => $to,
+                      'Subject' => $subject);
+      
+      $smtp = Mail::factory('smtp',
+      array ('host' => $host,
+        'auth' => "LOGIN",
+        'socket_options' => array('ssl' => array('verify_peer_name' => false)),
+        'username' => $username,
+        'password' => $password));
+  
+      $mail = $smtp->send($to, $headers, $body);
+  
+      if (PEAR::isError($mail)) {
+          $mailmessage = $mail->getMessage();
+         } else {
+          $mailmessage = "Thank you! We have received your message!";
+         }
+    } else {
+      $mailmessage = "OOPS a wild error appeared! Please email contact@inclineedu.org!"
+    }
     
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
-    $phone = htmlspecialchars($_POST['phone']);
-    $body="From: $name \nPhone: $phone\nMessage: $message";
-    $subject = "Contact Form Submission From $name";
-
-    require_once "Mail.php";
-
-    $from = "Website Contact Form <education.incline@gmail.com>";
-    $to = "Contact <contact@inclineedu.org>";
-
-    $host = 'smtp.gmail.com:587';
-    $username = 'education.incline@gmail.com';
-    $password = 'abc123ABC123';
-
-    $headers = array('from' => $from,
-                    'To' => $to,
-                    'Subject' => $subject);
-    
-    $smtp = Mail::factory('smtp',
-    array ('host' => $host,
-      'auth' => "LOGIN",
-      'socket_options' => array('ssl' => array('verify_peer_name' => false)),
-      'username' => $username,
-      'password' => $password));
-
-    $mail = $smtp->send($to, $headers, $body);
-
-    if (PEAR::isError($mail)) {
-        $mailmessage = $mail->getMessage();
-       } else {
-        $mailmessage = "Thank you! We have received your message!";
-       }
     
     header("refresh:20; /contact");
 ?>
