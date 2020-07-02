@@ -49,6 +49,7 @@
   gtag('config', 'UA-158958448-1');
   </script>
   
+
 </head>
 
 <body>
@@ -67,22 +68,24 @@
       </div>
     </div>
   </div>
-
+  
   <div class="section">
     <div class="container">
       <div class="row mb-5">
 
         <div class="col-12 mb-5 order-2">
 		  <!-- add action="#" to change redirect after submitting-->
-          <form name="contact" method="POST" action="contactsub">
+          <form name="contact" method="POST" action="contactsub" onsubmit="return required()">
             <div class="row">
+            
               <div class="col-md-6 form-group">
                 <label for="name">Name</label>
-                <input name="name" type="text" id="name" class="form-control ">
+                
+                <input name="name" type="text" id="name" class="form-control " placeholder = "Masli Sunria">
               </div>
               <div class="col-md-6 form-group">
                 <label for="phone">Phone</label>
-                <input name="phone" type="text" id="phone" class="form-control ">
+                <input name="phone" type="text" id="phone" class="form-control " placeholder = "604 555 0194">
               </div>
             </div>
             <div class="row">
@@ -93,7 +96,7 @@
             <div class="row">
               <div class="col-md-12 form-group">
                 <label for="email">Email</label>
-                <input name="email" type="email" id="email" class="form-control ">
+                <input name="email" type="email" id="email" class="form-control " placeholder = "Masli.Sunria@gmail.com">
               </div>
             </div>
             <div class="row">
@@ -109,8 +112,21 @@
             </div>
           </form>
         </div>
-
-        
+        <script>
+        function required()
+        {
+        var empt = document.forms["contact"]["message"].value;
+        if (empt == "")
+        {
+          document.forms["contact"]["message"].style.background = 'LightPink'
+        return false;
+        }
+        else 
+        {
+        return true; 
+        }
+        }
+        </script>
       </div>
 
       <div class="row">

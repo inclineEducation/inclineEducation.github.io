@@ -4,6 +4,7 @@
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
     */
+    
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
@@ -14,7 +15,7 @@
     require_once "Mail.php";
 
     $from = "Website Contact Form <education.incline@gmail.com>";
-    $to = "Roy Du <roy.du@inclineedu.org>";
+    $to = "Contact <contact@inclineedu.org>";
 
     $host = 'smtp.gmail.com:587';
     $username = 'education.incline@gmail.com';
@@ -39,14 +40,14 @@
         $mailmessage = "Thank you! We have received your message!";
        }
     
-    header("refresh:5; /contact");
+    header("refresh:20; /contact");
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>404-PAGE NOT FOUND</title>
+  <title>Contact Form Received!</title>
   <meta name="keywords" content="incline,education,mentorship,panel,discussions,secondary,education,school,
   post,high,students,teachers,parents,community,advancing,charity,blog,university,panel">
   <meta charset="utf-8">
@@ -99,10 +100,10 @@
 		  <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" style="font-size:3vh">
         <?php echo $mailmessage; ?>
       </h2>
-      <h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" style="font-size:3vh"> You will be returned the contact page in 5 seconds </h3>
+      <h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" style="font-size:3vh"> You will be returned the contact page in 10 seconds </h3>
 
       <div data-aos="fade-right" data-aos-delay="">
-        <p style="text-align: center;"><a href="/contact" class="btn btn-outline-black">Click Here If Redirect is Not Working</a></p>
+        <p style="text-align: center;"><a href="/contact" class="btn btn-outline-black">Click Here to Go Back Manually</a></p>
       </div>
 
       
