@@ -66,7 +66,7 @@ $teamAdvisors = new People();
 $servername="localhost";
 $username = "client";
 $password = "Fl@pdc@4@%rJ";
-/*
+
 //connect to MySQL
 $conn = new mysqli($servername, $username, $password);
 $teamTable = $conn->query("SELECT * FROM inclineeducation.team");
@@ -80,7 +80,7 @@ while ($row = $result->fetch_assoc()) {
     $row['linkedin'],
   );
 }
-*/
+
 
 
 $teamCore->addPeople(
