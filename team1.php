@@ -143,8 +143,6 @@ $teamCore->addPeople(
   <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script src = "./updates/team-members.js" type="text/babel"></script>
-  <script src = "./updates/advisors.js" type="text/babel"></script>
   <script src = "./updates/testimonial.js" type="text/babel"></script>
 
   <!-- JQuery Source -->
