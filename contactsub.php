@@ -40,7 +40,7 @@
           $mailmessage = "Thank you! We have received your message!";
          }
     } else {
-      $mailmessage = "OOPS a wild error appeared! Please email contact@inclineedu.org!"
+      $mailmessage = "OOPS a wild error appeared! Please email contact@inclineedu.org!";
     }
     
     
