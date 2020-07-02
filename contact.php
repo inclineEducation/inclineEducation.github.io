@@ -74,7 +74,7 @@
 
         <div class="col-12 mb-5 order-2">
 		  <!-- add action="#" to change redirect after submitting-->
-          <form name="contact" method="POST" action="/mail.php">
+          <form name="contact" method="POST" action="/contactsub.php">
             <div class="row">
               <div class="col-md-6 form-group">
                 <label for="name">Name</label>

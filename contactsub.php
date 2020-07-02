@@ -34,6 +34,4 @@
        } else {
         echo("<p>Message successfully sent!</p>");
        }
-
-    mail('zeleidu@gmail.com', 'test', 'test test test');
 ?>
