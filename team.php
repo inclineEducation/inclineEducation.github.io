@@ -1,4 +1,116 @@
 
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+class Person {
+  public $name = 'N/A';
+  public $description = 'N/A';
+  public $image = 'N/A';
+  public $link = 'N/A';
+  public $delay = 'N/A';
+
+  function __construct($iname = 'no name', $idescription = 'no description', 
+            $iimage = '"no image"', $ilink = 'no link', $idelay = '100'){
+    $this->name = $iname;
+    $this->description = $idescription;
+    $this->image = $iimage;
+    $this->link = $ilink;
+    $this->delay = $idelay;
+  }
+
+  function output() {
+    echo $this->getHtml();
+  }
+
+  function getHtml(){
+    return <<<PERSON
+    <div class="col-lg-4 mb-5" data-aos="fade-up" data-aos-delay=$this->delay style="margin-left: auto; margin-right: auto">
+      <div class="media d-block text-center">
+        <div class="media-custom">
+        <a href=$this->link target = "_blank"><img src=$this->image alt=$this->name class="img-fluid"></img></a>
+        </div>
+        <div class="media-body">
+          <h3 class="mt-0 text-black">$this->name</h3>
+          <p>$this->description</p>
+        </div>
+      </div>
+    </div>
+    PERSON;
+  }
+}
+
+class People {
+  public $people;
+  function __construct(){
+    $this->people = array();
+  }
+
+  function addPerson($person){
+    $this->people[] = $person;
+  }
+
+  function addPeople($people){
+    foreach ($people as $person){
+      $this->addPerson($person);
+    }
+  }
+
+  function output(){
+    foreach ($this->people as $person) {
+      $person->output();
+    }
+  }
+}
+$teamCore = new People();
+$teamAdvisors = new People();
+
+//MySQL details
+$servername="localhost";
+$username = "client";
+$password = "Fl@pdc@4@%rJ";
+
+//connect to MySQL
+$conn = new mysqli($servername, $username, $password);
+$teamTable = $conn->query("SELECT * FROM inclineeducation.team");
+$advisorsTable = $conn->query("SELECT * FROM inclineeducation.advisors");
+$conn->close();
+
+while ($row = $teamTable->fetch_assoc()) {
+  $teamCore->addPerson(
+    new Person(
+      $row['firstName'].' '.$row['lastName'],
+      $row['description'],
+      $row['imageURI'],
+      $row['linkedin'],
+    )
+  );
+}
+
+while ($row = $advisorsTable->fetch_assoc()) {
+  $teamAdvisors->addPerson(
+    new Person(
+      $row['firstName'].' '.$row['lastName'],
+      $row['description'],
+      $row['imageURI'],
+      $row['linkedin'],
+    )
+  );
+}
+
+
+/*
+$teamCore->addPeople(
+  array(
+    new Person(
+
+    )
+  )
+);
+*/
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,8 +143,6 @@
   <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script src = "./updates/team-members.js" type="text/babel"></script>
-  <script src = "./updates/advisors.js" type="text/babel"></script>
   <script src = "./updates/testimonial.js" type="text/babel"></script>
 
   <!-- JQuery Source -->
@@ -68,25 +178,6 @@
       </div>
     </div>
   </div>
-
-  <!-- <div class="section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 order-md-2" data-aos="fade-up" data-aos-delay="100">
-          <figure class="img-dotted-bg">
-            <img src="images/hero_2.jpg" alt="Image" class="img-fluid">
-          </figure>
-        </div>
-        <div class="col-md-5 mr-auto" data-aos="fade-up" data-aos-delay="">
-          <h2 class="mb-4 section-title"><strong>Creativity</strong> is our DNA</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quos, adipisci aliquid similique
-            saepe ipsa minus maxime alias libero nam quis officia eum impedit. At quisquam reprehenderit cum hic enim?</p>
-          <p>Necessitatibus eligendi molestias similique tempore, optio nobis numquam temporibus debitis cum aspernatur,
-            eius, nihil soluta sapiente enim. </p>
-        </div>
-      </div>
-    </div>
-  </div> -->
   
   <div class="section" id="core" style="padding-bottom: 0;">
     <div class="container">
@@ -96,7 +187,9 @@
         </div>
       </div>
       <div class="row">
-          <div id = "team"></div>
+          <!-- ~~~~~CORE TEAM~~~~~ -->
+          <!--<div id = "team"></div>-->
+          <?php $teamCore->output(); ?>
           
       </div>
       <hr style="width: 70%; border-top: 3px double; margin-top: 5em; margin-bottom: 5em;" id="advisors">
@@ -106,7 +199,7 @@
         </div> 
       </div> 
       <div class="row">
-        <div id = "advisor_list"></div>
+        <?php $teamAdvisors->output(); ?>
       </div>
     </div>
   </div>
