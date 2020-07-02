@@ -1,10 +1,16 @@
 <?php
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $phone = $_POST['phone'];
+    $body="From: $name \nPhone: $phone\nMessage: $message";
+    $subject = "Contact Form Submission From $name";
+    echo "Thank You!";
+
     require_once "Mail.php";
 
     $from = "Website Contact Form <education.incline@gmail.com>";
     $to = "Roy Du <roy.du@inclineedu.org>";
-    $subject = "hi";
-    $body = "body";
 
     $host = 'smtp.gmail.com:587';
     $username = 'education.incline@gmail.com';

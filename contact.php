@@ -74,7 +74,7 @@
 
         <div class="col-12 mb-5 order-2">
 		  <!-- add action="#" to change redirect after submitting-->
-          <form name="contact" method="post" data-netlify-recaptcha="true" data-netlify="true">
+          <form name="contact" method="POST" action="mail.php">
             <div class="row">
               <div class="col-md-6 form-group">
                 <label for="name">Name</label>
@@ -101,9 +101,8 @@
                 <label for="message">Write Message</label>
                 <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
               </div>
-			<div class = "row" data-netlify-recaptcha="true">
+			      <div class = "row">
             </div>
-				<div class="col-md-12 form-group" data-netlify-recaptcha="true"></div>
 			</div>
             <div class="row">
               <div class="col-md-6 form-group">
