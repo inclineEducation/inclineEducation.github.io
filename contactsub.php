@@ -39,4 +39,6 @@
        } else {
         echo("<p>Message successfully sent!</p>");
        }
+    
+    header("Location: /contact");
 ?>
