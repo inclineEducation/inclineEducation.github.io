@@ -75,7 +75,7 @@ $conn = new mysqli($servername, $username, $password);
 $teamTable = $conn->query("SELECT * FROM inclineeducation.team");
 $conn->close();
 
-while ($row = $result->fetch_assoc()) {
+while ($row = $teamTable->fetch_assoc()) {
   $teamCore->addPeople(
     $row['firstName'].' '.$row['lastName'],
     $row['description'],
