@@ -1,7 +1,7 @@
 <?php
     require_once "Mail.php";
 
-    $from = "Website Contact Form <education.incline@gmail.com>";
+    $from = "Contact Form <education.incline@gmail.com>";
     $to = "Roy Du <roy.du@inclineedu.org>";
     $subject = "hi";
     $body = "body";
