@@ -10,12 +10,12 @@
       $message = htmlspecialchars($_POST['message']);
       $phone = htmlspecialchars($_POST['phone']);
       if ($phone == ''){
-        $phone = 'Not Provided';
+        $phone = '<Not Provided>';
       }
       if ($name == ''){
-        $name = 'Not Provided';
+        $name = '<Not Provided>';
       }
-      $body="From: $name \nPhone: $phone\nMessage: $message";
+      $body="From: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
       $subject = "Contact Form Submission From $name";
   
       require_once "Mail.php";
