@@ -3,6 +3,7 @@
     $email = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
     $phone = htmlspecialchars($_POST['phone']);
+    echo var_dump($_POST);
     echo "name: $name\nemail: $email\nmessage: $message\nphone: $phone";
     $body="From: $name \nPhone: $phone\nMessage: $message";
     $subject = "Contact Form Submission From $name";
