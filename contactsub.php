@@ -1,8 +1,9 @@
 <?php
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    $phone = $_POST['phone'];
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $message = htmlspecialchars($_POST['message']);
+    $phone = htmlspecialchars($_POST['phone']);
+    echo "name: $name\nemail: $email\nmessage: $message\nphone: $phone";
     $body="From: $name \nPhone: $phone\nMessage: $message";
     $subject = "Contact Form Submission From $name";
     echo "Thank You!";

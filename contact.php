@@ -101,9 +101,7 @@
                 <label for="message">Write Message</label>
                 <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
               </div>
-			      <div class = "row">
-            </div>
-			</div>
+			      </div>
             <div class="row">
               <div class="col-md-6 form-group">
                 <input type="submit" value="Send Message" class="btn btn-outline-black px-3 py-3">
