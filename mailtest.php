@@ -7,8 +7,8 @@
     $body = "body";
 
     $host = 'smtp.gmail.com:587';
-    $username = 'roy.du@inclineedu.org';
-    $password = 'dtjygefbbgerxqiz';
+    $username = 'spamspamspamspam123123123123@gmail.com';
+    $password = '398351006';
 
     $headers = array('from' => $from,
                     'To' => $to,
