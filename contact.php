@@ -95,13 +95,13 @@
             </div>
             <div class="row">
               <div class="col-md-12 form-group">
-                <label for="email">Email</label>
+                <label for="email">Email<span style="color: red";>*</span></label>
                 <input name="email" type="email" id="email" class="form-control " placeholder = "Masli.Sunria@gmail.com">
               </div>
             </div>
             <div class="row">
               <div class="col-md-12 form-group">
-                <label for="message">Write Message</label>
+                <label for="message">Write Message<span style="color: red";>*</span></label>
                 <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
               </div>
 			      </div>
@@ -116,9 +116,17 @@
         function required()
         {
         var empt = document.forms["contact"]["message"].value;
-        if (empt == "")
+        var email = document.forms["contact"]["email"].value;
+        if (empt == "" || email == "")
         {
-          document.forms["contact"]["message"].style.background = 'LightPink'
+          if (empt == "")
+            document.forms["contact"]["message"].style.background = 'LightPink';
+          else
+            document.forms["contact"]["message"].style.background = 'White';
+          if (email == "")
+            document.forms["contact"]["email"].style.background = 'LightPink';
+          else
+            document.forms["contact"]["email"].style.background = 'white';
         return false;
         }
         else 
