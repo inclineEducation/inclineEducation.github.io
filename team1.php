@@ -77,7 +77,7 @@ $conn->close();
 
 while ($row = $teamTable->fetch_assoc()) {
   echo var_dump($row);
-  $teamCore->addPeople(
+  $teamCore->addPerson(
     $row['firstName'].' '.$row['lastName'],
     $row['description'],
     $row['imageURI'],
