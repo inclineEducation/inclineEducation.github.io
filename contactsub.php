@@ -44,7 +44,7 @@
     }
     
     
-    header("refresh:20; /contact");
+    header("refresh:10; /contact");
 ?>
 
 <!DOCTYPE html>
