@@ -59,14 +59,13 @@ class People {
     }
   }
 }
+$teamCore = new People();
+$teamAdvisors = new People();
 /*
 //MySQL details
 $servername="localhost";
 $username = "client";
 $password = "Fl@pdc@4@%rJ";
-
-$teamCore = new People();
-$teamAdvisors = new People();
 
 //connect to MySQL
 $conn = new mysqli($servername, $username, $password);
