@@ -6,7 +6,7 @@
     $subject = "hi";
     $body = "body";
 
-    $host = 'smtp.gmail.com';
+    $host = 'smtp.gmail.com:587';
     $username = 'roy.du@inclineedu.org';
     $password = 'roy34267';
 
