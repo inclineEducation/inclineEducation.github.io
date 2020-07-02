@@ -16,7 +16,7 @@
     
     $smtp = Mail::factory('smtp',
     array ('host' => $host,
-      'auth' => "PLAIN",
+      'auth' => "LOGIN",
       'socket_options' => array('ssl' => array('verify_peer_name' => false)),
       'username' => $username,
       'password' => $password));
