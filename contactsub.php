@@ -1,16 +1,15 @@
 <?php
+    /*
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
+    */
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
     $phone = htmlspecialchars($_POST['phone']);
-    echo var_dump($_POST);
-    echo "name: $name\nemail: $email\nmessage: $message\nphone: $phone";
     $body="From: $name \nPhone: $phone\nMessage: $message";
     $subject = "Contact Form Submission From $name";
-    echo "Thank You!";
 
     require_once "Mail.php";
 
@@ -97,10 +96,10 @@
         <img data-aos="fade-right" data-aos-delay="" src="/images/brand_space/IE_B_Text.png" style="width:30vh;">
         <div class="col-md-25 text-center">
 		  <h1 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" style="font-size:8vh">Contact Form Submission</h1>
-		  <h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" style="font-size:3vh">
+		  <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" style="font-size:3vh">
         <?php echo $mailmessage; ?>
-      </h3>
-      <h4 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" style="font-size:3vh"> You will be returned the contact page in 5 seconds </h4>
+      </h2>
+      <h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" style="font-size:3vh"> You will be returned the contact page in 5 seconds </h3>
 
       <div data-aos="fade-right" data-aos-delay="">
         <p style="text-align: center;"><a href="/contact" class="btn btn-outline-black">Click Here If Redirect is Not Working</a></p>
