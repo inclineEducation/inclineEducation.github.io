@@ -59,6 +59,7 @@ class People {
     }
   }
 }
+/*
 //MySQL details
 $servername="localhost";
 $username = "client";
@@ -80,8 +81,9 @@ while ($row = $result->fetch_assoc()) {
     $row['linkedin'],
   );
 }
+*/
 
-/*
+
 $teamCore->addPeople(
   array(
     new Person(
@@ -117,7 +119,7 @@ $teamCore->addPeople(
 
   )
 );
-*/
+
 ?>
 
 <!DOCTYPE html>
