@@ -1,4 +1,6 @@
 <?php
+    require_once "Mail.php";
+
     $from = "test <test@inclineedu.org>";
     $to = "Roy Du <roy.du@inclineedu.org>";
     $subject = "hi";
