@@ -4,6 +4,7 @@
     $message = htmlspecialchars($_POST['message']);
     $phone = htmlspecialchars($_POST['phone']);
     echo var_dump($_POST);
+    echo var_dump(json_decode(file_get_contents("php://input"), true));
     echo "name: $name\nemail: $email\nmessage: $message\nphone: $phone";
     $body="From: $name \nPhone: $phone\nMessage: $message";
     $subject = "Contact Form Submission From $name";
