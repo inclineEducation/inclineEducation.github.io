@@ -8,7 +8,7 @@ class Person {
   public $delay = 'N/A';
 
   function __construct($iname = 'no name', $idescription = 'no description', 
-            $iimage = 'no image', $ilink = 'no link', $idelay = '100'){
+            $iimage = '"no image"', $ilink = 'no link', $idelay = '100'){
     $this->name = $iname;
     $this->description = $idescription;
     $this->image = $iimage;
@@ -61,12 +61,12 @@ class People {
 }
 $teamCore = new People();
 $teamAdvisors = new People();
-/*
+
 //MySQL details
 $servername="localhost";
 $username = "client";
 $password = "Fl@pdc@4@%rJ";
-
+/*
 //connect to MySQL
 $conn = new mysqli($servername, $username, $password);
 $teamTable = $conn->query("SELECT * FROM inclineeducation.team");
