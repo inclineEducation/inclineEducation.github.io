@@ -168,5 +168,6 @@ class Team extends React.Component {
     }
 }
 
-
+/*
 ReactDOM.render(<Team />, document.getElementById("team"))
+*/
