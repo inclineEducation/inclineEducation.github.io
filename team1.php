@@ -76,7 +76,7 @@ $teamTable = $conn->query("SELECT * FROM inclineeducation.team");
 $conn->close();
 
 while ($row = $teamTable->fetch_assoc()) {
-  $var_dump($row);
+  var_dump($row);
   $teamCore->addPeople(
     $row['firstName'].' '.$row['lastName'],
     $row['description'],
