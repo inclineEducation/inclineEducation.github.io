@@ -9,6 +9,12 @@
       $email = htmlspecialchars($_POST['email']);
       $message = htmlspecialchars($_POST['message']);
       $phone = htmlspecialchars($_POST['phone']);
+      if ($phone == ''){
+        $phone = 'Not Provided';
+      }
+      if ($name == ''){
+        $name = 'Not Provided';
+      }
       $body="From: $name \nPhone: $phone\nMessage: $message";
       $subject = "Contact Form Submission From $name";
   
