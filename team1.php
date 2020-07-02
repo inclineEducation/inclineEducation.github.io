@@ -73,6 +73,7 @@ $password = "Fl@pdc@4@%rJ";
 //connect to MySQL
 $conn = new mysqli($servername, $username, $password);
 $teamTable = $conn->query("SELECT * FROM inclineeducation.team");
+$advisorsTable = $conn->query("SELECT * FROM inclineeducation.advisors");
 $conn->close();
 
 while ($row = $teamTable->fetch_assoc()) {
@@ -86,43 +87,27 @@ while ($row = $teamTable->fetch_assoc()) {
   );
 }
 
+while ($row = $advisorsTable->fetch_assoc()) {
+  $teamAdvisors->addPerson(
+    new Person(
+      $row['firstName'].' '.$row['lastName'],
+      $row['description'],
+      $row['imageURI'],
+      $row['linkedin'],
+    )
+  );
+}
 
 
+/*
 $teamCore->addPeople(
   array(
     new Person(
-      'Christopher Ng',
-      "Christopher is a third year undergraduate student pursuing a Bachelor of Science in Pharmacology 
-      and Minor in Commerce. He has previously interned at Deloitte Consulting  
-      and is an author of two peer-reviewed publications in medical research. 
-      In his free time, Christopher enjoys playing squash, running or reading books on social psychology.",
-      '/images/team/300_80/chris3.png',
-      'https://www.linkedin.com/in/chrng/'
-    ),
-    new Person(
-      'Jack He',
-      "Jack is a second year student at UBC pursuing a Bachelor of Science in Computer Science and 
-      a Minor in Commerce. He is currently interning at Microsoft as a software engineer and product manager. 
-      He is also working on his YouTube channel and will be posting about his journey to launching 
-      a Silicon Valley startup in the future. Outside the classroom, Jack can be found playing chess.",
-      '/images/team/300_80/amazingJack4.jpg',
-      'https://www.linkedin.com/in/jack-he-845587161/'
-    ),
-    new Person(
-      "Talisha Griesbach",
-      "Talisha is in her third year of Integrated Engineering with a Minor in Commerce in UBC, 
-      and the recipient of the 2020 CEMF Women in Engineering Ambassador Award for BC. She is an Electrical Lead at 
-      UBC Supermileage, serves as Director of Communications in Alpha Gamma Delta, and started her own social 
-      enterprise, Patch. Talisha is currently interning at Kardium and loves exercising and playing cello.",
-      "/images/team/300_80/Talisha.jpg",
-      "https://www.linkedin.com/in/talishag/"
-    ),
-    new Person(
 
     )
-
   )
 );
+*/
 
 ?>
 
@@ -206,9 +191,7 @@ $teamCore->addPeople(
       <div class="row">
           <!-- ~~~~~CORE TEAM~~~~~ -->
           <!--<div id = "team"></div>-->
-          <?php
-            $teamCore->output();
-          ?>
+          <?php $teamCore->output(); ?>
           
       </div>
       <hr style="width: 70%; border-top: 3px double; margin-top: 5em; margin-bottom: 5em;" id="advisors">
@@ -218,7 +201,7 @@ $teamCore->addPeople(
         </div> 
       </div> 
       <div class="row">
-        <div id = "advisor_list"></div>
+        <?php $teamAdvisors->output(); ?>
       </div>
     </div>
   </div>
