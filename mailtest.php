@@ -1,14 +1,14 @@
 <?php
     require_once "Mail.php";
 
-    $from = "test <test@inclineedu.org>";
+    $from = "Website Contact Form";
     $to = "Roy Du <roy.du@inclineedu.org>";
     $subject = "hi";
     $body = "body";
 
     $host = 'smtp.gmail.com:587';
-    $username = 'spamspamspamspam123123123123@gmail.com';
-    $password = '398351006';
+    $username = 'education.incline@gmail.com';
+    $password = 'abc123ABC123';
 
     $headers = array('from' => $from,
                     'To' => $to,
