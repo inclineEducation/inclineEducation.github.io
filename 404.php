@@ -57,7 +57,7 @@
       </h3>
 
       <div data-aos="fade-right" data-aos-delay="">
-        <p style="text-align: center;"><a href="/index.html" class="btn btn-outline-black">Click Here To Return Home</a></p>
+        <p style="text-align: center;"><a href="/index" class="btn btn-outline-black">Click Here To Return Home</a></p>
       </div>
 
       

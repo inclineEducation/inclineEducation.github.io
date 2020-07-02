@@ -103,7 +103,7 @@
       <h4 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" style="font-size:3vh"> You will be returned the contact page in 5 seconds </h4>
 
       <div data-aos="fade-right" data-aos-delay="">
-        <p style="text-align: center;"><a href="/index.html" class="btn btn-outline-black">Click Here To Return Home</a></p>
+        <p style="text-align: center;"><a href="/contact" class="btn btn-outline-black">Click Here If Redirect is Not Working</a></p>
       </div>
 
       
