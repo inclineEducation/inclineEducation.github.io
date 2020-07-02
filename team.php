@@ -1,8 +1,10 @@
 
 <?php
+/*
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+*/
 class Person {
   public $name = 'N/A';
   public $description = 'N/A';
@@ -188,7 +190,6 @@ $teamCore->addPeople(
       </div>
       <div class="row">
           <!-- ~~~~~CORE TEAM~~~~~ -->
-          <!--<div id = "team"></div>-->
           <?php $teamCore->output(); ?>
           
       </div>
@@ -199,6 +200,7 @@ $teamCore->addPeople(
         </div> 
       </div> 
       <div class="row">
+        <!-- ~~~~~Advisors~~~~~ -->
         <?php $teamAdvisors->output(); ?>
       </div>
     </div>
