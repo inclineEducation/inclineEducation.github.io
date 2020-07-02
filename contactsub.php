@@ -1,10 +1,12 @@
 <?php
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
     $phone = htmlspecialchars($_POST['phone']);
     echo var_dump($_POST);
-    echo var_dump(json_decode(file_get_contents("php://input"), true));
     echo "name: $name\nemail: $email\nmessage: $message\nphone: $phone";
     $body="From: $name \nPhone: $phone\nMessage: $message";
     $subject = "Contact Form Submission From $name";
