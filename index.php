@@ -35,11 +35,11 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- React Scripts -->
+  <!--
   <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script src = "updates/home-page.js" type="text/babel"></script>
-  <script src = "updates/testimonial.js" type="text/babel"></script>
+  -->
 
 
   <!-- JQuery Source -->
@@ -69,8 +69,8 @@
     <div class="container">
       <div class="row slider-text align-items-center justify-content-center">
         <div class="col-lg-12 text-center col-sm-12">
-          <h2 data-aos="fade-up" data-aos="fade-up" data-aos-delay="" style="color: white;"><div id = "subtitle"></div></h2> <!--subtitle-->
-          <h1 class="mb-4" data-aos="fade-up" data-aos-delay="100"><div id = "title"></div></h1> <!--title-->
+          <h2 data-aos="fade-up" data-aos="fade-up" data-aos-delay="" style="color: white;">Helping Students Find Lasting Success</h2> <!--subtitle-->
+          <h1 class="mb-4" data-aos="fade-up" data-aos-delay="100">Incline Education</h1> <!--title-->
 		  <!-- that weird play button
           <div class="btn-play-wrap mx-auto" data-aos="fade-up" data-aos-delay="200">
             <a href="https://www.youtube.com/watch?v=_VnYSoMI-9Q" data-fancybox data-ratio="2"
