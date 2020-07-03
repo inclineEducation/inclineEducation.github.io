@@ -52,7 +52,7 @@
 </head>
 
 <body>
-<?php include "../../snippets/navbar.html" ?>
+<?php include "../../components/navbar.html" ?>
   <!-- END header -->
 
   <div class="slider-item innerp overlay" data-stellar-background-ratio="0.5"
@@ -136,7 +136,7 @@
   
 <!--Services-->
 
-<?php include "../../snippets/services.html" ?>
+<?php include "../../components/services.html" ?>
 
 <?php include "../../components/testimonials.html" ?>
 
@@ -154,7 +154,7 @@
     </div>
   </div> 
 
-  <?php include "../../snippets/footer.html" ?>
+  <?php include "../../components/footer.html" ?>
   <!-- loader -->
     <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
       <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
