@@ -96,7 +96,7 @@
         <div class="col-md-25" style="padding: 1em;">
 
       <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
-        <a href= "p/Avoid_the_checklist_extracurriculars.html">
+        <a href= "p/Avoid_the_checklist_extracurriculars">
             <h1>Avoid The Checklist Extracurriculars</h2>
             <h2>
               Why you should not have to sacrifice doing what you love to pursue your dream career.
@@ -109,7 +109,7 @@
       <hr style="margin-top: 2rem; margin-bottom: 2rem;">
 
       <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
-        <a href= "p/women_in_economics.html">
+        <a href= "p/women_in_economics">
             <h1>Women in Economics</h2>
             <h2>
               Never Stop Fighting for What You Believe in
