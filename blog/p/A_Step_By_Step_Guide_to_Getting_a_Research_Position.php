@@ -36,10 +36,11 @@
   </script>
 
   <!-- React Scripts -->
+  <!--
   <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script src = "/updates/testimonial.js" type="text/babel"></script>
+  -->
 
   <!-- JQuery Source -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -199,7 +200,7 @@
 
 <?php include "../../components/services.html" ?>
 
-<div id = "Testimonials"></div>
+<?php include "./components/testimonials.html" ?>
 
    <div class="bg-primary py-5">
     <div class="container text-center">
