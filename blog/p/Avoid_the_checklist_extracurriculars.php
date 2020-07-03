@@ -138,7 +138,7 @@
 
 <?php include "../../snippets/services.html" ?>
 
-<?php include "./components/testimonials.html" ?>
+<?php include "../../components/testimonials.html" ?>
 
    <div class="bg-primary py-5">
     <div class="container text-center">

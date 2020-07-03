@@ -172,7 +172,7 @@
 
 <?php include "../components/services.html" ?>
 
-<?php include "./components/testimonials.html" ?>
+<?php include "../components/testimonials.html" ?>
 
    <div class="bg-primary py-5">
     <div class="container text-center">
