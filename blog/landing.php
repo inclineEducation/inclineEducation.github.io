@@ -28,8 +28,9 @@ $blogTable = $conn->query("SELECT * FROM inclineeducation.blog");
 $conn->close();
 
 while ($row = $blogTable->fetch_assoc()) {
-    echo gettype($row['date']);
-    echo $row['date'];
+  echo 'hi';
+  echo gettype($row['date']);
+  echo $row['date'];
 }
 
 ?>
