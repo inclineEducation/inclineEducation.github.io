@@ -21,7 +21,7 @@ class post {
     $this->$authorLast = $authorLast;
     $this->$URI = $URI;
     $this->$date = date_create($date);
-    $this->dateString = date_format('F d, Y');
+    $this->dateString = date_format($this->$date, 'F d, Y');
   }
 
   function getHTML(){
