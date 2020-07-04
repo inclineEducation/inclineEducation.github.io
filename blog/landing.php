@@ -27,11 +27,11 @@ class post {
   function getHTML(){
     return <<<TEXT
       <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
-        <a href= "p/$URI">
-            <h1>$title</h1>
-            <h2>$subtitle</h2>
+        <a href= "p/$this->$URI">
+            <h1>$this->title</h1>
+            <h2>$this->$subtitle</h2>
         </a>
-            <p><em>Posted by $authorFirst $authorLast on $dateString</em></p>
+            <p><em>Posted by $this->$authorFirst $this->$authorLast on $this->$dateString</em></p>
       </div>
       <hr style="margin-top: 2rem; margin-bottom: 2rem;">
     TEXT;
