@@ -145,19 +145,21 @@ $conn->close();
     </div>
   </div>
 
-  <?php
-  while ($row = $blogTable->fetch_assoc()) {
-    echo var_dump($row);
-    $blogpost = new post($row['title'], $row['subtitle'], $row['authorFirstName'], $row['authorLastName'], $row['URI'], $row['date']);
-    echo var_dump($blogpost);
-    echo $blogpost->getHTML();
-  }
-  ?>
+  
   
   <div class="section portfolio-section" style="padding-bottom: 4em; padding-top: 4em;">
     <div class="container justify-content-center" style="width: calc(50vw);min-width:100px;">
       <div class="row mb-5 justify-content-center">
         <div class="col-md-25" style="padding: 1em;">
+
+        <?php
+        while ($row = $blogTable->fetch_assoc()) {
+          echo var_dump($row);
+          $blogpost = new post($row['title'], $row['subtitle'], $row['authorFirstName'], $row['authorLastName'], $row['URI'], $row['date']);
+          echo var_dump($blogpost);
+          echo $blogpost->getHTML();
+        }
+        ?>
 
       <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
         <a href= "p/Avoid_the_checklist_extracurriculars">
