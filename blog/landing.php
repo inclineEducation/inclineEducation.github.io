@@ -20,7 +20,7 @@ class post {
     $this->$authorFirst = $authorFirst;
     $this->$authorLast = $authorLast;
     $this->$URI = $URI;
-    $this->$date = new date_create($date);
+    $this->$date = date_create($date);
     $this->dateString = date_format('F d, Y');
   }
 
@@ -147,7 +147,7 @@ $conn->close();
 
   <?php
   while ($row = $blogTable->fetch_assoc()) {
-    $blogpost = new post($row['title'], $row['subtitle'], $row['authorFirst'], $row['authorLast'], $row['URI'], $row['date']);
+    $blogpost = new post($row['title'], $row['subtitle'], $row['authorFirstName'], $row['authorLastName'], $row['URI'], $row['date']);
     echo $blogpost->getHTML;
   }
   ?>
