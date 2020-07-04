@@ -1,3 +1,39 @@
+<?php
+class post {
+  public $title;
+  public $subtitle;
+  public $authorFirst;
+  public $authorLast;
+  public $URI;
+  public $date;
+
+  function __construct($title = 'unset', $subtitle = 'unset', $authorFirst = 'unset', $authorLast = 'unset',
+                      $URI='unset', $date = '1969-04-20'){
+    $this->$title = $title;
+    $this->$subtitle = $subtitle;
+    $this->$authorFirst = $authorFirst;
+    $this->$authorLast = $authorLast;
+    $this->$URI = $URI;
+    $this->$date = $date;
+  }
+}
+
+//MySQL details
+$servername="localhost";
+$username = "client";
+$password = "Fl@pdc@4@%rJ";
+
+$conn = new mysqli($servername, $username, $password);
+$blogTable = $conn->query("SELECT * FROM inclineeducation.blog");
+$conn->close();
+
+while ($row = $blogTable->fetch_assoc()) {
+    echo gettype($row['date']);
+    echo $row['date'];
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
