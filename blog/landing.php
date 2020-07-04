@@ -4,8 +4,16 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$page = htmlspecialchars($_GET['page']);
-echo $page;
+if (array_key_exists('page', $_GET)){
+  $page = htmlspecialchars($_GET['page']);
+} else {
+  $page = 1;
+}
+if (array_key_exists('postsperpage', $_GET)){
+  $postsPerPage = htmlspecialchars($_GET['postsperpage']);
+} else {
+  $postsPerPage = 5;
+}
 
 class post {
   public $title;
@@ -42,16 +50,25 @@ class post {
 }
 
 //MySQL details
+
 $servername="localhost";
 $username = "client";
 $password = "Fl@pdc@4@%rJ";
 
 
 $conn = new mysqli($servername, $username, $password);
-$blogTable = $conn->query("SELECT * FROM inclineeducation.blog ORDER BY date DESC");
-$numPosts = $conn->query("SELECT COUNT(*) FROM inclineeducation.blog");
-echo $numPosts->fetch_all()[0][0];
-$conn->close()
+$numPosts = $conn->query("SELECT COUNT(*) FROM inclineeducation.blog")->fetch_all()[0][0];
+
+$upperRange = $numPosts - ( ( $postsPerPage * ($page - 1) ) );
+$lowerRange = $numPosts - ( $postsPerPage * ($page) - 1);
+
+$blogTable = $conn->query("SELECT * FROM inclineeducation.blog 
+                            WHERE id BETWEEN $lowerRange AND $upperRange
+                            ORDER BY date DESC");
+
+$conn->close();
+
+$numPages = ceil ( (float) $numPosts / $postsPerPage );
 
 
 ?>
@@ -150,10 +167,10 @@ $conn->close()
 
   
   
-  <div class="section portfolio-section" style="padding-bottom: 4em; padding-top: 4em;">
+  <div class="section portfolio-section" style="padding-bottom: 0em; padding-top: 4em;">
     <div class="container justify-content-center" style="width: calc(50vw);min-width:100px;">
       <div class="row mb-5 justify-content-center">
-        <div class="col-md-25" style="padding: 1em;">
+        <div class="col-md-25" style="padding: 1em; width: 100%">
 
         <?php
         while ($row = $blogTable->fetch_assoc()) {
@@ -168,7 +185,38 @@ $conn->close()
 
         </div>
         <div class="row mb-5 justify-content-center">
-          <p>page: 1 2 3 4 5</p>
+          <?php
+          echo '<p style="color: black;"> page: ';
+          $pagesPrinted = 0;
+          if ($page - 2 > 1) {
+            echo "<a href='?page=".(1)."&postsperpage=".$postsPerPage."'>".(1)."</a> ";
+          }
+          if ($page - 2 > 2) {
+            echo ' &#8230; ';
+          }
+          if ($page - 2 > 0) {
+            echo "<a href='?page=".($page - 2)."&postsperpage=".$postsPerPage."'>".($page - 2)."</a> ";
+            $pagesPrinted ++;
+          }
+          if ($page - 1 > 0) {
+            echo "<a href='?page=".($page - 1)."&postsperpage=".$postsPerPage."'>".($page - 1)."</a> ";
+            $pagesPrinted ++;
+          } 
+          echo "<u>".($page)."</u> ";
+          $pagesPrinted ++;
+          $counter = 1;
+          for (; $pagesPrinted < 5; $pagesPrinted ++, $counter ++){
+            if ($page + $counter > $numPages) break;
+            echo "<a href='?page=".($page + $counter)."&postsperpage=".$postsPerPage."'>".($page  + $counter)."</a> ";
+          }
+          if ($page + $counter < ($numPages - 1)){
+            echo ' &#8230; ';
+          }
+          if ($page + $counter < $numPages) {
+            echo "<a href='?page=".($numPages)."&postsperpage=".$postsPerPage."'>".($numPages)."</a> ";
+          }
+
+          ?>
         </div>
       </div>
     </div>
