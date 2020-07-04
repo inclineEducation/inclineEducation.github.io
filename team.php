@@ -176,8 +176,8 @@ $teamCore->addPeople(
       <div class="row slider-text align-items-center justify-content-center text-center">
         <div class="col-lg-12 col-sm-12">
           <h1 class="mb-4" data-aos="fade-up" data-aos-delay="">Meet our team</h1>
-		  <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><a href="index.html">Home</a> <span class="mx-3">/</span> Team</p>
-          <!-- <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><a href="index.html">Home</a> <span class="mx-3">/</span> About</p> -->
+		  <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><a href="index">Home</a> <span class="mx-3">/</span> Team</p>
+          <!-- <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><a href="index">Home</a> <span class="mx-3">/</span> About</p> -->
         </div>
       </div>
     </div>
@@ -224,7 +224,7 @@ $teamCore->addPeople(
           <!--
 		  <p class="text-white mb-4" data-aos="fade-right" data-aos-delay="100">text here</p>
 		  -->
-          <p class="mb-0" data-aos="fade-right" data-aos-delay="200"><a href="contact.html" class="btn btn-outline-white px-4 py-3">Get In Touch!</a></p>
+          <p class="mb-0" data-aos="fade-right" data-aos-delay="200"><a href="contact" class="btn btn-outline-white px-4 py-3">Get In Touch!</a></p>
         </div>
       </div>
 

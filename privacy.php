@@ -85,7 +85,7 @@
 		-->
 					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Gathering of Personally-Identifying Information</h3>
 		<p data-aos="fade-right" data-aos-delay="">Certain visitors to Incline Education's websites choose to interact with Incline Education in ways that require Incline Education to gather personally-identifying information. The amount and type of 
-		information that Incline Education gathers depends on the nature of the interaction. For example, we ask visitors who utilize our <a href="contact.html">contact form</a> to provide an email for response purposes.</p>
+		information that Incline Education gathers depends on the nature of the interaction. For example, we ask visitors who utilize our <a href="contact">contact form</a> to provide an email for response purposes.</p>
 
 					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Security</h3>
 		<p data-aos="fade-right" data-aos-delay="">The security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use 

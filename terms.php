@@ -227,7 +227,7 @@
 		  <p data-aos="fade-right" data-aos-delay="">We store information to further enhance the services we provide to all our users. This includes information such as your
 		language or country that you are accessing our website from. This information is associated with unique identifiers tied to
 		the browser or device that you are using.</p>
-		  <p data-aos="fade-right" data-aos-delay="">Please refer to our <a href=privacy.html>Privacy Policy</a> for more information.</p>
+		  <p data-aos="fade-right" data-aos-delay="">Please refer to our <a href=privacy>Privacy Policy</a> for more information.</p>
 		  <br>
 		  
 		  <h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Disclaimer</h3>
@@ -309,7 +309,7 @@
           <h3 class="text-white mb-2 font-weight-normal">Let's do more together</h3>
 
         
-          <p class="mb-0"><a href="contact.html" class="btn btn-outline-white px-4 py-3">Get In Touch!</a></p>
+          <p class="mb-0"><a href="contact" class="btn btn-outline-white px-4 py-3">Get In Touch!</a></p>
         </div>
       </div>
 

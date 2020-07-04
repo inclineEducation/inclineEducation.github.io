@@ -59,7 +59,7 @@
       <div class="row slider-text align-items-center justify-content-center text-center">
         <div class="col-lg-12 col-sm-12">
           <h1 class="mb-4" data-aos="fade-up" data-aos-delay="">About Us</h1>
-		  <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><a href="index.html">Home</a> <span class="mx-3">/</span> About Us</p>
+		  <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><a href="index">Home</a> <span class="mx-3">/</span> About Us</p>
         </div>
       </div>
     </div>
@@ -108,7 +108,7 @@
           <h3 class="text-white mb-2 font-weight-normal">Let's do more together</h3>
 
         
-          <p class="mb-0"><a href="contact.html" class="btn btn-outline-white px-4 py-3">Get In Touch!</a></p>
+          <p class="mb-0"><a href="contact" class="btn btn-outline-white px-4 py-3">Get In Touch!</a></p>
         </div>
       </div>
 

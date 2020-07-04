@@ -97,7 +97,7 @@
         </div>
       </div>
     </div>
-    <p data-aos="fade-up" style="text-align: center;"><a href="about.html" class="btn btn-outline-black">Learn More</a></p>
+    <p data-aos="fade-up" style="text-align: center;"><a href="about" class="btn btn-outline-black">Learn More</a></p>
 <style>
 .work-thumb {
 	 display: block;
@@ -168,7 +168,7 @@
             Incline Education is a team of university students from various faculties who have come together for the sole 
             purpose of helping high school students achieve more out of their post-secondary experience.
           </p>
-          <p><a href="team.html" data-aos="fade-left" class="btn btn-outline-black">Learn More</a></p>
+          <p><a href="team" data-aos="fade-left" class="btn btn-outline-black">Learn More</a></p>
         </div>
         <div class="col-lg-6 order-1">
           <figure class="img-dotted-bg">
@@ -199,7 +199,7 @@
 		  <!---
           <p class="text-white mb-4" data-aos="fade-right" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           --->
-          <p class="mb-0" data-aos="fade-right" data-aos-delay="200"><a href="contact.html" class="btn btn-outline-white px-4 py-3">Get In Touch!</a></p>
+          <p class="mb-0" data-aos="fade-right" data-aos-delay="200"><a href="contact" class="btn btn-outline-white px-4 py-3">Get In Touch!</a></p>
         </div>
       </div>
 
