@@ -6,6 +6,7 @@ class post {
   public $authorLast;
   public $URI;
   public $date;
+  public $dateString;
 
   function __construct($title = 'unset', $subtitle = 'unset', $authorFirst = 'unset', $authorLast = 'unset',
                       $URI='unset', $date = '1969-04-20'){
@@ -14,7 +15,21 @@ class post {
     $this->$authorFirst = $authorFirst;
     $this->$authorLast = $authorLast;
     $this->$URI = $URI;
-    $this->$date = $date;
+    $this->$date = new date_create($date);
+    $this->dateString = date_format('F d, Y');
+  }
+
+  function getHTML(){
+    return <<<TEXT
+      <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
+        <a href= "p/$URI">
+            <h1>$title</h1>
+            <h2>$subtitle</h2>
+        </a>
+            <p><em>Posted by $authorFirst $authorLast on $dateString</em></p>
+      </div>
+      <hr style="margin-top: 2rem; margin-bottom: 2rem;">
+    TEXT;
   }
 }
 
@@ -27,11 +42,9 @@ $conn = new mysqli($servername, $username, $password);
 $blogTable = $conn->query("SELECT * FROM inclineeducation.blog");
 $conn->close();
 
-while ($row = $blogTable->fetch_assoc()) {
-  echo 'hi';
-  echo gettype($row['date']);
-  echo $row['date'];
-}
+
+
+
 
 ?>
 
@@ -113,6 +126,12 @@ while ($row = $blogTable->fetch_assoc()) {
 <body>
 <?php include "../components/navbar.html" ?>
   <!-- END header -->
+  <?php
+  while ($row = $blogTable->fetch_assoc()) {
+    $blogpost = new post($row['title'], $row['subtitle'], $row['authorFirst'], $row['authorLast'], $row['URI'], $row['date']);
+    echo $blogpost->getHTML;
+  }
+  ?>
 
   <div class="slider-item innerp overlay" data-stellar-background-ratio="0.5"
     style="background-image: url('/images/group.jpg');">
@@ -134,7 +153,7 @@ while ($row = $blogTable->fetch_assoc()) {
 
       <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
         <a href= "p/Avoid_the_checklist_extracurriculars">
-            <h1>Avoid The Checklist Extracurriculars</h2>
+            <h1>Avoid The Checklist Extracurriculars</h1>
             <h2>
               Why you should not have to sacrifice doing what you love to pursue your dream career.
             </h2>
@@ -147,7 +166,7 @@ while ($row = $blogTable->fetch_assoc()) {
 
       <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
         <a href= "p/women_in_economics">
-            <h1>Women in Economics</h2>
+            <h1>Women in Economics</h1>
             <h2>
               Never Stop Fighting for What You Believe in
             </h2>
@@ -160,7 +179,7 @@ while ($row = $blogTable->fetch_assoc()) {
 		
 			<div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
         <a href= "p/a_day_in_the_life_of_an_engineering_student">
-            <h1>A Day in the Life of an Engineering Student</h2>
+            <h1>A Day in the Life of an Engineering Student</h1>
             <h2>
               Make These the Best 4 Years of Your Life
             </h2>
@@ -173,7 +192,7 @@ while ($row = $blogTable->fetch_assoc()) {
 
           <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
             <a href= "p/navigating_first_year_engineering_for_aspiring_female_engineers">
-                <h1>Navigating First Year Engineering For Aspiring Female Engineers</h2>
+                <h1>Navigating First Year Engineering For Aspiring Female Engineers</h1>
                 <h2>
                   Tips to help you get through the toughest engineering workloads and schedules.
                 </h2>
@@ -186,7 +205,7 @@ while ($row = $blogTable->fetch_assoc()) {
 		  
 		  <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
         <a href= "p/A_Step_By_Step_Guide_to_Getting_a_Research_Position">
-            <h1>A Step-By-Step Guide to Getting a Research Position</h2>
+            <h1>A Step-By-Step Guide to Getting a Research Position</h1>
             <h2 >
               Learn how you can join an academic research project with little to no experience.
             </h2>
