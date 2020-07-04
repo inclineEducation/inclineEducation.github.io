@@ -52,7 +52,7 @@
 </head>
 
 <body>
-<?php include "../../components/navbar" ?>
+<?php include "../../components/navbar.html" ?>
   <!-- END header -->
 
   <div class="slider-item innerp overlay" data-stellar-background-ratio="0.5"
@@ -96,7 +96,9 @@
           <img src='../i/1/IMG_4201.png' style='max-width: 70vw; max-height: 50vh;'>
         </div>
 
-        <p>Lastly, before university I had many misconceptions about being a woman in engineering, such as being frowned upon because of my gender and having no social life. However after going through two years in engineering, I can confidently say that it was never a problem! It has always been super welcoming at my school and there are so many support groups for academics and for any barriers that may arise. The faulty of engineering even has academic events set up before each midterm which usually include practice exams and pizza!
+        <p>Lastly, before university I had many misconceptions about being a woman in engineering, such as being frowned upon because of my gender and having no social life. 
+        However after going through two years in engineering, I can confidently say that it was never a problem! It has always been super welcoming at my school and there are 
+        so many support groups for academics and for any barriers that may arise. The faulty of engineering even has academic events set up before each midterm which usually include practice exams and pizza!
         As long as you work hard in the courses and balance nights out with homework, it will not be hard to maintain a social life. I actually get to see my friends
         quite a bit for bubble tea every now and then, which is much needed after a long day of classes! Homework is inevitable in engineering, but my tips
         would be to start them early and ask for help as soon as possible!</p>
@@ -117,7 +119,7 @@
   
 <!--Services-->
 
-<?php include "../../components/services" ?>
+<?php include "../../components/services.html" ?>
 
 <?php include "../../components/testimonials.html" ?>
 
@@ -135,7 +137,7 @@
     </div>
   </div> 
 
-  <?php include "../../components/footer" ?>
+  <?php include "../../components/footer.html" ?>
   <!-- loader -->
     <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
       <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
