@@ -46,6 +46,8 @@ $password = "Fl@pdc@4@%rJ";
 
 $conn = new mysqli($servername, $username, $password);
 $blogTable = $conn->query("SELECT * FROM inclineeducation.blog");
+$numPosts = $conn->query("SELECT COUNT(*) FROM inclineeducation.blog");
+echo $gettype($numPosts);
 $conn->close();
 
 
