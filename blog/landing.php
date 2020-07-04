@@ -1,8 +1,9 @@
 <?php
-
+/*
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+*/
 
 if (array_key_exists('page', $_GET)){
   $page = htmlspecialchars($_GET['page']);
@@ -178,10 +179,6 @@ $numPages = ceil ( (float) $numPosts / $postsPerPage );
           echo $blogpost->getHTML();
         }
         ?>
-
-        
-
-          
 
         </div>
         <div class="row mb-5 justify-content-center">
