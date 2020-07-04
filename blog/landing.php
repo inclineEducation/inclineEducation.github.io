@@ -12,7 +12,7 @@ if (array_key_exists('page', $_GET)){
 if (array_key_exists('postsperpage', $_GET)){
   $postsPerPage = htmlspecialchars($_GET['postsperpage']);
 } else {
-  $postsPerPage = 3;
+  $postsPerPage = 5;
 }
 
 class post {
