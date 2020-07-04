@@ -159,70 +159,7 @@ $conn->close();
         }
         ?>
 
-      <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
-        <a href= "p/Avoid_the_checklist_extracurriculars">
-            <h1>Avoid The Checklist Extracurriculars</h1>
-            <h2>
-              Why you should not have to sacrifice doing what you love to pursue your dream career.
-            </h2>
-        </a>
-            <p>
-                <em>Posted by Ella Chan on June 29th, 2020</em>
-            </p>
-      </div>
-      <hr style="margin-top: 2rem; margin-bottom: 2rem;">
-
-      <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
-        <a href= "p/women_in_economics">
-            <h1>Women in Economics</h1>
-            <h2>
-              Never Stop Fighting for What You Believe in
-            </h2>
-        </a>
-            <p>
-                <em>Posted by Anushka Gupta on June 22th, 2020</em>
-            </p>
-      </div>
-      <hr style="margin-top: 2rem; margin-bottom: 2rem;">
-		
-			<div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
-        <a href= "p/a_day_in_the_life_of_an_engineering_student">
-            <h1>A Day in the Life of an Engineering Student</h1>
-            <h2>
-              Make These the Best 4 Years of Your Life
-            </h2>
-        </a>
-            <p>
-                <em>Posted by Andy Chung on June 15th, 2020</em>
-            </p>
-      </div>
-      <hr style="margin-top: 2rem; margin-bottom: 2rem;">
-
-          <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
-            <a href= "p/navigating_first_year_engineering_for_aspiring_female_engineers">
-                <h1>Navigating First Year Engineering For Aspiring Female Engineers</h1>
-                <h2>
-                  Tips to help you get through the toughest engineering workloads and schedules.
-                </h2>
-            </a>
-                <p>
-                    <em>Posted by Michelle Lin on June 8th, 2020</em>
-                </p>
-          </div>
-          <hr style="margin-top: 2rem; margin-bottom: 2rem;">
-		  
-		  <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
-        <a href= "p/A_Step_By_Step_Guide_to_Getting_a_Research_Position">
-            <h1>A Step-By-Step Guide to Getting a Research Position</h1>
-            <h2 >
-              Learn how you can join an academic research project with little to no experience.
-            </h2>
-        </a>
-            <p>
-                <em>Posted by Christopher Ng on June 1st, 2020</em>
-            </p>
-      </div>
-      <hr style="margin-top: 2rem; margin-bottom: 2rem;">
+        
 
           
 
