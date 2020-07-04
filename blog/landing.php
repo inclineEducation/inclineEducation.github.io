@@ -15,12 +15,12 @@ class post {
 
   function __construct($title = 'unset', $subtitle = 'unset', $authorFirst = 'unset', $authorLast = 'unset',
                       $URI='unset', $date = '1969-04-20'){
-    $this->$title = $title;
-    $this->$subtitle = $subtitle;
-    $this->$authorFirst = $authorFirst;
-    $this->$authorLast = $authorLast;
-    $this->$URI = $URI;
-    $this->$date = date_create($date);
+    $this->title = $title;
+    $this->subtitle = $subtitle;
+    $this->authorFirst = $authorFirst;
+    $this->authorLast = $authorLast;
+    $this->URI = $URI;
+    $this->date = date_create($date);
     $this->dateString = date_format($this->$date, 'F d, Y');
   }
 
