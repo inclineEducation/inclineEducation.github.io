@@ -43,9 +43,11 @@ $servername="localhost";
 $username = "client";
 $password = "Fl@pdc@4@%rJ";
 
+
 $conn = new mysqli($servername, $username, $password);
 $blogTable = $conn->query("SELECT * FROM inclineeducation.blog");
 $conn->close();
+
 
 
 
@@ -163,6 +165,9 @@ $conn->close();
 
           
 
+        </div>
+        <div class="row mb-5 justify-content-center">
+          <p>page: 1 2 3 4 5</p>
         </div>
       </div>
     </div>
