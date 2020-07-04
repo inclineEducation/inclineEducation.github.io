@@ -154,7 +154,6 @@ $conn->close();
 
         <?php
         while ($row = $blogTable->fetch_assoc()) {
-          echo var_dump($row);
           $blogpost = new post($row['title'], $row['subtitle'], $row['authorFirstName'], $row['authorLastName'], $row['URI'], $row['date']);
           echo var_dump($blogpost);
           echo $blogpost->getHTML();
