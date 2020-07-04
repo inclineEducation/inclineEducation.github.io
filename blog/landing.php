@@ -126,12 +126,7 @@ $conn->close();
 <body>
 <?php include "../components/navbar.html" ?>
   <!-- END header -->
-  <?php
-  while ($row = $blogTable->fetch_assoc()) {
-    $blogpost = new post($row['title'], $row['subtitle'], $row['authorFirst'], $row['authorLast'], $row['URI'], $row['date']);
-    echo $blogpost->getHTML;
-  }
-  ?>
+  
 
   <div class="slider-item innerp overlay" data-stellar-background-ratio="0.5"
     style="background-image: url('/images/group.jpg');">
@@ -145,6 +140,12 @@ $conn->close();
     </div>
   </div>
 
+  <?php
+  while ($row = $blogTable->fetch_assoc()) {
+    $blogpost = new post($row['title'], $row['subtitle'], $row['authorFirst'], $row['authorLast'], $row['URI'], $row['date']);
+    echo $blogpost->getHTML;
+  }
+  ?>
   
   <div class="section portfolio-section" style="padding-bottom: 4em; padding-top: 4em;">
     <div class="container justify-content-center" style="width: calc(50vw);min-width:100px;">
