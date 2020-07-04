@@ -27,11 +27,11 @@ class post {
   function getHTML(){
     return <<<TEXT
       <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
-        <a href= "p/$this->$URI">
+        <a href= "p/$this->URI">
             <h1>$this->title</h1>
-            <h2>$this->$subtitle</h2>
+            <h2>$this->subtitle</h2>
         </a>
-            <p><em>Posted by $this->$authorFirst $this->$authorLast on $this->$dateString</em></p>
+            <p><em>Posted by $this->authorFirst $this->authorLast on $this->dateString</em></p>
       </div>
       <hr style="margin-top: 2rem; margin-bottom: 2rem;">
     TEXT;
@@ -148,7 +148,7 @@ $conn->close();
   <?php
   while ($row = $blogTable->fetch_assoc()) {
     $blogpost = new post($row['title'], $row['subtitle'], $row['authorFirstName'], $row['authorLastName'], $row['URI'], $row['date']);
-    echo gettype($blogpost->getHTML());
+    echo $blogpost->getHTML();
   }
   ?>
   
