@@ -47,12 +47,8 @@ $password = "Fl@pdc@4@%rJ";
 $conn = new mysqli($servername, $username, $password);
 $blogTable = $conn->query("SELECT * FROM inclineeducation.blog ORDER BY date DESC");
 $numPosts = $conn->query("SELECT COUNT(*) FROM inclineeducation.blog");
-echo var_dump($numPosts->fetch_all());
-$conn->close();
-
-
-
-
+echo $numPosts->fetch_all()[0][0];
+$conn->close()
 
 
 ?>
