@@ -26,12 +26,12 @@ $generator->setSitemapFileName("sitemap.xml");
 $generator->setSitemapIndexFileName("sitemap-index.xml");
 
 // alternate languages
-/*
+
 $alternates = [
-    ['hreflang' => 'de', 'href' => "http://www.example.com/de"],
-    ['hreflang' => 'fr', 'href' => "http://www.example.com/fr"],
+    //['hreflang' => 'de', 'href' => "http://www.example.com/de"],
+    //['hreflang' => 'fr', 'href' => "http://www.example.com/fr"],
 ];
-*/
+
 
 // adding url `loc`, `lastmodified`, `changefreq`, `priority`, `alternates`
 
