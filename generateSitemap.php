@@ -34,9 +34,9 @@ $alternates = [
 */
 
 // adding url `loc`, `lastmodified`, `changefreq`, `priority`, `alternates`
-/*
-$generator->addURL('http://example.com/url/path/', new DateTime(), 'always', 0.5, $alternates);
-*/
+
+$generator->addURL('https://inclineedu.org/', new DateTime(), 'always', 0.5, $alternates);
+
 
 // generate internally a sitemap
 $generator->createSitemap();
