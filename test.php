@@ -2,6 +2,8 @@
     th, td, table {
         border: 1px solid black;
         margin: auto;
+        table-layout:fixed;
+        word-wrap:break-word;
         
     }
 </style>
