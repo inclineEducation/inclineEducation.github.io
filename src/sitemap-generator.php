@@ -175,8 +175,7 @@
 	$start_url = filter_var ($start_url, FILTER_SANITIZE_URL);
 
 	fwrite ($pf, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" .
-				 "<?xml-stylesheet type=\"text/xsl\" href=\"http://iprodev.github.io/PHP-XML-Sitemap-Generator/xml-sitemap.xsl\"?>\n" .
-				 "<!-- Created with iProDev PHP XML Sitemap Generator " . VERSION . " http://iprodev.com -->\n" .
+				 "<?xml-stylesheet type=\"text/xsl\" href=\"/src/xml-sitemap.xsl\"?>\n" .
 				 "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"\n" .
 				 "        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n" .
 				 "        xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9\n" .
