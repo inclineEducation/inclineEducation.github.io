@@ -10,7 +10,7 @@
 	require_once "simple_html_dom.php";
 
 	// Set the output file name.
-	$file = "sitemap.xml";
+	$file = "../sitemap.xml";
 
 	// Set the start URL. Here is http used, use https:// for 
 	// SSL websites.
