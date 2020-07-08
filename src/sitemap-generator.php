@@ -112,6 +112,8 @@
 		foreach ($a1 as $val) {
 			$next_url = $val->href or "";
 
+			$fragment_split = explode ("?", $next_url);
+			$next_url       = $fragment_split[0];
 			$fragment_split = explode ("#", $next_url);
 			$next_url       = $fragment_split[0];
 
