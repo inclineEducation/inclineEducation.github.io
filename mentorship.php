@@ -172,7 +172,7 @@
           <h3 class="text-white mb-2 font-weight-normal">Let's do more together</h3>
 
         
-          <p class="mb-0"><a href="contact.html" class="btn btn-outline-white px-4 py-3">Get In Touch!</a></p>
+          <p class="mb-0"><a href="contact" class="btn btn-outline-white px-4 py-3">Get In Touch!</a></p>
         </div>
       </div>
 
