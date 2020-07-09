@@ -73,7 +73,7 @@
 	}
 
 	function GetUrl ($url) {
-		$agent = "Mozilla/5.0 (compatible; iProDev PHP XML Sitemap Generator/" . VERSION . ", http://iprodev.com)";
+		$agent = "Mozilla/5.0";
 
 		$ch = curl_init();
 		curl_setopt ($ch, CURLOPT_AUTOREFERER, true);
