@@ -154,7 +154,17 @@
 -->
     <div class="container-fluid">
       <div class="row mb-5 no-gutters">
-        <div id = "events" style="margin:auto;"></div>
+        <div class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="100" style = "float: left;">
+            <a href= https://docs.google.com/forms/d/e/1FAIpQLSc26NAiGASu96jxSME6ca0tHg9l4KyfLFhhaMlneHSOXlX9cg/viewform class="work-thumb">
+              <div class="work-text">
+                <h2>VIRTUAL PANEL</h2>
+                <p>Google Meet</p>
+                <p>Sunday, July 26</p>
+                <p>3:30pm - 5:00pm</p>
+              </div>
+              <img src=/images/event/vln11032020/10/vln6.jpg alt="Image" class="img-fluid"></img>
+            </a>
+          </div>
       </div>
     </div>
   </div>
