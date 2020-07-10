@@ -106,22 +106,10 @@
           <p data-aos="fade-right" data-aos-delay="100">
             If you have any questions or business inquiries, please feel free to email us at <a href="mailto:contact@inclineedu.org">contact@inclineedu.org</a>. 
           </p>
-          <br>
-          <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="100">Upcoming Events</h2>
-          <p data-aos="fade-right" data-aos-delay="100">
-            Sunday August 9 | 3:00 pm - 4:30 pm | Google Meet 
-          </p>
-          <p data-aos="fade-right" data-aos-delay="100" style="font-size:1.5rem;">
-            Incline Education Digital Panel Discussion 
-          </p>
-          <p data-aos="fade-right" data-aos="fade-right" data-aos-delay="100">
-            <div class="col-lg-12 order-1">
-              <p style="text-align: center;" data-aos="fade-right" data-aos-delay="100"><a href="/signup" class="btn btn-outline-black">Sign up here</a></p>
-            </div>
-          </p>
         </div>
       </div>
     </div>
+    <?php include "./components/upcomingEvents.php" ?>
     <div class="container justify-content-center" style="width: calc(40rem+40vw); max-width: 90vw;">
         <div class="row mb-5 justify-content-center" style="text-align: center;">
             <div class="col-md-15 text-center">
