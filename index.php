@@ -121,7 +121,7 @@
         </div>
         <div class="col-lg-6 order-1">
           <figure class="img-dotted-bg">
-            <img src="images\event\vln11032020\25\vln6.JPG" alt="Image" class="img-fluid">
+            <img src="images\event\vln11032020\25\vln6.jpg" alt="Image" class="img-fluid">
 
             <img src="images\event\vln11032020\10\vln3.jpg" alt="Image" class="img-fluid img-absolute" data-aos="fade-left">
 
