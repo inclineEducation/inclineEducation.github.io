@@ -109,7 +109,31 @@
         </div>
       </div>
     </div>
-    <?php include "./components/upcomingEvents.php" ?>
+    <!--<?php include "./components/upcomingEvents.php" ?>-->
+    <!-- UPCOMING EVENTS -->
+    <div class="section portfolio-section" id="vpanel" style="padding-bottom: 1em;">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-8 text-center" style="background-color: #ffe699;">
+
+            <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="100">Upcoming Events</h2>
+            <p data-aos="fade-right" data-aos-delay="100">
+              Sunday August 9 | 3:00 pm - 4:30 pm | Google Meet 
+            </p>
+            <p data-aos="fade-right" data-aos-delay="100" style="font-size:1.5rem;">
+              Incline Education Virtual Panel Discussion 
+            </p>
+            <p data-aos="fade-right" data-aos="fade-right" data-aos-delay="100">
+              <div class="col-lg-12 order-1">
+                <p style="text-align: center;" data-aos="fade-right" data-aos-delay="100"><a href="/signup" class="btn btn-outline-black">Sign up here</a></p>
+              </div>
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- UPCOMING EVENTS DONE -->
     <div class="container justify-content-center" style="width: calc(40rem+40vw); max-width: 90vw;">
         <div class="row mb-5 justify-content-center" style="text-align: center;">
             <div class="col-md-15 text-center">
@@ -131,7 +155,8 @@
                 </div>
             </div>
         </div>
-  </div>
+      </div>
+    </div>
 
 <!--Services-->
 
@@ -139,19 +164,18 @@
 
 <?php include "./components/testimonials.html" ?>
 
-   <div class="bg-primary py-5">
-    <div class="container text-center">
-      <div class="row justify-content-center">
-        <div class="col-lg-7">
-          <h3 class="text-white mb-2 font-weight-normal">Let's do more together</h3>
+    <div class="bg-primary py-5">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <h3 class="text-white mb-2 font-weight-normal">Let's do more together</h3>
 
-        
-          <p class="mb-0"><a href="contact" class="btn btn-outline-white px-4 py-3">Get In Touch!</a></p>
+          
+            <p class="mb-0"><a href="contact" class="btn btn-outline-white px-4 py-3">Get In Touch!</a></p>
+          </div>
         </div>
       </div>
-
-    </div>
-  </div> 
+    </div> 
 
   <?php include "components/footer.html" ?>
   <!-- loader -->
