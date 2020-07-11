@@ -114,7 +114,7 @@
     <div class="section portfolio-section" id="vpanel" style="padding-bottom: 1em;">
       <div class="container">
         <div class="row mb-5 justify-content-center">
-          <div class="col-md-8 text-center" style="background-color: #ffe699;">
+          <div class="col-md-8 text-center" style="background-color: #ffe699;" data-aos="fade" data-aos-delay="100">
 
             <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="100">Upcoming Events</h2>
             <p data-aos="fade-right" data-aos-delay="100">
