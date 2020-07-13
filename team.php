@@ -68,9 +68,6 @@ $teamCore = new People();
 $teamAdvisors = new People();
 
 //MySQL details
-$servername="localhost";
-$username = "client";
-$password = "Fl@pdc@4@%rJ";
 
 $login = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT']."/misc/mysql_login.json"), true);
 
