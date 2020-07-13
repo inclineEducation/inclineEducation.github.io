@@ -43,7 +43,7 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   -->
 
-  <!-- JQuery Source --><p></p>
+  <!-- JQuery Source -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <link rel="stylesheet" href="css/blogpage.css">
