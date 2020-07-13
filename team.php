@@ -1,10 +1,10 @@
 
 <?php
-/*
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-*/
+
 class Person {
   public $name = 'N/A';
   public $description = 'N/A';
@@ -68,12 +68,12 @@ $teamCore = new People();
 $teamAdvisors = new People();
 
 //MySQL details
-$servername="localhost";
-$username = "client";
-$password = "Fl@pdc@4@%rJ";
+
+$login = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT']."/misc/mysql_login.json"), true);
+
 
 //connect to MySQL
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($login['server'], $login['username'], $login['password']);
 $teamTable = $conn->query("SELECT * FROM inclineeducation.team");
 $advisorsTable = $conn->query("SELECT * FROM inclineeducation.advisors");
 $conn->close();

@@ -84,7 +84,15 @@
   </div>
   
 
-  <div class="section portfolio-section" style="padding-bottom: 5em;">
+  
+  
+
+<!--
+<br><br><br><br>
+-->
+  <?php include "./components/upcomingEvents.php" ?>
+
+  <div class="section portfolio-section" style="padding-top: 0em; padding-bottom: 5em;">
     <div class="container">
       <div class="row mb-5 justify-content-center" data-aos="fade-up" style="margin-bottom: 0em!important">
         <div class="col-md-8 text-center">
@@ -93,68 +101,9 @@
             Incline Education hosts panel discussions and digital coffee chats for high school students 
             across Canada to help continue their development in post-secondary education and beyond. 
           </p>
+          <p data-aos="fade-up" style="text-align: center;"><a href="about" class="btn btn-outline-black">Learn More</a></p>
           <!-- <p><a href="#">View All Portfolio</a></p> -->
         </div>
-      </div>
-    </div>
-    <p data-aos="fade-up" style="text-align: center;"><a href="about" class="btn btn-outline-black">Learn More</a></p>
-<style>
-.work-thumb {
-	 display: block;
-	 position: relative;
-}
- .work-thumb img {
-	 border: 10px solid #fff;
-}
- .work-thumb .work-text {
-	 text-align: center;
-	 position: absolute;
-	 top: 50%;
-	 left: 50%;
-	 width: 90%;
-	 margin-top: 20px;
-	 transition: 0.3s all ease;
-	 opacity: 1;
-	 visibility: visible;
-	 transform: translate(-50%, -50%);
-}
- .work-thumb .work-text h2 {
-	 color: #fff;
-	 font-weight: 300;
-	 margin-bottom: 0;
-	 font-size: 1.5rem;
-}
- .work-thumb .work-text p {
-	 color: rgba(255, 255, 255, .5);
-}
- .work-thumb:before {
-	 content: "";
-	 background: rgba(0, 0, 0, .5);
-	 position: absolute;
-	 transition: 0.3s all ease;
-	 opacity: 1;
-	 visibility: visible;
-	 top: 10px;
-	 left: 10px;
-	 right: 10px;
-	 bottom: 10px;
-}
- .work-thumb:hover .work-text {
-	 margin-top: 0px;
-	 opacity: 1;
-	 visibility: visible;
-}
- .work-thumb:hover:before {
-	 opacity: 1;
-	 visibility: visible;
-}
-</style>
-<!--
-<br><br><br><br>
--->
-    <div class="container-fluid">
-      <div class="row mb-5 no-gutters">
-        <div id = "events" style="margin:auto;"></div>
       </div>
     </div>
   </div>
@@ -172,7 +121,7 @@
         </div>
         <div class="col-lg-6 order-1">
           <figure class="img-dotted-bg">
-            <img src="images\event\vln11032020\25\vln6.JPG" alt="Image" class="img-fluid">
+            <img src="images\event\vln11032020\25\vln6.jpg" alt="Image" class="img-fluid">
 
             <img src="images\event\vln11032020\10\vln3.jpg" alt="Image" class="img-fluid img-absolute" data-aos="fade-left">
 

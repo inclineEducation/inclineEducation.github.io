@@ -51,13 +51,10 @@ class post {
 }
 
 //MySQL details
+$login = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT']."/misc/mysql_login.json"), true);
 
-$servername="localhost";
-$username = "client";
-$password = "Fl@pdc@4@%rJ";
-
-
-$conn = new mysqli($servername, $username, $password);
+//connect to MySQL
+$conn = new mysqli($login['server'], $login['username'], $login['password']);
 $numPosts = $conn->query("SELECT COUNT(*) FROM inclineeducation.blog")->fetch_all()[0][0];
 
 $upperRange = $numPosts - ( ( $postsPerPage * ($page - 1) ) );
