@@ -27,8 +27,6 @@ ErrorDocument 404 /404.php
     Redirect 301 /studentsurvey https://forms.gle/LTucpsvXc2jUCrKH7
     Redirect 301 /parentsurvey https://forms.gle/duKmwA42Ub8SCVm16
     Redirect 301 /parentSurvey  https://forms.gle/duKmwA42Ub8SCVm16
-    Redirect 301 /mentee https://docs.google.com/forms/d/e/1FAIpQLSfZC6UTphVjJoOTtMxJM40cFFRB032Sj1plHAiYisk3wwS9SQ/viewform?usp=sf_link
-    Redirect 301 /mentor https://docs.google.com/forms/d/e/1FAIpQLSee6lcP4eNbxU-oklHTdVgDcGsx4gMV3QfPOzzRNMDMyeAsjw/viewform?usp=sf_link
     Redirect 301 /signup https://forms.gle/mi3B28KD7CYkaKGc7
 
     # analytics tools
@@ -41,3 +39,10 @@ ErrorDocument 404 /404.php
 
     # Chris messed up here
     Redirect 301 /mentorship. /mentorship
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+#             302 (temporary redirects)
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Redirect 301 /mentee https://docs.google.com/forms/d/e/1FAIpQLSfZC6UTphVjJoOTtMxJM40cFFRB032Sj1plHAiYisk3wwS9SQ/viewform?usp=sf_link
+    Redirect 301 /mentor https://docs.google.com/forms/d/e/1FAIpQLSee6lcP4eNbxU-oklHTdVgDcGsx4gMV3QfPOzzRNMDMyeAsjw/viewform?usp=sf_link
+	
