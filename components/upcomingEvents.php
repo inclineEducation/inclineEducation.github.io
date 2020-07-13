@@ -53,8 +53,8 @@
                     <div class="work-text">
                         <h2>VIRTUAL PANEL</h2>
                         <p>Google Meet</p>
-                        <p>Sunday, July 26</p>
-                        <p>3:30pm - 5:00pm</p>
+                        <p>Sunday, August 9</p>
+                        <p>3:00pm - 4:30pm</p>
                     </div>
                     <img src=/images/event/vln11032020/25/vln6.jpg alt="Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover"></img>
                 </a>
