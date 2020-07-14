@@ -47,14 +47,13 @@
       
       function signOut() {
         gapi.auth2.getAuthInstance().signOut().then(function(){
-          console.log('signed out');
           var xhr = new XMLHttpRequest();
           xhr.open('POST', 'logout.php');
           xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
           xhr.onload = function() {
             console.log(xhr.responseText);
           };
-          xhr.send('token=' + id_token);
+          xhr.send('token=' + googleUser.getAuthResponse().id_token);
         })
       }
     </script>
