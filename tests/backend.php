@@ -3,6 +3,7 @@
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
 
+    echo '<p>post data: '.var_dump($_POST).'</p>';
     $CLIENT_ID = '378721043768-shk5urkcr6k66c4buk39h2sracd8iuhg.apps.googleusercontent.com';
     if (count($_POST) > 0) {
       $token = htmlspecialchars($_POST['token']);
