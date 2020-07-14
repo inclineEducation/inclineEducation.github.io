@@ -43,7 +43,7 @@
 
 
         console.log("ID Token: " + id_token);
-        document.querySelector('#name').innerText = profile.getGivenName();
+        document.querySelector('#name').innerText = 'signed in as: ' + profile.getGivenName();
       }
       
       function signOut() {
@@ -55,6 +55,8 @@
           };
           xhr.send();
         })
+
+        document.querySelector('#name').innerText = 'Not Signed In';
       }
     </script>
   </body>
