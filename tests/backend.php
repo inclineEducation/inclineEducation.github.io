@@ -16,6 +16,9 @@
       $payload = $client->verifyIdToken($token);
       if ($payload) {
         $userid = $payload['sub'];
+        foreach ($payload as $key => $value){
+            echo "<p>".$key.": ".$value."</p>";
+        }
         echo "success";
         echo var_dump($payload);
         // If request specified a G Suite domain:
