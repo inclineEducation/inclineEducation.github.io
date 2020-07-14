@@ -9,7 +9,7 @@
     <button onclick="signOut()">Sign Out</button>
     <div id="name">Not Signed In</div>
 
-    <form method="post" id="postdata" action="REDIRECT_PAGE.php">
+    <form method="post" id="postdata" action="backend">
       <input id="posttoken" type="hidden" name="token" value="unset">
     </form>
 
