@@ -52,7 +52,7 @@
           xhr.open('POST', 'logout');
           xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
           xhr.onload = function() {
-            console.log(xhr.responseText);
+            console.log('logout: ' + xhr.responseText);
           };
           xhr.send('token=' + id_token);
         })

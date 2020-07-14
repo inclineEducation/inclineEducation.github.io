@@ -4,5 +4,7 @@
         session_unset();
         session_destroy();
         echo "logged out";
+    } else {
+        echo "token doesnt match";
     }
 ?>
