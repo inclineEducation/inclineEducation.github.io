@@ -1,4 +1,5 @@
 <?php
+    session_start();
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
@@ -18,7 +19,10 @@
         echo "success";
         echo var_dump($payload);
         // If request specified a G Suite domain:
-        //$domain = $payload['hd'];
+        $domain = $payload['hd'];
+        if ($domain == 'inclineedu.org'){
+            echo '<p>Incline Education Email Signed In<p>';
+        }
       } else {
         // Invalid ID token
         echo "failed";
