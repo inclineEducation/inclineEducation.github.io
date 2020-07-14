@@ -10,7 +10,7 @@
     <div id="name">Not Signed In</div>
 
     <form method="post" id="postdata" action="REDIRECT_PAGE.php">
-      <input type="hidden" name="token" value="unset">
+      <input if="posttoken" type="hidden" name="token" value="unset">
     </form>
 
     <script>
@@ -29,7 +29,7 @@
 
         // The ID token you need to pass to your backend:
         var id_token = googleUser.getAuthResponse().id_token;
-        document.querySelector('#postdata').setAttribute("value", "id_token");
+        document.querySelector('#posttoken').setAttribute("value", "id_token");
         document.getElementById('postdata').submit();
 
         var xhr = new XMLHttpRequest();
