@@ -8,6 +8,11 @@
     <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
     <button onclick="signOut()">Sign Out</button>
     <div id="name">Not Signed In</div>
+
+    <form method="post" id="postdata" action="REDIRECT_PAGE.php">
+      <input type="hidden" name="token" value="unset">
+    </form>
+
     <script>
       function onSignIn(googleUser) {
         // Useful data for your client-side scripts:
@@ -19,9 +24,14 @@
         console.log('Family Name: ' + profile.getFamilyName());
         console.log("Image URL: " + profile.getImageUrl());
         console.log("Email: " + profile.getEmail());
+        
+        
 
         // The ID token you need to pass to your backend:
         var id_token = googleUser.getAuthResponse().id_token;
+        document.querySelector('#postdata').setAttribute("value", "id_token");
+        document.getElementById('postdata').submit();
+
         var xhr = new XMLHttpRequest();
         xhr.open('POST', 'backend.php');
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
