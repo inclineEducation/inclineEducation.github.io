@@ -15,6 +15,8 @@
       $client->setAuthConfig('client_secret_378721043768-shk5urkcr6k66c4buk39h2sracd8iuhg.apps.googleusercontent.com.json');
       $payload = $client->verifyIdToken($token);
       if ($payload) {
+        $_SESSION["payload"] = $payload;
+        $_SESSION["token"] = $_POST['token'];
         $userid = $payload['sub'];
         foreach ($payload as $key => $value){
             echo "<p>".$key.": ".$value."</p>";
