@@ -16,7 +16,7 @@
       $payload = $client->verifyIdToken($token);
       if ($payload) {
         $_SESSION["payload"] = $payload;
-        $_SESSION["token"] = $_POST['token'];
+        $_SESSION["token"] = $token;
         $userid = $payload['sub'];
         foreach ($payload as $key => $value){
             echo "<p>".$key.": ".$value."</p>";
