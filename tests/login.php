@@ -49,12 +49,11 @@
       function signOut() {
         gapi.auth2.getAuthInstance().signOut().then(function(){
           var xhr = new XMLHttpRequest();
-          xhr.open('POST', 'logout');
-          xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+          xhr.open('GET', 'logout?t=' + Math.random());
           xhr.onload = function() {
             console.log('logout: ' + xhr.responseText);
           };
-          xhr.send('token=' + id_token);
+          xhr.send();
         })
       }
     </script>
