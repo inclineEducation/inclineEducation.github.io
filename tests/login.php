@@ -29,7 +29,7 @@
 
         // The ID token you need to pass to your backend:
         var id_token = googleUser.getAuthResponse().id_token;
-        document.getElementById('posttoken').setAttribute("value", "id_token");
+        document.getElementById('posttoken').setAttribute("value", id_token);
         document.getElementById('postdata').submit();
 
         var xhr = new XMLHttpRequest();
