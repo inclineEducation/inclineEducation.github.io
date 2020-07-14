@@ -1,5 +1,6 @@
 <?php
-        session_unset();
-        session_destroy();
-        echo "logged out";
+    session_start();
+    session_unset();
+    session_destroy();
+    echo "logged out";
 ?>
