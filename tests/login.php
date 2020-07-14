@@ -33,7 +33,7 @@
         //document.getElementById('postdata').submit();
 
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'backend.php');
+        xhr.open('POST', 'backend');
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         xhr.onload = function() {
           console.log('Signed in as: ' + xhr.responseText);
@@ -48,7 +48,7 @@
       function signOut() {
         gapi.auth2.getAuthInstance().signOut().then(function(){
           var xhr = new XMLHttpRequest();
-          xhr.open('POST', 'logout.php');
+          xhr.open('POST', 'logout');
           xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
           xhr.onload = function() {
             console.log(xhr.responseText);
