@@ -119,6 +119,9 @@
           'EC' I was looking for: something I cared about and naturally did.
         </p>
 
+        </p>
+        <img src="../i/6/e.jpg" align='right' style='max-width: 30vw; max-height: 70vh; min-width: 320px; height: auto; padding-left: 1vw; padding-right: 1vw;'/>
+        <p>
         <p>
         Additionally, I’ve been slowly pulled into the UBC engineering student body, the EUS. 
         I attended exactly one EUS event in first year, mainly due to the fear of the 

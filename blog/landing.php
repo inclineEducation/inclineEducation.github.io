@@ -40,8 +40,8 @@ class post {
     return <<<TEXT
       <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
         <a href= "p/$this->URI">
-            <h1>$this->title</h1>
-            <h2>$this->subtitle</h2>
+            <h1 style="font-size: calc(1.75rem + 2vw);">$this->title</h1>
+            <h2 style="font-size: calc(1.2rem + 1vw);">$this->subtitle</h2>
         </a>
             <p><em>Posted by $this->authorFirst $this->authorLast on $this->dateString</em></p>
       </div>
@@ -51,13 +51,10 @@ class post {
 }
 
 //MySQL details
+$login = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT']."/misc/mysql_login.json"), true);
 
-$servername="localhost";
-$username = "client";
-$password = "Fl@pdc@4@%rJ";
-
-
-$conn = new mysqli($servername, $username, $password);
+//connect to MySQL
+$conn = new mysqli($login['server'], $login['username'], $login['password']);
 $numPosts = $conn->query("SELECT COUNT(*) FROM inclineeducation.blog")->fetch_all()[0][0];
 
 $upperRange = $numPosts - ( ( $postsPerPage * ($page - 1) ) );
@@ -169,7 +166,7 @@ $numPages = ceil ( (float) $numPosts / $postsPerPage );
   
   
   <div class="section portfolio-section" style="padding-bottom: 0em; padding-top: 4em;">
-    <div class="container justify-content-center" style="width: calc(50vw);min-width:100px;">
+    <div class="container justify-content-center" style="width: calc(50vw);min-width:300px;">
       <div class="row mb-5 justify-content-center">
         <div class="col-md-25" style="padding: 1em; width: 100%">
 
