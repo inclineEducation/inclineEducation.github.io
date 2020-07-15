@@ -57,7 +57,7 @@
   <!-- END header -->
 
   <div class="slider-item innerp overlay" data-stellar-background-ratio="0.5"
-    style="background-image: url('../i/7/mental.jpeg'); height: calc(60vh); min-height: 400px;">
+    style="background-image: url('../i/7/adventure-backlit-dawn-dusk-207896.jpg'); height: calc(60vh); min-height: 400px;">
     <div class="container">
       <div class="row slider-text align-items-center justify-content-left text-left titleText" style="height: calc(60vh); min-height: 400px;">
         <div class="col-lg-12 col-sm-12">
