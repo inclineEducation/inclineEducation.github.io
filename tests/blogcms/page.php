@@ -1,27 +1,3 @@
-<?php
-$login = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT']."/misc/mysql_login.json"), true);
-$conn = new mysqli($login['server'], $login['username'], $login['password']);
-
-$post=$conn->query("SELECT * FROM inclineeducation.blog WHERE id = '3'");
-if (mysqli_num_rows($post) == 1) {
-    $row = $post->fetch_assoc();
-    $title = $row['title'];
-    $subtitle = $row['subtitle'];
-    $firstName = $row['authorFirstName'];
-    $lastName = $row['authorLastName'];
-    $date = $row['date'];
-    $content = $row['content'];
-}else{
-    $title = "";
-    $subtitle = "";
-    $firstName = "";
-    $lastName = "";
-    $date = "";
-    $content = "";
-}
-$dateString = date_format(date_create($date), 'F dS, Y');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,6 +43,7 @@ $dateString = date_format(date_create($date), 'F dS, Y');
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   -->
 
+
   <!-- JQuery Source -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -80,17 +57,13 @@ $dateString = date_format(date_create($date), 'F dS, Y');
   <!-- END header -->
 
   <div class="slider-item innerp overlay" data-stellar-background-ratio="0.5"
-    style="background-image: url('../i/2/title.jpg'); height: calc(60vh); min-height: 400px;">
+    style="background-image: url('../i/3/101643259_452747815584941_1113949873306075136_n.jpg'); height: calc(60vh); min-height: 400px;">
     <div class="container">
       <div class="row slider-text align-items-center justify-content-left text-left titleText" style="height: calc(60vh); min-height: 400px;">
         <div class="col-lg-12 col-sm-12">
-          <?php
-          echo <<< TEXT
-          <h1 data-aos="fade-up" style="font-size:calc(1.75rem + 0.75vw);">$title</h1>
-          <h2 data-aos="fade-up" style="color: white; font-size: calc(1rem + 1vw);">$subtitle</h2>
-          <p data-aos="fade-up" style="font-size: calc(0.6rem + 0.25vw);"><em>Posted by $firstName $lastName on $dateString</em></p>
-TEXT;
-          ?>
+          <h1 data-aos="fade-up" style="font-size:calc(1.75rem + 0.75vw);">Women in Economics</h1>
+          <h2 data-aos="fade-up" style="color: white; font-size: calc(1rem + 1vw);">Never Stop Fighting for What You Believe In</h2>
+          <p data-aos="fade-up" style="font-size: calc(0.6rem + 0.25vw);"><em>Posted by Anushka Gupta on June 22th, 2020</em></p>
         </div>
       </div>
     </div>
@@ -100,8 +73,10 @@ TEXT;
     <div class="container justify-content-center" style="width: calc(30rem + 30vw);max-width:calc(90vw);">
       <div class="row mb-5 justify-content-center">
         <div class="col-md-25" style="padding: 1em;" data-aos="fade-left" data-aos-offset="-200">
-          
-        <?php echo $content; ?>
+        <!--CONTENT-->
+        
+
+        
 
         </div>
       </div>
