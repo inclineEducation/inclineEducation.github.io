@@ -27,6 +27,7 @@
         $domain = $payload['hd'];
         if ($domain == 'inclineedu.org'){
             echo '<p>Incline Education Email Signed In<p>';
+            $_SESSION["authLevel"] = 5;
         }
       } else {
         // Invalid ID token

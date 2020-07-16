@@ -1,5 +1,6 @@
 <?php
-
+session_start();
+if (array_key_exists("authLevel", $_SESSION) && $_SESSION["authLevel"] >= 5){
 include($_SERVER['DOCUMENT_ROOT']."/src/filterText.php");
 
 $login = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT']."/misc/mysql_login.json"), true);
@@ -70,7 +71,9 @@ $conn->query("UPDATE inclineeducation.blog
                 WHERE 
                     (`id` = '$id')"
                 );
-
+}else{
+    echo "oops you're not logged in";
+}
 
 
 ?>

@@ -69,6 +69,10 @@ input {
     border-right: 1px solid #2a2a2a;
 }
 
+.CodeMirror-focused{
+    outline: 5px auto white;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -88,6 +92,7 @@ input {
   background-size: contain;
 }
 
+
 /* Handle on hover */
 /*
 ::-webkit-scrollbar-thumb:hover {
@@ -99,7 +104,7 @@ input {
 </head>
 <body style="background-color: #2a2a2a">
 <!--APPEND .PHP TO SUBMITHTML WHEN IN DEVELOPMENT ENVIRONMENT-->
-<form method="post" id="postdata" action="submitHTML">
+<form method="post" id="postdata" action="submitHTML.php">
     <?php
     echo <<< FORM
     <table style="margin:auto;">
@@ -118,7 +123,7 @@ input {
         </tr>
         <tr>
         <th>
-        <pre><code class="html"><textarea id="content" name="content" placeholder="Content" style="width: 90vw; height:70vh; margin:auto;">$content</textarea></code></pre>
+        <textarea id="content" name="content" placeholder="Content" style="width: 90vw; height:70vh; margin:auto;">$content</textarea>
         </th>
         </tr>
 
