@@ -99,7 +99,7 @@ input {
 </head>
 <body style="background-color: #2a2a2a">
 <!--APPEND .PHP TO SUBMITHTML WHEN IN DEVELOPMENT ENVIRONMENT-->
-<form method="post" id="postdata" action="submitHTML.php">
+<form method="post" id="postdata" action="submitHTML">
     <?php
     echo <<< FORM
     <table style="margin:auto;">
