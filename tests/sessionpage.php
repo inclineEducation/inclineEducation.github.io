@@ -1,5 +1,6 @@
 <?php
     session_start();
+    echo var_dump($_SESSION);
     if (array_key_exists("payload", $_SESSION)){
         foreach ($_SESSION["payload"] as $key => $value){
             echo "<p>".$key.": ".$value."</p>";

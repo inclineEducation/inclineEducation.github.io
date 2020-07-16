@@ -104,7 +104,7 @@ input {
 </head>
 <body style="background-color: #2a2a2a">
 <!--APPEND .PHP TO SUBMITHTML WHEN IN DEVELOPMENT ENVIRONMENT-->
-<form method="post" id="postdata" action="submitHTML.php">
+<form method="post" id="postdata" action="submitHTML">
     <?php
     echo <<< FORM
     <table style="margin:auto;">
@@ -121,12 +121,12 @@ input {
         <input name="lastName" type="text" placeholder="Last Name" value="$lastName" style="width:30vw; font-size: 1.5rem">
         <input name="date" type="date" placeholder="date" value="$date" style="width:29vw; font-size: 1.5rem"></th>
         </tr>
+
         <tr>
         <th>
         <textarea id="content" name="content" placeholder="Content" style="width: 90vw; height:70vh; margin:auto;">$content</textarea>
         </th>
         </tr>
-
 
         <tr>
         <th><input type="submit" style="font-size: 1.5rem"></th>

@@ -9,6 +9,7 @@
     <button onclick="signOut()">Sign Out</button>
     <div id="name">Not Signed In</div>
 
+    <!--APPEND .php TO BACKEND WHEN IN DEV ENVIRONMENT-->
     <form method="post" id="postdata" action="backend">
       <input id="posttoken" type="hidden" name="token" value="unset">
     </form>
@@ -34,6 +35,7 @@
         //document.getElementById('postdata').submit();
 
         var xhr = new XMLHttpRequest();
+        //backend.php when in dev environment
         xhr.open('POST', 'backend');
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         xhr.onload = function() {
@@ -49,6 +51,7 @@
       function signOut() {
         gapi.auth2.getAuthInstance().signOut().then(function(){
           var xhr = new XMLHttpRequest();
+          //logout.php when in dev environment
           xhr.open('GET', 'logout?t=' + Math.random());
           xhr.onload = function() {
             console.log('logout: ' + xhr.responseText);
