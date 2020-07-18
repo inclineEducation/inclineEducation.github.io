@@ -6,7 +6,7 @@
 
     echo '<p>post data: '.var_dump($_POST).'</p>';
     $CLIENT_ID = '378721043768-shk5urkcr6k66c4buk39h2sracd8iuhg.apps.googleusercontent.com';
-    if (count($_POST) > 0) {
+    if (!empty(count($_POST))) {
       $token = htmlspecialchars($_POST['token']);
         
       require_once '../vendor/autoload.php';
@@ -14,8 +14,9 @@
       $client = new Google_Client(['client_id' => $CLIENT_ID]);
       $client->setAuthConfig('client_secret_378721043768-shk5urkcr6k66c4buk39h2sracd8iuhg.apps.googleusercontent.com.json');
       $payload = $client->verifyIdToken($token);
+      echo "<p>$payload</p>";
       if ($payload) {
-        $_SESSION["payload"] = $payload;
+        $_SESSION["user"] = $payload;
         $_SESSION["token"] = $token;
         $userid = $payload['sub'];
         foreach ($payload as $key => $value){

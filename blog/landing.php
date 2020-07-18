@@ -39,7 +39,7 @@ class post {
   function getHTML(){
     return <<<TEXT
       <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
-        <a href= "p/$this->URI">
+        <a href= "p/post?p=$this->URI">
             <h1 style="font-size: calc(1.75rem + 2vw);">$this->title</h1>
             <h2 style="font-size: calc(1.2rem + 1vw);">$this->subtitle</h2>
         </a>
@@ -61,7 +61,7 @@ $upperRange = $numPosts - ( ( $postsPerPage * ($page - 1) ) );
 $lowerRange = $numPosts - ( $postsPerPage * ($page) - 1);
 
 $blogTable = $conn->query("SELECT * FROM inclineeducation.blog 
-                            WHERE id BETWEEN $lowerRange AND $upperRange
+                            WHERE (id BETWEEN $lowerRange AND $upperRange) AND (`live`='1')
                             ORDER BY date DESC");
 
 $conn->close();
