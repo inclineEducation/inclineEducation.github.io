@@ -118,9 +118,9 @@ session_start();
         console.log("ID Token: " + id_token);
         <?php
           if (array_key_exists('redirect', $_GET)){
-            //echo 'window.location.href ="'.$_GET['redirect'].'";';
+            echo 'window.location.href ="'.$_GET['redirect'].'";';
           } else {
-            //echo 'window.location.href ="/admin/landing";';
+            echo 'window.location.href ="/admin/landing";';
           }
         ?>
       }
