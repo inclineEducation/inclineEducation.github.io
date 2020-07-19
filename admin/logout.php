@@ -41,7 +41,7 @@
   </script>
   <meta name="google-signin-scope" content="profile email">
   <meta name="google-signin-client_id" content="378721043768-shk5urkcr6k66c4buk39h2sracd8iuhg.apps.googleusercontent.com">
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://apis.google.com/js/platform.js"></script>
 </head>
 
 <body>
