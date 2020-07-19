@@ -3,5 +3,5 @@
 # PLEASE RESPECT THESE RULES. THANK YOU.
 
 User-agent: *
-Disallow: /images
 Disallow: /404.html
+Disallow: /admin
