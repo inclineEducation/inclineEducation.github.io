@@ -104,19 +104,20 @@ $posts = $conn->query("SELECT title, URI FROM inclineeducation.blog ORDER BY id 
   <?php include $_SERVER['DOCUMENT_ROOT']."/components/commonScripts.html" ?>
     <script>
         $("#new").change(function(){
-            if ($(this).val() == "new"){
+            if ($(this).attr("checked") == true){
                 $('#editGroup').hide();
                 $('#editTitle').removeAttr('required');
                 $('#editTitle').val("");
             }
         });
         $("#edit").change(function(){
-            if ($(this).val() == "edit"){
+            if ($(this).attr("checked") == true){
                 $('#editGroup').show();
                 $('#editTitle').attr('required', '');
             }
         });
         $("#new").trigger("change");
+        $("#edit").trigger("change")''
     </script>
 
 </body>
