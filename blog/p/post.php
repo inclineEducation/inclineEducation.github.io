@@ -79,18 +79,17 @@ $dateString = date_format(date_create($date), 'F dS, Y');
 <body>
 <?php include "../../components/navbar.html" ?>
   <!-- END header -->
-
+  <?php
+  echo <<< TITLE
   <div class="slider-item innerp overlay" data-stellar-background-ratio="0.5"
     style="background-image: url('$titleImage'); height: calc(60vh); min-height: 400px;">
     <div class="container">
       <div class="row slider-text align-items-center justify-content-left text-left titleText" style="height: calc(60vh); min-height: 400px;">
         <div class="col-lg-12 col-sm-12">
-          <?php
-          echo <<< TEXT
           <h1 data-aos="fade-up" style="font-size:calc(1.75rem + 0.75vw);">$title</h1>
           <h2 data-aos="fade-up" style="color: white; font-size: calc(1rem + 1vw);">$subtitle</h2>
           <p data-aos="fade-up" style="font-size: calc(0.6rem + 0.25vw);"><em>Posted by $firstName $lastName on $dateString</em></p>
-TEXT;
+TITLE;
           ?>
         </div>
       </div>
