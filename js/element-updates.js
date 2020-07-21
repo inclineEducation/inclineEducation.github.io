@@ -7,11 +7,11 @@
 */
 function updateNavbar(){
     var page = $("meta[name='navpage']").attr("content");
-    console.log("page:");
-    console.log(page);
+    //console.log("page:");
+    //console.log(page);
     $('.nav-link').each(function() {
-        console.log("looking for:")
-        console.log(($(this).attr('navpage')));
+        //console.log("looking for:")
+        //console.log(($(this).attr('navpage')));
         if (($(this).attr('navpage')) == $("meta[name='navpage']").attr("content")){
              $(this).addClass('active');
         }
@@ -23,7 +23,7 @@ $(document).ready(function(){
     console.log('document ready');
     var canvas = document.getElementsByClassName('nav-link');
     if (canvas) {
-        console.log('non-mutation - navbar loaded');
+        //console.log('non-mutation - navbar loaded');
         updateNavbar();
     }
     var observer = new MutationObserver(function (mutations, me) {
