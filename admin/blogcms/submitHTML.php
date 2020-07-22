@@ -1,4 +1,9 @@
 <?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 session_start();
 $authLevel = $_SERVER['REMOTE_ADDR'] == '127.0.0.1' ? 5 : (array_key_exists("authLevel", $_SESSION) ? $_SESSION["authLevel"] : 0);
 if ($authLevel >= 5){
