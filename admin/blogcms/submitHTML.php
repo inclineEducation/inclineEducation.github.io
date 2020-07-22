@@ -54,10 +54,15 @@ if ($authLevel >= 5){
         echo "NEW";
         $result = $conn->query("SELECT * FROM inclineeducation.blog WHERE (URI='$uri')");
         if (mysqli_num_rows($result) == 0){
-            $conn->query("INSERT INTO inclineeducation.blog 
+            echo "<p>Updating SQL</p>";
+            if ($conn->query("INSERT INTO inclineeducation.blog 
                         (`title`, `subtitle`, `authorFirstName`, `authorLastName`, `URI`, `date`, `content`, `live`)
                         VALUES ('$title', '$subtitle', '$firstName', '$lastName', '$uri', '$date', '$content', '$status)
-                        ");
+                        ")){
+                            echo "success";
+                        }else{
+                            echo "failed";
+                        }
         }else{
             echo "<p>URI ALREADY EXISTS</p>";
         }
