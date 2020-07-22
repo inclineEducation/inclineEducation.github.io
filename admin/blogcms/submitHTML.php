@@ -48,7 +48,7 @@ if ($authLevel >= 5){
         }
         $content = $conn->real_escape_string($content);
 
-        echo $contentDOM->saveHTML();
+        echo "<p>content: </p><p>".$contentDOM->saveHTML()."</p>";
     if ($_POST['n']){
         $uri = $_POST['URI'];
         echo "NEW";
