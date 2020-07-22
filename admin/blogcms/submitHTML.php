@@ -55,7 +55,7 @@ if ($authLevel >= 5){
         $result = $conn->query("SELECT * FROM inclineeducation.blog WHERE (URI='$uri')");
         if (mysqli_num_rows($result) == 0){
             echo "<p>Updating SQL</p>";
-            $maxId = $conn->query("SELECT MAX(id) AS 'MAXID' FROM inclineeducation.blog"->fetch_assoc()['MAXID']);
+            $maxId = $conn->query("SELECT MAX(id) AS 'MAXID' FROM inclineeducation.blog")->fetch_assoc()['MAXID'];
             echo $maxID;
             if ($conn->query("INSERT INTO inclineeducation.blog 
                         (`title`, `subtitle`, `authorFirstName`, `authorLastName`, `URI`, `date`, `content`, `live`)
