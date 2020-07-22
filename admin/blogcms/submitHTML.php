@@ -61,6 +61,9 @@ if ($authLevel >= 5){
                         ")){
                             echo "success";
                         }else{
+                            echo "command: INSERT INTO inclineeducation.blog 
+                            (`title`, `subtitle`, `authorFirstName`, `authorLastName`, `URI`, `date`, `content`, `live`)
+                            VALUES ('$title', '$subtitle', '$firstName', '$lastName', '$uri', '$date', '$content', '$status)";
                             echo "failed";
                         }
         }else{
