@@ -111,7 +111,7 @@
     </div>
     <!--<?php include "./components/upcomingEvents.php" ?>-->
     <!-- UPCOMING EVENTS -->
-    <div class="section portfolio-section" id="vpanel" style="padding-bottom: 1em;">
+    <div class="section portfolio-section" id="vpanel" style="padding-bottom: 1em; padding-top: 1em">
       <div class="container">
         <div class="row mb-5 justify-content-center">
           <div class="col-md-8 text-center" style="background-color: #ffe699;" data-aos="fade" data-aos-delay="100">

@@ -83,7 +83,7 @@
   <div class="section portfolio-section" style="padding-bottom: 4em;">
     <div class="container">
       <div class="row mb-5 justify-content-center">
-        <div class="col-md-25 text-center" style="padding: 1em;">
+        <div class="col-md-8 text-center" style="padding: 1em;">
           <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Why Join Incline Education?</h2>
           <p data-aos="fade-right" data-aos-delay="100">
           Personal development is ingrained in our culture. Whether you want to learn how to run your own startup or develop your leadership skills, 
@@ -96,11 +96,16 @@
           We are looking for motivated individuals who are passionate about education. At Incline Education, no two team members are alike. Our team consists 
           of individuals from 8+ countries around the world and spanning 10+ different post-secondary programs. 
           </p>
+
           <br>
 
           <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Our Team Members Have Received Offers and Worked For These Organizations:</h2>
 
           <!-- MOVE TO AUTOPOPULATE -->
+          <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Job Postings</h2>
+          <p data-aos="fade-right" data-aos-delay="100">
+          We are not currently hiring. Check back later!
+          </p>
 
           <!--
           <style>
@@ -137,8 +142,6 @@
             </tr>
           </table>
           -->
-          
-
 
         </div>
       </div>
