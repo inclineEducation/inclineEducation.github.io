@@ -2,23 +2,19 @@
 <html lang="en">
 
 <head>
-  <title>Incline Education - Mentorship</title>
-  <meta name="title" content="Incline Education Mentorship Program">
-  <meta name="description" content="Incline Education’s Mentorship Program is a platform for high-school 
-  students to be matched with post-secondary students to guide them in their academic and career 
-  endeavours. Sign up to be either a mentor or a mentee, and we’ll pair you up with someone who matches 
-  your interests and aspirations.">
+  <title>Incline Education - Join Us</title>
+  <meta name="title" content="Join Incline Education">
+  <meta name="description" content="Become a part of a highly motivated team of individuals commited to helping high school students with their transition to post-secondary education.">
   <meta name="navpage" content="services" />
   <!--Social Media Preview Stuff-->
   <meta property="og:site_name" content="Incline Education" />
-  <meta property="og:title" content="Incline Education Mentorship Program" />
-  <meta property="og:description" content="Incline Education’s Mentorship Program is a platform for high-school students to be matched with post-secondary students to guide them in their academic and career endeavours. Sign up to be either a mentor or a mentee, and we’ll pair you up with someone who matches your interests and aspirations." />
-  <meta property="og:image" content="https://inclineedu.org/images/brand_space/IEMentorship.png" />
-  <meta property="og:url" content="https://inclineedu.org/mentorship" />
+  <meta property="og:title" content="Join Incline Education" />
+  <meta property="og:description" content="Become a part of a highly motivated team of individuals commited to helping high school students with their transition to post-secondary education." />
+  <meta property="og:url" content="https://inclineedu.org/careers" />
   <meta property="og:type" content="website" />
   <meta property="fb:app_id" content="645462402679378" />
   <meta property="fb:admins" content="100000242873868"/>
-  <meta name="keywords" content="incline,education,mentorship,panel,discussions,secondary,education,school,
+  <meta name="keywords" content="incline,education,team,panel,discussions,secondary,education,school,
   post,high,students,teachers,parents,community,advancing,charity,blog,university,panel">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -73,7 +69,7 @@
       <div class="row slider-text align-items-center justify-content-center text-center">
         <div class="col-lg-12 col-sm-12">
           <h1 class="mb-4" data-aos="fade-up" data-aos-delay="">Join Us</h1>
-		  <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><a href="/index.php">Home</a> <span class="mx-3">/</span> Mentorship</p>
+		  <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><a href="/index.php">Home</a> <span class="mx-3">/</span> Join Us</p>
         </div>
       </div>
     </div>
@@ -98,8 +94,6 @@
           </p>
 
           <br>
-
-          <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Our Team Members Have Received Offers and Worked For These Organizations:</h2>
 
           <!-- MOVE TO AUTOPOPULATE -->
           <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Job Postings</h2>
