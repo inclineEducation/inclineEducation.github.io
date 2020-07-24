@@ -2,20 +2,10 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD:join.php
   <title>Incline Education - Join Us</title>
   <meta name="title" content="Join Incline Education">
   <meta name="description" content="Become a part of a highly motivated team of individuals commited to helping high school students with their transition to post-secondary education.">
   <meta name="navpage" content="services" />
-=======
-  <title>Incline Education - Mentorship</title>
-  <meta name="title" content="Incline Education Mentorship Program">
-  <meta name="description" content="Incline Education’s Mentorship Program is a platform for high-school 
-  students to be matched with post-secondary students to guide them in their academic and career 
-  endeavours. Sign up to be either a mentor or a mentee, and we’ll pair you up with someone who matches 
-  your interests and aspirations.">
-  <meta name="navpage" content="team" />
->>>>>>> 4c1b2e9e987ca9561128cdf87d7c53c6d409e448:careers.php
   <!--Social Media Preview Stuff-->
   <meta property="og:site_name" content="Incline Education" />
   <meta property="og:title" content="Join Incline Education" />
