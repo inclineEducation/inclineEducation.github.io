@@ -107,6 +107,10 @@
             th {
               font-weight: normal;
             }
+            table{
+              border-collapse: separate;
+              border-spacing: 10px;
+            }
           </style>
           <table align="center" style="width: 80%">
             <tr>
