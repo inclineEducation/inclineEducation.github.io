@@ -99,10 +99,49 @@
 
           <br>
 
+          <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Our Team Members Have Received Offers and Worked For These Organizations:</h2>
+
+          <!-- MOVE TO AUTOPOPULATE -->
           <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Job Postings</h2>
           <p data-aos="fade-right" data-aos-delay="100">
           We are not currently hiring. Check back later!
           </p>
+
+          <!--
+          <style>
+            th {
+              font-weight: normal;
+            }
+            table{
+              border-collapse: separate;
+              border-spacing: 10px;
+            }
+          </style>
+          <table align="center" style="width: 80%">
+            <tr>
+              <th>
+                <b><p>Position</p></b>
+              </th>
+              <th>
+                <b><p>Job Description</p></b>
+              </th>
+              <th>
+                <b><p>Application Link</p></b>
+              </th>
+            </tr>
+            <tr>
+              <th>
+                <p>Graphic Designer</p>
+              </th>
+              <th>
+                <p>Somebody who designs graphics. something something something lorem ipsum stuff here more text and padding</p>
+              </th>
+              <th>
+                <p><a href="#">click here</a></p>
+              </th>
+            </tr>
+          </table>
+          -->
 
         </div>
       </div>
