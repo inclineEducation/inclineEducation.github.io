@@ -5,7 +5,7 @@
   <title>Incline Education - Join Us</title>
   <meta name="title" content="Join Incline Education">
   <meta name="description" content="Become a part of a highly motivated team of individuals commited to helping high school students with their transition to post-secondary education.">
-  <meta name="navpage" content="services" />
+  <meta name="navpage" content="team" />
   <!--Social Media Preview Stuff-->
   <meta property="og:site_name" content="Incline Education" />
   <meta property="og:title" content="Join Incline Education" />
