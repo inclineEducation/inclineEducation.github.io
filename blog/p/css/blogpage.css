@@ -16,7 +16,7 @@ h3 {
   margin-top: 1rem;
   font-size: 3rem;
 }
-p, ul {
+p, ul, ol {
     color: black;
 }
 ul{

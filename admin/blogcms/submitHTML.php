@@ -1,4 +1,9 @@
 <?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 session_start();
 $authLevel = $_SERVER['REMOTE_ADDR'] == '127.0.0.1' ? 5 : (array_key_exists("authLevel", $_SESSION) ? $_SESSION["authLevel"] : 0);
 if ($authLevel >= 5){
@@ -43,16 +48,25 @@ if ($authLevel >= 5){
         }
         $content = $conn->real_escape_string($content);
 
-        echo $contentDOM->saveHTML();
+        echo "<p>content: </p><p>".$contentDOM->saveHTML()."</p>";
     if ($_POST['n']){
         $uri = $_POST['URI'];
         echo "NEW";
         $result = $conn->query("SELECT * FROM inclineeducation.blog WHERE (URI='$uri')");
         if (mysqli_num_rows($result) == 0){
-            $conn->query("INSERT INTO inclineeducation.blog 
-                        (`title`, `subtitle`, `authorFirstName`, `authorLastName`, `URI`, `date`, `content`, `live`)
-                        VALUES ('$title', '$subtitle', '$firstName', '$lastName', '$uri', '$date', '$content', '$status)
-                        ");
+            echo "<p>Updating SQL</p>";
+            $maxId = ($conn->query("SELECT MAX(id) AS 'MAXID' FROM inclineeducation.blog")->fetch_assoc()['MAXID']) + 1;
+            if ($conn->query("INSERT INTO inclineeducation.blog 
+                        (`id`, `title`, `subtitle`, `authorFirstName`, `authorLastName`, `URI`, `date`, `content`, `live`)
+                        VALUES ('$maxId', '$title', '$subtitle', '$firstName', '$lastName', '$uri', '$date', '$content', '$status')
+                        ")){
+                            echo "success";
+                        }else{
+                            echo "command: INSERT INTO inclineeducation.blog 
+                            (`id`, `title`, `subtitle`, `authorFirstName`, `authorLastName`, `URI`, `date`, `content`, `live`)
+                            VALUES ('$maxId', '$title', '$subtitle', '$firstName', '$lastName', '$uri', '$date', '$content', '$status')";
+                            echo "failed";
+                        }
         }else{
             echo "<p>URI ALREADY EXISTS</p>";
         }

@@ -49,7 +49,7 @@
     echo <<<TEXT
             <div class="row mb-5 no-gutters justify-content-center">
                 <div class="col-sm-4 col-md-4 col-lg-4" style = "float: left;">
-                <a href=/panels#vpanel class="work-thumb">
+                <a href=/signup class="work-thumb">
                     <div class="work-text">
                         <h2>VIRTUAL PANEL</h2>
                         <p>Google Meet</p>

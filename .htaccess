@@ -44,4 +44,5 @@ ErrorDocument 404 /404.php
 	Redirect 302 /mentee https://docs.google.com/forms/d/e/1FAIpQLSfZC6UTphVjJoOTtMxJM40cFFRB032Sj1plHAiYisk3wwS9SQ/viewform?usp=sf_link
     Redirect 302 /mentor https://docs.google.com/forms/d/e/1FAIpQLSee6lcP4eNbxU-oklHTdVgDcGsx4gMV3QfPOzzRNMDMyeAsjw/viewform?usp=sf_link
 	Redirect 302 /signup https://forms.gle/mi3B28KD7CYkaKGc7
+	Redirect 302 /join https://meet.google.com/zhc-jdug-vfp
 	
