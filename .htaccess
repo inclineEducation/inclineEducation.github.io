@@ -12,6 +12,10 @@ RewriteRule ^ %{REQUEST_URI}.php [NC,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^events/([^/]+)$ /events/event?e=$1 [NC]
 
+#Redirect inclineedu.org/blog/PARAM to inclineedu.org/blog/p/post?p=PARAM
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^blog/([^/]+)$ /blog/p/post?p=$1 [NC]
+
 
 ErrorDocument 404 /404.php
 
