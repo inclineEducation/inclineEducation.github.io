@@ -1,1 +1,3 @@
-echo sucess!
+<?php
+    echo "success!";
+?>
