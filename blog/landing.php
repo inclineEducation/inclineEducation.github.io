@@ -39,7 +39,7 @@ class post {
   function getHTML(){
     return <<<TEXT
       <div data-aos="fade-right" data-aos-offset="-100" class="blog-index">
-        <a href= "p/post?p=$this->URI">
+        <a href= "/blog/$this->URI">
             <h1 style="font-size: calc(1.75rem + 2vw);">$this->title</h1>
             <h2 style="font-size: calc(1.2rem + 1vw);">$this->subtitle</h2>
         </a>
