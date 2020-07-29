@@ -41,28 +41,75 @@
   <?php include $_SERVER['DOCUMENT_ROOT']."/components/navbar.html" ?>
   <!-- END header -->
 
-  <div class="slider-item innerp overlay" data-stellar-background-ratio="0.5"
-    style="background-image: url('/images/color/069_069_069.jpg'); height:80px; min-height: 80px">
+  <div class="innerp overlay" data-stellar-background-ratio="0.5"
+    style="background: url('/images/color/gradient.jpg') center center no-repeat; height:80px; min-height: 80px">
     
   </div>
 
-  
-  <div class="section portfolio-section">
-    <div class="container">
-      <div class="row mb-5 justify-content-center" style="height:100vh;">
-        <div class="col-md-25 text-center">
+  <div class="section portfolio-section" style="padding-top: 0em; padding-bottom:0em;">
+    <div class="container" style="background-color:#ffc107;">
+      <div class="row mb-5 justify-content-left" style="margin-bottom:0em!important; padding:3em 2em;">
+        <div class="col-md-4 text-center">
             <!--CONTENT-->
-            <h1>Something about John Doe. I dunno.</h1>
-            <h2>It's currently 1:30am. I am tired. I will finish this when it is no longer 1:30am.</h2>
-            <h3>Here. Have this instead.</h3>
-            <img src="/images/92508566_3452608761432437_2428323158529409024_n.jpg">
-            <h3>Or this?</h3>
-            <img src="/images/misc/memes/hey.jpg">
+            <img src="images/misc/hagp.jpg">
+        </div>
+        <div class="col-md-20 text-left">
+          <h1 style="padding-left: 1rem;">John Doe | <span style="color:gray">Panelist</span></h1>
+          <h2 style="padding-left: 1rem">The University of British Columbia</h2>
+          <h3 style="padding-left: 1rem">Faculty of Land and Food Systems</h3>
+          <div class="row">
+            <div class="col text-center" style="padding-bottom:1em">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+              <img src=/images/blog/linkedin2x.png style="max-width: 3vw; max-height: 10vh;">
+            </a>
+            </div>
+            <div class="col text-center" style="padding-bottom:1em">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+              <img src=/images/blog/facebook2x.png style="max-width: 3vw; max-height: 10vh;">
+            </a>
+            </div>
+            <div class="col text-center" style="padding-bottom:1em">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+              <img src=/images/blog/instagram2x.png style="max-width: 3vw; max-height: 10vh;">
+            </a>
+            </div>
+            <div class="col text-center" style="padding-bottom:1em">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+              <img src=/images/blog/website2x.png style="max-width: 3vw; max-height: 10vh;">
+            </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
+  
+  <div class="section portfolio-section" style="padding-top: 0em; padding-bottom:0em;">
+    <div class="container" style="background-color:blanchedalmond;">
+      <div class="row mb-5 justify-content-center" style="margin-bottom:0em!important; padding-bottom:3rem">
+        <div class="col-md-25 text-left" style="padding:2rem">
+            <!--CONTENT-->
+            <p>
+              John Doe is just an average UBC student who in the LFS faculty. Average as it gets. Boring and average.
+              Ever since he was a little child, John Doe strived to be just like his parents - middle aged, average people
+              with deadpan, average jobs; boring, average friends; clinically average depression; and no hope for the future.
+            </p>
+            <p>
+              He saw the deadness of his parents' eyes. The pain and suffering, everything which led to their painfully average existence, 
+              and couldn't imagine how he could accomplish such averageness in the span of his lifetime. He aspired to live up to his 
+              parents, although he didn't know how he would do so. Of course, such is the mind of the small child. The world seemed to be
+              great and wonderous, with limitless possibilities.
+            </p>
+            <p>
+              Now, 24, John spends most of his day in bed. Crying. He wanted to be just like his parents, his role models, and he succeeded 
+              utterly and completely. Hell, after highschool, he quickly surpassed that which he so desperately wanted. Now, John exists in 
+              a sea of misery and sadness, with a fake smile to hide his true pain from the world. His eyes are just as dead as his parents' 
+              were, his job just as average, life just as boring, and depression just as clinically diagnosed.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
   <?php include $_SERVER['DOCUMENT_ROOT']."./components/footer.html" ?>
   <!-- loader -->
     <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
