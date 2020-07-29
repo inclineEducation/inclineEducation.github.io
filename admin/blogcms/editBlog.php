@@ -270,7 +270,7 @@ FORM;
     );
     $("#title").change(function(){
         console.log("change");
-            $('#uri').val($(this).val().replace(/ /g,"_").replace(/[^a-zA-Z0-9]/g, ''));
+            $('#uri').val($(this).val().replace(/ /g,"_").replace(/[^a-zA-Z0-9\_\-]/g, ''));
         });
 </script>
 </body>
