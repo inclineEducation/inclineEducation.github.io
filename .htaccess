@@ -3,7 +3,7 @@ rewriteEngine on
 Options -Indexes
 
 #Redirect inclineedu.org/events/PARAM to inclineedu.org/events/event?e=PARAM
-RewriteRule ^/events/([^/^?]+)$ /events/event?e=$1 [NC,R]
+RewriteRule ^/events/([^/^\?]+)$ /events/event?e=$1 [NC,R]
 
 RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
 RewriteRule ^ /%1 [NC,L,R]
