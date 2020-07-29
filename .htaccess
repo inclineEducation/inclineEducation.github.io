@@ -2,11 +2,16 @@ rewriteEngine on
 
 Options -Indexes
 
+#Redirect inclineedu.org/events/PARAM to inclineedu.org/events/event?e=PARAM
+RewriteRule ^events/([^/]+) /event.php?e=$1 [NC]
+
 RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
 RewriteRule ^ /%1 [NC,L,R]
 
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^ %{REQUEST_URI}.php [NC,L]
+
+RewriteRule ^index/([^/]+)/([^/]+).php /page.php?search=$1&sort=$2 [NC]
 
 ErrorDocument 404 /404.php
 
