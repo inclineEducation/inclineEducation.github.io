@@ -59,22 +59,22 @@
           <h3 style="padding-left: 1rem">Faculty of Land and Food Systems</h3>
           <div class="row">
             <div class="col text-center" style="padding-bottom:1em">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <a href="/lol">
               <img src=/images/blog/linkedin2x.png style="max-width: 3vw; max-height: 10vh;">
             </a>
             </div>
             <div class="col text-center" style="padding-bottom:1em">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <a href="/lol">
               <img src=/images/blog/facebook2x.png style="max-width: 3vw; max-height: 10vh;">
             </a>
             </div>
             <div class="col text-center" style="padding-bottom:1em">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <a href="/lol">
               <img src=/images/blog/instagram2x.png style="max-width: 3vw; max-height: 10vh;">
             </a>
             </div>
             <div class="col text-center" style="padding-bottom:1em">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <a href="/lol">
               <img src=/images/blog/website2x.png style="max-width: 3vw; max-height: 10vh;">
             </a>
             </div>
