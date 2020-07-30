@@ -7,9 +7,10 @@ class Person {
   public $faculty = 'N/A';
   public $link = 'N/A';
   public $delay = 'N/A';
+  public $mod = '';
 
   function __construct($iname = 'no name', $idescription = 'no description', $ischool = 'no school', $ifaculty = 'no faculty',
-            $iimage = '"no image"', $ilink = 'no link', $idelay = '100'){
+            $iimage = '"no image"', $ilink = 'no link', $imod = false, $idelay = '100'){
     $this->name = $iname;
     $this->description = $idescription;
     $this->image = $iimage;
@@ -17,6 +18,7 @@ class Person {
     $this->delay = $idelay;
     $this->school = $ischool;
     $this->faculty = $ifaculty;
+    $this->mod = $imod ? '[mod]' : '';
   }
 
   function output() {
@@ -31,7 +33,7 @@ class Person {
         <a href=$this->link target = "_blank"><img src=$this->image alt=$this->name class="img-fluid"></img></a>
         </div>
         <div class="media-body">
-          <h3 class="mt-0 mb-0 text-black">$this->name</h3>
+          <h3 class="mt-0 mb-0 text-black">$this->name $this->mod</h3>
           <p><b>$this->school </b>∣<b> $this->faculty</b></p>
           <p>$this->description</p>
         </div>
@@ -47,26 +49,37 @@ class Event {
   public $date = 'N/A';
   public $startTime = 'N/A';
   public $endTime = 'N/A';
+  public $startTimeMST = 'N/A';
+  public $endTimeMST = 'N/A';
+  public $startTimeEST = 'N/A';
+  public $endTimeEST = 'N/A';
   public $location = 'N/A';
   public $signupLink = 'N/A';
   public $eventType = 'N/A';
-
+  public $mod = 'N/A';
   function __construct($iname = 'no name', 
                         $idescription = 'no description', 
-                        $idate = 'no date',
                         $istartTime = 'no start time',
                         $iendTime = 'no end time',
                         $ilocation = 'no location',
                         $isignup = 'no signup link',
-                        $itype = 'no event type'){
+                        $itype = 'no event type',
+                        $imod = 'no moderator'){
     $this->name = $iname;
     $this->description = $idescription;
-    $this->date = $idate;
-    $this->startTime = $istartTime;
-    $this->endTime = $iendTime;
+    $unixStartTime = strtotime($istartTime);
+    $unixEndTime = strtotime($iendTime);
+    $this->date = date('d/m/Y',$unixStartTime) == date('d/m/Y',$unixEndTime) ? date('F jS, Y',$unixStartTime) : 'starts and ends on different days';
+    $this->startTime = date('g:ia',$unixStartTime);
+    $this->endTime = date('g:ia',$unixEndTime);
+    $this->startTimeMST = date('g:ia',$unixStartTime+3600);
+    $this->endTimeMST = date('g:ia',$unixEndTime+3600);
+    $this->startTimeEST = date('g:ia',$unixStartTime+10800);
+    $this->endTimeEST = date('g:ia',$unixEndTime+10800);
     $this->location = $ilocation;
     $this->signupLink = $isignup;
     $this->eventType = $itype;
+    $this->mod = $imod;
   }
 }
 
@@ -78,6 +91,10 @@ class People {
 
   function addPerson($person){
     $this->people[] = $person;
+  }
+
+  function addBeginning($person){
+    array_unshift($this->people, $person);
   }
 
   function addPeople($people){
@@ -120,31 +137,44 @@ $conn->close();
 
 
 if (mysqli_num_rows($eventTable) != 0){
-  while ($row = $teamTable->fetch_assoc()) {
-    $panelists->addPerson(
-      new Person(
-        $row['firstName'].' '.$row['lastName'],
-        $row['description'],
-        $row['school'],
-        $row['faculty'],
-        $row['imageURI'],
-        $row['linkedin'],
-      )
-    );
-  }
   $row = $eventTable->fetch_assoc();
   $event = new Event(
     $row['name'],
     $row['description'],
-    date('d/m/Y',strtotime($row['startTime'])) == date('d/m/Y',strtotime($row['endTime'])) ? date('F jS, Y',strtotime($row['startTime'])) : 'starts and ends on different days',
-    date('g:ia',strtotime($row['startTime'])),
-    date('g:ia',strtotime($row['endTime'])),
+    $row['startTime'],
+    $row['endTime'],
     $row['location'],
     $row['signupLink'],
     $row['eventType'],
-    $row['eventType']
+    $row['moderator']
   );
-
+  while ($row = $teamTable->fetch_assoc()) {
+    if (($row['firstName'] ." ".$row['lastName']) == $event->mod){
+      $panelists->addBeginning(
+        new Person(
+          $row['firstName'].' '.$row['lastName'],
+          $row['description'],
+          $row['school'],
+          $row['faculty'],
+          $row['imageURI'],
+          $row['linkedin'],
+          true
+        )
+      );
+    } else {
+      $panelists->addPerson(
+        new Person(
+          $row['firstName'].' '.$row['lastName'],
+          $row['description'],
+          $row['school'],
+          $row['faculty'],
+          $row['imageURI'],
+          $row['linkedin'],
+        )
+      );
+    }
+  }
+  
 }else{
   include($_SERVER['DOCUMENT_ROOT']."/404.php");
   exit();
@@ -256,7 +286,9 @@ if (mysqli_num_rows($eventTable) != 0){
                     <p><b><?php echo $event->date ?></b></p>
                 </td>
                 <td style="width: 33%">
-                    <p><b><?php echo $event->startTime." pst - $event->endTime"." pst" ?></b></p>
+                    <p class="mb-0"><b><?php echo $event->startTime." PST - $event->endTime"." PST" ?></b></p>
+                    <p class="mb-0"><b><?php echo $event->startTimeMST." MST - $event->endTimeMST"." MST" ?></b></p>
+                    <p><b><?php echo $event->startTimeEST." EST - $event->endTimeEST"." EST" ?></b></p>
                 </td>
                 <td style="width: 33%">
                     <p><b><?php echo $event->location ?></b></p>
@@ -265,6 +297,7 @@ if (mysqli_num_rows($eventTable) != 0){
 
                 <tr>
                 <td colspan="3" data-aos="fade-right">
+                    <hr>
                     <?php echo $event->description ?>
                 </td>
                 </tr>
