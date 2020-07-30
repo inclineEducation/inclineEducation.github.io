@@ -273,7 +273,7 @@ if (mysqli_num_rows($eventTable) != 0){
 
         <!--EVENT INFO-->
         <div class="row mb-5 justify-content-center">
-            <div class="col-md-25 text-center" style="padding: 1em;">
+            <div class="col-md-8 text-center" style="padding: 1em;">
             <table style="margin:auto; width: 100%">
                 <tr data-aos="fade-right" data-aos-delay="" style="text-align:center;">
                 <th colspan="3">
