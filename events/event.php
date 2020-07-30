@@ -256,7 +256,7 @@ if (mysqli_num_rows($eventTable) != 0){
                     <p><b><?php echo $event->date ?></b></p>
                 </td>
                 <td style="width: 33%">
-                    <p><b><?php echo $event->startTime."pst - $event->endTime"."pst" ?></b></p>
+                    <p><b><?php echo $event->startTime." pst - $event->endTime"." pst" ?></b></p>
                 </td>
                 <td style="width: 33%">
                     <p><b><?php echo $event->location ?></b></p>
