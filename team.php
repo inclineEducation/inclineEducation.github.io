@@ -28,10 +28,10 @@ class Person {
 
   function getHtml(){
     return <<<PERSON
-    <div class="col-lg-4 mb-5" data-aos="fade-up" data-aos-delay=$this->delay style="margin-left: auto; margin-right: auto">
+    <div class="col-lg-4 mb-5" data-aos="fade-up" data-aos-delay='$this->delay' style="margin-left: auto; margin-right: auto">
       <div class="media d-block text-center">
         <div class="media-custom">
-        <a href=$this->link target = "_blank"><img src=$this->image alt=$this->name class="img-fluid"></img></a>
+        <a href='$this->link' target = "_blank"><img src='$this->image' alt='$this->name' class="img-fluid"></img></a>
         </div>
         <div class="media-body">
           <h3 class="mt-0 text-black">$this->name</h3>
