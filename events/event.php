@@ -1,3 +1,156 @@
+<?php
+class Person {
+  public $name = 'N/A';
+  public $description = 'N/A';
+  public $image = 'N/A';
+  public $school = 'N/A';
+  public $faculty = 'N/A';
+  public $link = 'N/A';
+  public $delay = 'N/A';
+
+  function __construct($iname = 'no name', $idescription = 'no description', $ischool = 'no school', $ifaculty = 'no faculty',
+            $iimage = '"no image"', $ilink = 'no link', $idelay = '100'){
+    $this->name = $iname;
+    $this->description = $idescription;
+    $this->image = $iimage;
+    $this->link = $ilink;
+    $this->delay = $idelay;
+    $this->school = $ischool;
+    $this->faculty = $ifaculty;
+  }
+
+  function output() {
+    echo $this->getHtml();
+  }
+
+  function getHtml(){
+    return <<<PERSON
+    <div class="col-lg-4 mb-5" data-aos="fade-up" data-aos-delay=$this->delay style="margin-left: auto; margin-right: auto">
+      <div class="media d-block text-center">
+        <div class="media-custom">
+        <a href=$this->link target = "_blank"><img src=$this->image alt=$this->name class="img-fluid"></img></a>
+        </div>
+        <div class="media-body">
+          <h3 class="mt-0 mb-0 text-black">$this->name</h3>
+          <p><b>$this->school </b>∣<b> $this->faculty</b></p>
+          <p>$this->description</p>
+        </div>
+      </div>
+    </div>
+    PERSON;
+  }
+}
+
+class Event {
+  public $name = 'N/A';
+  public $description = 'N/A';
+  public $date = 'N/A';
+  public $startTime = 'N/A';
+  public $endTime = 'N/A';
+  public $location = 'N/A';
+  public $signupLink = 'N/A';
+  public $eventType = 'N/A';
+
+  function __construct($iname = 'no name', 
+                        $idescription = 'no description', 
+                        $idate = 'no date',
+                        $istartTime = 'no start time',
+                        $iendTime = 'no end time',
+                        $ilocation = 'no location',
+                        $isignup = 'no signup link',
+                        $itype = 'no event type'){
+    $this->name = $iname;
+    $this->description = $idescription;
+    $this->date = $idate;
+    $this->startTime = $istartTime;
+    $this->endTime = $iendTime;
+    $this->location = $ilocation;
+    $this->signupLink = $isignup;
+    $this->eventType = $itype;
+  }
+}
+
+class People {
+  public $people;
+  function __construct(){
+    $this->people = array();
+  }
+
+  function addPerson($person){
+    $this->people[] = $person;
+  }
+
+  function addPeople($people){
+    foreach ($people as $person){
+      $this->addPerson($person);
+    }
+  }
+
+  function output(){
+    foreach ($this->people as $person) {
+      $person->output();
+    }
+  }
+}
+
+$panelists = new People();
+
+//MySQL details
+
+$login = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT']."/misc/mysql_login.json"), true);
+
+
+//connect to MySQL
+$conn = new mysqli($login['server'], $login['username'], $login['password']);
+
+$teamTable = $conn->query("SELECT people.firstName,people.lastName,people.description,people.imageURI,people.linkedin,people.school,people.faculty
+FROM inclineeducation.eventpeople link
+	JOIN inclineeducation.events events
+	ON link.eventID=events.eventID
+	JOIN inclineeducation.people people
+	ON link.UID=people.UID
+WHERE URI = '".$_GET['e']."'
+ORDER BY people.firstName ASC;");
+
+$eventTable = $conn->query("SELECT *
+FROM inclineeducation.events
+WHERE URI= '".$_GET['e']."';");
+
+$conn->close();
+
+
+if (mysqli_num_rows($eventTable) != 0){
+  while ($row = $teamTable->fetch_assoc()) {
+    $panelists->addPerson(
+      new Person(
+        $row['firstName'].' '.$row['lastName'],
+        $row['description'],
+        $row['school'],
+        $row['faculty'],
+        $row['imageURI'],
+        $row['linkedin'],
+      )
+    );
+  }
+  $row = $eventTable->fetch_assoc();
+  $event = new Event(
+    $row['name'],
+    $row['description'],
+    date('d/m/Y',strtotime($row['startTime'])) == date('d/m/Y',strtotime($row['endTime'])) ? date('F jS, Y',strtotime($row['startTime'])) : 'starts and ends on different days',
+    date('g:ia',strtotime($row['startTime'])),
+    date('g:ia',strtotime($row['endTime'])),
+    $row['location'],
+    $row['signupLink'],
+    $row['eventType'],
+    $row['eventType']
+  );
+
+}else{
+  include($_SERVER['DOCUMENT_ROOT']."/404.php");
+  exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -70,10 +223,10 @@
     <div class="container">
       <div class="row slider-text align-items-center justify-content-center text-center">
         <div class="col-lg-12 col-sm-12">
-          <h1 class="mb-4" data-aos="fade-up" data-aos-delay="">EVENT NAME</h1>
-          <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100">EVENT DATE</p>
+          <h1 class="mb-4" data-aos="fade-up" data-aos-delay=""><?php echo $event->name ?></h1>
+          <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><?php echo $event->date ?></p>
           <br>
-          <p data-aos="fade-up" data-aos-delay="200" style="text-align: center;"><a href="/signup" class="btn btn-title" style="text-decoration: none;">Sign Up!</a></p>
+          <p data-aos="fade-up" data-aos-delay="200" style="text-align: center;"><a href="<?php echo $event->signupLink ?>" class="btn btn-title" style="text-decoration: none;">Sign Up!</a></p>
         </div>
         <div class="col-lg-12 col-sm-12" style="position: absolute; bottom: 2rem;">
           <a class="smoothscroll" href="#top"><img src="/images/icons/scroll.png" style="max-width: 10vw; max-height: 5vh;"></a>
@@ -94,33 +247,30 @@
             <table style="margin:auto; width: 100%">
                 <tr data-aos="fade-right" data-aos-delay="" style="text-align:center;">
                 <th colspan="3">
-                    <h1>EVENT TITLE</h1>
+                    <h1><?php echo $event->name ?></h1>
                 </th>
                 </tr>
 
-                <tr data-aos="fade-right" data-aos-delay="">
+                <tr data-aos="fade-right" data-aos-delay="" style="text-align:center;">
                 <td style="width: 33%">
-                    <p>DATE</p>
+                    <p><b><?php echo $event->date ?></b></p>
                 </td>
                 <td style="width: 33%">
-                    <p>TIME</p>
+                    <p><b><?php echo "$event->startTime - $event->endTime" ?></b></p>
                 </td>
                 <td style="width: 33%">
-                    <p>LOCATION</p>
+                    <p><b><?php echo $event->location ?></b></p>
                 </td>
                 </tr>
 
                 <tr>
                 <td colspan="3" data-aos="fade-right">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <?php echo $event->description ?>
                 </td>
                 </tr>
                 <tr>
                     <td colspan="3" data-aos="fade-right">
-                        <p style="text-align: center;"><a href="/signup" class="btn btn-outline-black">Sign up for this event!</a></p>
+                        <p style="text-align: center;"><a href="<?php echo $event->signupLink ?>" class="btn btn-outline-black">Sign up for this event!</a></p>
                     </td>
                 </tr>
             </table>
@@ -136,29 +286,7 @@
 
         <div class="row">
             <?php
-            for ($i = 0; $i < 5; $i++){
-            echo <<<TEXT
-                <!--PANELIST-->
-                <div class="col-lg-4 mb-5" data-aos="fade-up" style="margin-left: auto; margin-right: auto">
-                <div class="media d-block text-center">
-                    <div class="media-custom">
-                    <a href="/people"><img src="/images/misc/hagp.jpg" alt="John Doe" class="img-fluid"></img></a>
-                    </div>
-                    <div class="media-body">
-                    <h3 class="mt-0 text-black" style="margin-bottom: 2px;">John Doe</h3>
-                    <b>
-                    <p style="margin-bottom: 2px;">The University of British Columbia</p>
-                    <p>Faculty of Land and Food Systems</p>
-                    </b>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-                </div>
-TEXT;
-            }
+            $panelists->output();
             ?>
 
         </div>
@@ -166,7 +294,7 @@ TEXT;
 
         <div class="row justify-content-center mb-5" style="margin-top: 3rem;">
             <div class="col-md-8 text-center" data-aos="fade-up">
-            <p style="text-align: center;"><a href="/signup" class="btn btn-outline-black">Sign up for this event!</a></p>
+            <p style="text-align: center;"><a href="<?php echo $event->signupLink ?>" class="btn btn-outline-black">Sign up for this event!</a></p>
             </div>
         </div>
 
