@@ -47,6 +47,8 @@ ErrorDocument 404 /404.php
     # Chris messed up here
     Redirect 301 /mentorship. /mentorship
 
+    Redirect 301 /lol https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 #             302 (temporary redirects)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
