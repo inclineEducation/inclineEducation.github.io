@@ -112,7 +112,7 @@
         </div>
       </div>
     </div>
-    <?php include "./components/upcomingEvents.php" ?>
+    <?php include $_SERVER['SERVER_ROOT']."/components/upcomingEvents.php" ?>
     <!-- UPCOMING EVENTS 
     <div class="section portfolio-section" id="vpanel" style="padding-bottom: 1em; padding-top: 1em">
       <div class="container">
