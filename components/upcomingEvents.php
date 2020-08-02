@@ -42,7 +42,7 @@
 	 visibility: visible;
     }
 </style>
-<div class="section" style="padding-bottom: 0em;">
+<div class="section events" style="padding-bottom: 0em;">
     <div data-aos="fade" data-aos-delay="100" class="container-fluid">
         <h2 style="text-align: center;">Upcoming Events</h2>
 <?php

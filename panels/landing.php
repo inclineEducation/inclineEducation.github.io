@@ -69,7 +69,7 @@
   </div>
 
   
-  <div class="section portfolio-section" style="padding-bottom: 1em;">
+  <div class="section portfolio-section" style="padding-bottom: 0em;">
     <div class="container">
       <div class="row mb-5 justify-content-center">
         <div class="col-md-8 text-center">
@@ -113,6 +113,7 @@
       </div>
     </div>
   </div>
+  <style>.events{padding-top:0}</style>
   <?php include $_SERVER['DOCUMENT_ROOT']."/components/upcomingEvents.php" ?>
     <!-- UPCOMING EVENTS 
     <div class="section portfolio-section" id="vpanel" style="padding-bottom: 1em; padding-top: 1em">
