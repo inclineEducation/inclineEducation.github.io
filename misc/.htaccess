@@ -1,0 +1,4 @@
+<Files mysql_login.json>
+order allow,deny
+deny from all
+</Files>
