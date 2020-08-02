@@ -37,7 +37,7 @@
 	
   gtag('config', 'UA-158958448-1');
 
-  <?php include $_SERVER['DOCUMENT_ROOT']."/common/headCommon.html"?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/components/headCommon.html"?>
 
   </script>
 </head>

@@ -242,7 +242,7 @@ if (mysqli_num_rows($eventTable) != 0){
     }
   </style>
 
-  <?php include $_SERVER['DOCUMENT_ROOT']."/common/headCommon.html"?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/components/headCommon.html"?>
 
 </head>
 
@@ -306,6 +306,7 @@ if (mysqli_num_rows($eventTable) != 0){
                 <tr>
                     <td colspan="3" data-aos="fade-right">
                         <p style="text-align: center;"><a href="<?php echo $event->signupLink ?>" class="btn btn-outline-black">Sign up for this event!</a></p>
+                        <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MnVqcHIxbmppcjA3MXV0ODZqbWZnaDZrN2sgY2hyaXN0b3BoZXIubmdAaW5jbGluZWVkdS5vcmc&amp;tmsrc=christopher.ng%40inclineedu.org"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
                     </td>
                 </tr>
             </table>

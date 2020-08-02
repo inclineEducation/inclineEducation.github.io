@@ -143,7 +143,7 @@ $numPages = ceil ( (float) $numPosts / $postsPerPage );
     }
 </style>
 
-<?php include $_SERVER['DOCUMENT_ROOT']."/common/headCommon.html"?>
+<?php include $_SERVER['DOCUMENT_ROOT']."/components/headCommon.html"?>
 
 </head>
 
