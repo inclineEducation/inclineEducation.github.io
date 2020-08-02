@@ -242,6 +242,8 @@ if (mysqli_num_rows($eventTable) != 0){
     }
   </style>
 
+  <?php include $_SERVER['DOCUMENT_ROOT']."/common/headCommon.html"?>
+
 </head>
 
 <body>

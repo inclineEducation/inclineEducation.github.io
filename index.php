@@ -56,11 +56,13 @@
   gtag('config', 'UA-158958448-1');
   </script>
 
+  <?php include $_SERVER['DOCUMENT_ROOT']."/common/headCommon.html"?>
+
 </head>
 
 <body>
 
-  <?php include "./components/navbar.html" ?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/components/navbar.html" ?>
   <!-- END header -->
 
 
@@ -90,7 +92,7 @@
 <!--
 <br><br><br><br>
 -->
-  <?php include "./components/upcomingEvents.php" ?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/components/upcomingEvents.php" ?>
 
   <div class="section portfolio-section" style="padding-top: 0em; padding-bottom: 5em;">
     <div class="container">
@@ -131,10 +133,10 @@
     </div>
   </div>
 
-  <?php include "./components/services.html" ?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/components/services.html" ?>
 
 
-  <?php include "./components/testimonials.html" ?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/components/testimonials.html" ?>
 
 
   <!-- END .block-4 -->
@@ -155,7 +157,7 @@
     </div>
   </div>
 
-  <?php include "components/footer.html" ?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/components/footer.html" ?>
 
   <!-- loader -->
   <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
@@ -163,7 +165,7 @@
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
         stroke="#ffc107" /></svg></div>
 
-  <?php include "./components/commonScripts.html" ?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/components/commonScripts.html" ?>
 </body>
 
 </html>

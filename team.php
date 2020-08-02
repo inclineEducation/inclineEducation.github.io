@@ -163,6 +163,7 @@ $teamCore->addPeople(
 	
   gtag('config', 'UA-158958448-1');
   </script>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/common/headCommon.html"?>
   
 </head>
 

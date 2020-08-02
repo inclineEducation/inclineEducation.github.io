@@ -34,6 +34,9 @@
   gtag('js', new Date());
 	
   gtag('config', 'UA-158958448-1');
+
+  <?php include $_SERVER['DOCUMENT_ROOT']."/common/headCommon.html"?>
+
   </script>
 
   <!-- React Scripts -->
@@ -109,8 +112,8 @@
         </div>
       </div>
     </div>
-    <!--<?php include "./components/upcomingEvents.php" ?>-->
-    <!-- UPCOMING EVENTS -->
+    <?php include "./components/upcomingEvents.php" ?>
+    <!-- UPCOMING EVENTS 
     <div class="section portfolio-section" id="vpanel" style="padding-bottom: 1em; padding-top: 1em">
       <div class="container">
         <div class="row mb-5 justify-content-center">
@@ -132,8 +135,7 @@
           </div>
         </div>
       </div>
-
-    <!-- UPCOMING EVENTS DONE -->
+     UPCOMING EVENTS DONE -->
     <div class="container justify-content-center" style="width: calc(40rem+40vw); max-width: 90vw;">
         <div class="row mb-5 justify-content-center" style="text-align: center;">
             <div class="col-md-15 text-center">

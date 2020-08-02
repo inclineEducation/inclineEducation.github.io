@@ -36,6 +36,9 @@
   gtag('js', new Date());
 	
   gtag('config', 'UA-158958448-1');
+
+  <?php include $_SERVER['DOCUMENT_ROOT']."/common/headCommon.html"?>
+
   </script>
 </head>
 

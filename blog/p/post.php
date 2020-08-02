@@ -73,6 +73,7 @@ $dateString = date_format(date_create($date), 'F dS, Y');
 
 <link rel="stylesheet" href="css/blogpage.css">
 
+<?php include $_SERVER['DOCUMENT_ROOT']."/common/headCommon.html"?>
 
 </head>
 
