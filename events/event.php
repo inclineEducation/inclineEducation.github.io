@@ -57,6 +57,7 @@ class Event {
   public $signupLink = 'N/A';
   public $eventType = 'N/A';
   public $mod = 'N/A';
+  public $calendarLink = null;
   function __construct($iname = 'no name', 
                         $idescription = 'no description', 
                         $istartTime = 'no start time',
@@ -64,7 +65,8 @@ class Event {
                         $ilocation = 'no location',
                         $isignup = 'no signup link',
                         $itype = 'no event type',
-                        $imod = 'no moderator'){
+                        $imod = 'no moderator',
+                        $icalendar = false){
     $this->name = $iname;
     $this->description = $idescription;
     $unixStartTime = strtotime($istartTime);
@@ -80,6 +82,7 @@ class Event {
     $this->signupLink = $isignup;
     $this->eventType = $itype;
     $this->mod = $imod;
+    $this->calendarLink = $icalendar;
   }
 }
 
@@ -146,7 +149,8 @@ if (mysqli_num_rows($eventTable) != 0){
     $row['location'],
     $row['signupLink'],
     $row['eventType'],
-    $row['moderator']
+    $row['moderator'],
+    $row['calendarLink']
   );
   while ($row = $teamTable->fetch_assoc()) {
     if (($row['firstName'] ." ".$row['lastName']) == $event->mod){
@@ -306,7 +310,11 @@ if (mysqli_num_rows($eventTable) != 0){
                 <tr>
                     <td colspan="3" data-aos="fade-right">
                         <p style="text-align: center;"><a href="<?php echo $event->signupLink ?>" class="btn btn-outline-black">Sign up for this event!</a></p>
-                        <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MnVqcHIxbmppcjA3MXV0ODZqbWZnaDZrN2sgY2hyaXN0b3BoZXIubmdAaW5jbGluZWVkdS5vcmc&amp;tmsrc=christopher.ng%40inclineedu.org"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+                        <?php
+                        if ($event->calendarLink){
+                          echo '<a target="_blank" href="'.htmlspecialchars($event->calendarLink).'"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>';
+                        }
+                        ?>
                     </td>
                 </tr>
             </table>
