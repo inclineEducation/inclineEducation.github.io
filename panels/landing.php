@@ -112,7 +112,8 @@
         </div>
       </div>
     </div>
-    <?php include $_SERVER['SERVER_ROOT']."/components/upcomingEvents.php" ?>
+  </div>
+  <?php include $_SERVER['SERVER_ROOT']."/components/upcomingEvents.php" ?>
     <!-- UPCOMING EVENTS 
     <div class="section portfolio-section" id="vpanel" style="padding-bottom: 1em; padding-top: 1em">
       <div class="container">
@@ -136,6 +137,7 @@
         </div>
       </div>
      UPCOMING EVENTS DONE -->
+  <div class="section portfolio-section" style="padding-bottom: 1em;">
     <div class="container justify-content-center" style="width: calc(40rem+40vw); max-width: 90vw;">
         <div class="row mb-5 justify-content-center" style="text-align: center;">
             <div class="col-md-15 text-center">
