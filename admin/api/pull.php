@@ -1,6 +1,6 @@
 <?php
 if ( $_POST['payload'] ) {
-shell_exec( 'cd /home/bitnami/htdocs && git reset –-hard HEAD && git pull' );
+echo shell_exec( 'cd /home/bitnami/htdocs && sudo git reset –-hard HEAD && sudo git pull' );
 }
 //q4RspMySWY4U7iunTHnR
 ?>pull completed
