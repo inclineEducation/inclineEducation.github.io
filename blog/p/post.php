@@ -71,14 +71,14 @@ $dateString = date_format(date_create($date), 'F dS, Y');
   <!-- JQuery Source -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<link rel="stylesheet" href="css/blogpage.css">
+<link rel="stylesheet" href="/blog/p/css/blogpage.css">
 
 <?php include $_SERVER['DOCUMENT_ROOT']."/components/headCommon.html"?>
 
 </head>
 
 <body>
-<?php include "../../components/navbar.html" ?>
+<?php include $_SERVER['DOCUMENT_ROOT']."/components/navbar.html" ?>
   <!-- END header -->
   <?php
   echo <<< TITLE
@@ -112,9 +112,9 @@ TITLE;
   
 <!--Services-->
 
-<?php include "../../components/services.html" ?>
+<?php include $_SERVER['DOCUMENT_ROOT']."/components/services.html" ?>
 
-<?php include "../../components/testimonials.html" ?>
+<?php include $_SERVER['DOCUMENT_ROOT']."/components/testimonials.html" ?>
 
    <div class="bg-primary py-5">
     <div class="container text-center">
@@ -130,7 +130,7 @@ TITLE;
     </div>
   </div> 
 
-  <?php include "../../components/footer.html" ?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/components/footer.html" ?>
   <!-- loader -->
     <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
       <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
