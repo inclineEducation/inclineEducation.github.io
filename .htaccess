@@ -57,4 +57,5 @@ ErrorDocument 404 /404.php
 	Redirect 302 /signup https://forms.gle/mi3B28KD7CYkaKGc7
 	Redirect 302 /join https://meet.google.com/zhc-jdug-vfp
 	Redirect 302 /calendar https://calendar.google.com/event?action=TEMPLATE&tmeid=MnVqcHIxbmppcjA3MXV0ODZqbWZnaDZrN2sgY2hyaXN0b3BoZXIubmdAaW5jbGluZWVkdS5vcmc&tmsrc=christopher.ng%40inclineedu.org
+	Redirect 302 /survey https://docs.google.com/forms/d/e/1FAIpQLSdFLP8nB-u1YmJdD7gIJ0VITfNOlOC4JgteykFK0MNad6bKXg/viewform?usp=sf_link
 	
