@@ -303,6 +303,12 @@ if (mysqli_num_rows($eventTable) != 0){
               <hr>
               <div data-aos="fade-right">
                 <?php echo $event->description ?>
+                <p style="text-align: center;"><a href="<?php echo $event->signupLink ?>" class="btn btn-outline-black">Sign up for this event!</a></p>
+                <?php
+                if ($event->calendarLink){
+                  echo '<a target="_blank" href="'.htmlspecialchars($event->calendarLink).'"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>';
+                }
+                ?>
               </div>
             </div>
         </div>
