@@ -1,4 +1,11 @@
 <?php
+
+//404 if 'e' key is not found.
+if (!array_key_exists('e', $_GET)){
+  include($_SERVER['DOCUMENT_ROOT']."/404.php");
+  exit();
+}
+
 class Person {
   public $name = 'N/A';
   public $description = 'N/A';
@@ -274,7 +281,7 @@ if (mysqli_num_rows($eventTable) != 0){
   <div id="top">
   </div>
 
-  <div class="section portfolio-section" style="padding-bottom: 4em;">
+  <div class="section portfolio-section" style="padding-bottom: 4em; padding-top: 2em">
     <div class="container">
 
         <!--EVENT INFO-->
@@ -327,21 +334,67 @@ if (mysqli_num_rows($eventTable) != 0){
 
         </div>
         <!--END PANELISTS-->
+        
+        <!--GIVEAWAY / SPONSOR INFO-->
+        <div class="row mb-5 justify-content-center" style="text-align: center;">
+          <div class="col-md-12 text-center">
+
+            <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="100">Giveaway Prizes</h2>
+            <h3 class="mb-4 section-title" data-aos="fade-right">Sign up and attend our panel for the chance to win:</h3>
+            <div class="row" style="display:flex; justify-content: center; align-items: center;"data-aos="fade-right" data-aos-delay="100">
+              <div class="col-lg-4 mb-4" style="text-align:center;">
+                <div style="padding-bottom: 100%; position: relative; height:100%">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                    <img src="/images/partners/gyu_kaku.jpg" alt="Gyu Kaku Japanese BBQ" style="width: 100%; max-height: 100%; margin:auto;">
+                  </div>
+                </div>
+                <p>Gyu Kaku Japanese BBQ Gift Vouchers</p>   
+              </div>
+              <div class="col-lg-4 mb-4" style="text-align:center;">
+                <div style="padding-bottom: 100%; position: relative; height:100%;">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                    <img src="/images/misc/giveaway/google_home.jpg" alt="Google Home Mini" style="width: 90%; max-height: 90%; margin:auto;">
+                  </div>
+                </div>
+                <p>Google Home Mini</p>
+              </div>
+              <div class="col-lg-4 mb-4" style="text-align:center;">
+                <div style="padding-bottom: 100%; position: relative; height:100%">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                    <img src="/images/partners/lush.jpg" alt="Lush Cosmetics" style="width: 90%; max-height: 90%; margin:auto;">
+                  </div>
+                </div>
+                <p>Lush Gift Basket</p> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END SPONSOR-->
 
         <div class="row justify-content-center mb-5" style="margin-top: 3rem;">
-            <div class="col-md-8 text-center" data-aos="fade-up">
-            <p style="text-align: center;"><a href="<?php echo $event->signupLink ?>" class="btn btn-outline-black">Sign up for this event!</a></p>
-            </div>
+          <div class="col-md-8 text-center" data-aos="fade-up">
+          <p style="text-align: center;"><a href="<?php echo $event->signupLink ?>" class="btn btn-outline-black">Sign up for this event!</a></p>
+          </div>
         </div>
-
       </div>
+    </div>
+  </div>
+
+  <div class="section portfolio-section" style="padding-bottom: 1em;">
+    <div class="container justify-content-center" style="width: calc(40rem+40vw); max-width: 90vw;">
+      
     </div>
   </div>
 
   
 
 <!--Services-->
-
+  
+  <style>
+    .section{
+      padding-top:0em;
+    }
+  </style>
   <?php include $_SERVER['DOCUMENT_ROOT']."/components/services.html" ?>
 
   <?php include $_SERVER['DOCUMENT_ROOT']."/components/testimonials.html" ?>
