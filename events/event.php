@@ -391,7 +391,7 @@ if (mysqli_num_rows($eventTable) != 0){
 <!--Services-->
   
   <style>
-    .section{
+    .services{
       padding-top:0em;
     }
   </style>
