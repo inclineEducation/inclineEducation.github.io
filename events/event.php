@@ -279,45 +279,31 @@ if (mysqli_num_rows($eventTable) != 0){
 
         <!--EVENT INFO-->
         <div class="row mb-5 justify-content-center">
+            <style>
+              .tablechild{
+                padding: 1.8rem 0;
+                margin-bottom: 0;
+              }
+            </style>
             <div class="col-md-8 text-center" style="padding: 1em;">
-            <table style="margin:auto; width: 100%">
-                <tr data-aos="fade-right" data-aos-delay="" style="text-align:center;">
-                <th colspan="3">
-                    <h1><?php echo $event->name ?></h1>
-                </th>
-                </tr>
-
-                <tr data-aos="fade-right" data-aos-delay="" style="text-align:center;">
-                <td style="width: 33%">
-                    <p><b><?php echo $event->date ?></b></p>
-                </td>
-                <td style="width: 33%">
+              <h1 data-aos="fade-right" style="margin:auto"><?php echo $event->name ?></h1>
+              <div class="row text-center" style="text-align:center;">
+                <div class="col-lg-4 text-center" data-aos="fade-right" style="display: table; position: relative;">
+                  <p class="tablechild"><b><?php echo $event->date ?></b></p>
+                </div>
+                <div class="col-lg-4 text-center" data-aos="fade-right" style="display: table; position: relative;">
                     <p class="mb-0"><b><?php echo $event->startTime." PST - $event->endTime"." PST" ?></b></p>
                     <p class="mb-0"><b><?php echo $event->startTimeMST." MST - $event->endTimeMST"." MST" ?></b></p>
                     <p><b><?php echo $event->startTimeEST." EST - $event->endTimeEST"." EST" ?></b></p>
-                </td>
-                <td style="width: 33%">
-                    <p><b><?php echo $event->location ?></b></p>
-                </td>
-                </tr>
-
-                <tr>
-                <td colspan="3" data-aos="fade-right">
-                    <hr>
-                    <?php echo $event->description ?>
-                </td>
-                </tr>
-                <tr>
-                    <td colspan="3" data-aos="fade-right">
-                        <p style="text-align: center;"><a href="<?php echo $event->signupLink ?>" class="btn btn-outline-black">Sign up for this event!</a></p>
-                        <?php
-                        if ($event->calendarLink){
-                          echo '<a target="_blank" href="'.htmlspecialchars($event->calendarLink).'"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>';
-                        }
-                        ?>
-                    </td>
-                </tr>
-            </table>
+                </div>
+                <div class="col-lg-4 text-center" data-aos="fade-right" style="display: table; position: relative;">
+                  <p class="tablechild"><b><?php echo $event->location ?></b></p>
+                </div>
+              </div>
+              <hr>
+              <div data-aos="fade-right">
+                <?php echo $event->description ?>
+              </div>
             </div>
         </div>
 
