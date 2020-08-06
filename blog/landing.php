@@ -138,7 +138,7 @@ $numPages = ceil ( (float) $numPosts / $postsPerPage );
     a{
         color: black;
     }
-    a:hover{
+    a:not(.navbar-brand):hover{
         color: #ffc107;
     }
 </style>
