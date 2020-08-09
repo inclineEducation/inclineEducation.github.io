@@ -55,12 +55,12 @@ ErrorDocument 404 /404.php
 	Redirect 302 /mentee https://docs.google.com/forms/d/e/1FAIpQLSdFLP8nB-u1YmJdD7gIJ0VITfNOlOC4JgteykFK0MNad6bKXg/viewform?usp=sf_link
 	Redirect 302 /mentor https://docs.google.com/forms/d/e/1FAIpQLSee6lcP4eNbxU-oklHTdVgDcGsx4gMV3QfPOzzRNMDMyeAsjw/viewform?usp=sf_link
 	Redirect 302 /signup https://forms.gle/mi3B28KD7CYkaKGc7
-<<<<<<< HEAD
-	Redirect 302 /join https://meet.google.com/zhc-jdug-vfp
 	Redirect 302 /calendar https://calendar.google.com/event?action=TEMPLATE&tmeid=M250YTI0NjFtZ2NnZTB1bTFwbTBraTA1dGogY2hyaXN0b3BoZXIubmdAaW5jbGluZWVkdS5vcmc&tmsrc=christopher.ng%40inclineedu.org
-=======
 	Redirect 302 /join https://youtu.be/O2t11aeIXo0
+<<<<<<< HEAD
 	Redirect 302 /calendar https://calendar.google.com/event?action=TEMPLATE&tmeid=MGNwYTdkZHJ0ZnI1Ymg1MmNoMHZja3ZqbWUgY2hyaXN0b3BoZXIueWoubmdAbQ&tmsrc=christopher.yj.ng%40gmail.com
 >>>>>>> b78200b8de6ff88a2a772c2cd4762376c5a83c23
+=======
+>>>>>>> e07aa7d17b78e1781a9ab55e38f63c53a238c264
 	Redirect 302 /survey https://docs.google.com/forms/d/e/1FAIpQLSdFLP8nB-u1YmJdD7gIJ0VITfNOlOC4JgteykFK0MNad6bKXg/viewform?usp=sf_link
 	
