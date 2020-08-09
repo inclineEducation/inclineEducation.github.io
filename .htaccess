@@ -60,7 +60,6 @@ ErrorDocument 404 /404.php
 	Redirect 302 /calendar https://calendar.google.com/event?action=TEMPLATE&tmeid=M250YTI0NjFtZ2NnZTB1bTFwbTBraTA1dGogY2hyaXN0b3BoZXIubmdAaW5jbGluZWVkdS5vcmc&tmsrc=christopher.ng%40inclineedu.org
 =======
 	Redirect 302 /join https://youtu.be/O2t11aeIXo0
-	Redirect 302 /calendar https://calendar.google.com/event?action=TEMPLATE&tmeid=MnVqcHIxbmppcjA3MXV0ODZqbWZnaDZrN2sgY2hyaXN0b3BoZXIubmdAaW5jbGluZWVkdS5vcmc&tmsrc=christopher.ng%40inclineedu.org
 >>>>>>> b78200b8de6ff88a2a772c2cd4762376c5a83c23
 	Redirect 302 /survey https://docs.google.com/forms/d/e/1FAIpQLSdFLP8nB-u1YmJdD7gIJ0VITfNOlOC4JgteykFK0MNad6bKXg/viewform?usp=sf_link
 	
