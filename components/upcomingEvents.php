@@ -52,7 +52,7 @@
                 <a href=/events/summerpanel2020 class="work-thumb">
                     <div class="work-text">
                         <h2>VIRTUAL PANEL</h2>
-                        <p>Google Meet</p>
+                        <p>Youtube Live</p>
                         <p>Sunday, August 9</p>
                         <p>3:00pm - 4:30pm</p>
                     </div>
