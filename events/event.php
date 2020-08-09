@@ -269,7 +269,9 @@ if (mysqli_num_rows($eventTable) != 0){
           <h1 class="mb-4" data-aos="fade-up" data-aos-delay=""><?php echo $event->name ?></h1>
           <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><?php echo $event->date ?></p>
           <br>
-          <p data-aos="fade-up" data-aos-delay="200" style="text-align: center;"><a href="<?php echo $event->signupLink ?>" class="btn btn-title" style="text-decoration: none;">Sign Up!</a></p>
+          <p data-aos="fade-up" data-aos-delay="200" style="text-align: center;"><a href="/join" class="btn btn-title" style="text-decoration: none;">Join Us Live!</a></p>
+          <br>
+          <p data-aos="fade-up" data-aos-delay="200" style="text-align: center;"><a href="<?php echo $event->signupLink ?>" class="btn btn-title" style="text-decoration: none; font-size:1rem">Sign Up!</a></p>
         </div>
         <div class="col-lg-12 col-sm-12" style="position: absolute; bottom: 2rem;">
           <a class="smoothscroll" href="#top"><img src="/images/icons/scroll.png" style="max-width: 10vw; max-height: 5vh;"></a>
@@ -335,6 +337,7 @@ if (mysqli_num_rows($eventTable) != 0){
         </div>
         <!--END PANELISTS-->
         
+        <!--TODO: MAKE THIS DYNAMIC-->
         <!--GIVEAWAY / SPONSOR INFO-->
         <div class="row mb-5 justify-content-center" style="text-align: center;">
           <div class="col-md-12 text-center">
