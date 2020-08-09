@@ -1,4 +1,11 @@
 <?php
+
+//404 if 'e' key is not found.
+if (!array_key_exists('e', $_GET)){
+  include($_SERVER['DOCUMENT_ROOT']."/404.php");
+  exit();
+}
+
 class Person {
   public $name = 'N/A';
   public $description = 'N/A';
@@ -262,7 +269,9 @@ if (mysqli_num_rows($eventTable) != 0){
           <h1 class="mb-4" data-aos="fade-up" data-aos-delay=""><?php echo $event->name ?></h1>
           <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><?php echo $event->date ?></p>
           <br>
-          <p data-aos="fade-up" data-aos-delay="200" style="text-align: center;"><a href="<?php echo $event->signupLink ?>" class="btn btn-title" style="text-decoration: none;">Sign Up!</a></p>
+          <p data-aos="fade-up" data-aos-delay="200" style="text-align: center;"><a href="/join" class="btn btn-title" style="text-decoration: none;">Join Us Live!</a></p>
+          <br>
+          <p data-aos="fade-up" data-aos-delay="200" style="text-align: center;"><a href="<?php echo $event->signupLink ?>" class="btn btn-title" style="text-decoration: none; font-size:1rem">Sign Up!</a></p>
         </div>
         <div class="col-lg-12 col-sm-12" style="position: absolute; bottom: 2rem;">
           <a class="smoothscroll" href="#top"><img src="/images/icons/scroll.png" style="max-width: 10vw; max-height: 5vh;"></a>
@@ -274,50 +283,42 @@ if (mysqli_num_rows($eventTable) != 0){
   <div id="top">
   </div>
 
-  <div class="section portfolio-section" style="padding-bottom: 4em;">
+  <div class="section portfolio-section" style="padding-bottom: 4em; padding-top: 2em">
     <div class="container">
 
         <!--EVENT INFO-->
         <div class="row mb-5 justify-content-center">
+            <style>
+              .tablechild{
+                padding: 1.8rem 0;
+                margin-bottom: 0;
+              }
+            </style>
             <div class="col-md-8 text-center" style="padding: 1em;">
-            <table style="margin:auto; width: 100%">
-                <tr data-aos="fade-right" data-aos-delay="" style="text-align:center;">
-                <th colspan="3">
-                    <h1><?php echo $event->name ?></h1>
-                </th>
-                </tr>
-
-                <tr data-aos="fade-right" data-aos-delay="" style="text-align:center;">
-                <td style="width: 33%">
-                    <p><b><?php echo $event->date ?></b></p>
-                </td>
-                <td style="width: 33%">
+              <h1 data-aos="fade-right" style="margin:auto"><?php echo $event->name ?></h1>
+              <div class="row text-center" style="text-align:center;">
+                <div class="col-lg-4 text-center" data-aos="fade-right" style="display: table; position: relative;">
+                  <p class="tablechild"><b><?php echo $event->date ?></b></p>
+                </div>
+                <div class="col-lg-4 text-center" data-aos="fade-right" style="display: table; position: relative;">
                     <p class="mb-0"><b><?php echo $event->startTime." PST - $event->endTime"." PST" ?></b></p>
                     <p class="mb-0"><b><?php echo $event->startTimeMST." MST - $event->endTimeMST"." MST" ?></b></p>
                     <p><b><?php echo $event->startTimeEST." EST - $event->endTimeEST"." EST" ?></b></p>
-                </td>
-                <td style="width: 33%">
-                    <p><b><?php echo $event->location ?></b></p>
-                </td>
-                </tr>
-
-                <tr>
-                <td colspan="3" data-aos="fade-right">
-                    <hr>
-                    <?php echo $event->description ?>
-                </td>
-                </tr>
-                <tr>
-                    <td colspan="3" data-aos="fade-right">
-                        <p style="text-align: center;"><a href="<?php echo $event->signupLink ?>" class="btn btn-outline-black">Sign up for this event!</a></p>
-                        <?php
-                        if ($event->calendarLink){
-                          echo '<a target="_blank" href="'.htmlspecialchars($event->calendarLink).'"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>';
-                        }
-                        ?>
-                    </td>
-                </tr>
-            </table>
+                </div>
+                <div class="col-lg-4 text-center" data-aos="fade-right" style="display: table; position: relative;">
+                  <p class="tablechild"><b><?php echo $event->location ?></b></p>
+                </div>
+              </div>
+              <hr>
+              <div data-aos="fade-right">
+                <?php echo $event->description ?>
+                <p style="text-align: center;"><a href="<?php echo $event->signupLink ?>" class="btn btn-outline-black">Sign up for this event!</a></p>
+                <?php
+                if ($event->calendarLink){
+                  echo '<a target="_blank" href="'.htmlspecialchars($event->calendarLink).'"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>';
+                }
+                ?>
+              </div>
             </div>
         </div>
 
@@ -335,21 +336,81 @@ if (mysqli_num_rows($eventTable) != 0){
 
         </div>
         <!--END PANELISTS-->
+        
+        <!--TODO: MAKE THIS DYNAMIC-->
+        <!--GIVEAWAY / SPONSOR INFO-->
+        <div class="row mb-5 justify-content-center" style="text-align: center;">
+          <div class="col-md-12 text-center">
+
+            <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="100">Giveaway Prizes</h2>
+            <h3 class="mb-4 section-title" data-aos="fade-right">Sign up and attend our panel for the chance to win:</h3>
+            <div class="row" style="display:flex; justify-content: center; align-items: center;"data-aos="fade-right" data-aos-delay="100">
+
+              <div class="col-lg-4 mb-4" style="text-align:center;">
+                <div style="padding-bottom: 100%; position: relative; height:100%">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                    <img src="/images/partners/gyu_kaku.jpg" alt="Gyu Kaku Japanese BBQ" style="width: 100%; max-height: 100%; margin:auto;">
+                  </div>
+                </div>
+                <p>Gyu Kaku Japanese BBQ Gift Vouchers</p>   
+              </div>
+
+              <div class="col-lg-4 mb-4" style="text-align:center;">
+                <div style="padding-bottom: 100%; position: relative; height:100%;">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                    <img src="/images/misc/giveaway/google_home.jpg" alt="Google Home Mini" style="width: 90%; max-height: 90%; margin:auto;">
+                  </div>
+                </div>
+                <p>Google Home Mini</p>
+              </div>
+
+              <div class="col-lg-4 mb-4" style="text-align:center;">
+                <div style="padding-bottom: 100%; position: relative; height:100%">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                    <img src="/images/partners/lush.jpg" alt="Lush Cosmetics" style="width: 90%; max-height: 90%; margin:auto;">
+                  </div>
+                </div>
+                <p>Lush Gift Basket</p> 
+              </div>
+
+              <div class="col-lg-4 mb-4" style="text-align:center;">
+                <div style="padding-bottom: 100%; position: relative; height:100%">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                    <img src="/images/partners/virtuous_pie.jpg" alt="Virtuous Pie" style="width: 90%; max-height: 90%; margin:auto;">
+                  </div>
+                </div>
+                <p>Virtuous Pie Gift Card</p> 
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--END SPONSOR-->
 
         <div class="row justify-content-center mb-5" style="margin-top: 3rem;">
-            <div class="col-md-8 text-center" data-aos="fade-up">
-            <p style="text-align: center;"><a href="<?php echo $event->signupLink ?>" class="btn btn-outline-black">Sign up for this event!</a></p>
-            </div>
+          <div class="col-md-8 text-center" data-aos="fade-up">
+          <p style="text-align: center;"><a href="<?php echo $event->signupLink ?>" class="btn btn-outline-black">Sign up for this event!</a></p>
+          </div>
         </div>
-
       </div>
+    </div>
+  </div>
+
+  <div class="section portfolio-section" style="padding-bottom: 1em;">
+    <div class="container justify-content-center" style="width: calc(40rem+40vw); max-width: 90vw;">
+      
     </div>
   </div>
 
   
 
 <!--Services-->
-
+  
+  <style>
+    .services{
+      padding-top:0em;
+    }
+  </style>
   <?php include $_SERVER['DOCUMENT_ROOT']."/components/services.html" ?>
 
   <?php include $_SERVER['DOCUMENT_ROOT']."/components/testimonials.html" ?>
