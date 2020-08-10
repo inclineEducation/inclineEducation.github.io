@@ -12,6 +12,11 @@ RewriteRule ^ %{REQUEST_URI}.php [NC,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^events/([^/]+)$ /events/event?e=$1 [NC]
 
+#Redirect inclineedu.org/events/PARAM to inclineedu.org/events/event?e=PARAM
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^panels/([^/]+)$ /events/event?e=$1 [NC]
+
+
 #Redirect inclineedu.org/blog/PARAM to inclineedu.org/blog/p/post?p=PARAM
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^blog/([^/]+)$ /blog/p/post?p=$1 [NC]
