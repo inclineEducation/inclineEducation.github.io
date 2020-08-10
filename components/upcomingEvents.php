@@ -1,3 +1,5 @@
+<?php
+/*
 <style>
     .work-thumb .work-text {
         text-align: center;
@@ -42,19 +44,19 @@
 	 visibility: visible;
     }
 </style>
-<div class="section events" style="padding-bottom: 0em;">
+<div class="section events upcomingEvents" style="padding-bottom: 0em;">
     <div data-aos="fade" data-aos-delay="100" class="container-fluid">
         <h2 style="text-align: center;">Upcoming Events</h2>
 <?php
     echo <<<TEXT
             <div class="row mb-5 no-gutters justify-content-center">
-                <div class="col-sm-4 col-md-4 col-lg-4" style = "float: left;">
+                <div class="col-sm-4 col-md-4 col-lg-4 text-center" style = "float: left;">
                 <a href=/events/summerpanel2020 class="work-thumb">
                     <div class="work-text">
                         <h2>VIRTUAL PANEL</h2>
                         <p>Youtube Live</p>
                         <p>Sunday, August 9</p>
-                        <p>3:00pm - 4:30pm</p>
+                        <p>RIGHT NOW!</p>
                     </div>
                     <img src=/images/event/vln11032020/25/vln6.jpg alt="Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover"></img>
                 </a>
@@ -64,3 +66,5 @@
 ?>
     </div>
 </div>
+*/
+?>

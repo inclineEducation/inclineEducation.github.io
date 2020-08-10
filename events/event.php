@@ -268,6 +268,7 @@ if (mysqli_num_rows($eventTable) != 0){
         <div class="col-lg-12 col-sm-12">
           <h1 class="mb-4" data-aos="fade-up" data-aos-delay=""><?php echo $event->name ?></h1>
           <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><?php echo $event->date ?></p>
+          <!--TODO: MAKE JOIN BTN DYNAMIC-->
           <br>
           <p data-aos="fade-up" data-aos-delay="200" style="text-align: center;"><a href="/join" class="btn btn-title" style="text-decoration: none;">Join Us Live!</a></p>
           <br>
