@@ -94,7 +94,7 @@
 -->
   <?php include $_SERVER['DOCUMENT_ROOT']."/components/upcomingEvents.php" ?>
 
-  <div class="section portfolio-section" style="padding-top: 0em; padding-bottom: 5em;">
+  <div class="section portfolio-section" style="padding-bottom: 5em;">
     <div class="container">
       <div class="row mb-5 justify-content-center" data-aos="fade-up" style="margin-bottom: 0em!important">
         <div class="col-md-8 text-center">
