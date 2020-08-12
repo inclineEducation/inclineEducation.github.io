@@ -59,7 +59,6 @@ ErrorDocument 404 /404.php
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	Redirect 302 /mentee https://docs.google.com/forms/d/e/1FAIpQLSc7Kdp6-0geraB_RLXVhsIuAGxHz5W-FQ2u4vDt3l99rJGEBA/viewform?usp=sf_link
 	Redirect 302 /mentor https://docs.google.com/forms/d/e/1FAIpQLSee6lcP4eNbxU-oklHTdVgDcGsx4gMV3QfPOzzRNMDMyeAsjw/viewform?usp=sf_link
-	Redirect 302 /signup https://docs.google.com/forms/d/e/1FAIpQLSc7Kdp6-0geraB_RLXVhsIuAGxHz5W-FQ2u4vDt3l99rJGEBA/viewform?usp=sf_link
 	Redirect 302 /calendar https://calendar.google.com/event?action=TEMPLATE&tmeid=MGNwYTdkZHJ0ZnI1Ymg1MmNoMHZja3ZqbWUgY2hyaXN0b3BoZXIubmdAaW5jbGluZWVkdS5vcmc&tmsrc=christopher.ng%40inclineedu.org
 	Redirect 302 /survey https://docs.google.com/forms/d/e/1FAIpQLSdFLP8nB-u1YmJdD7gIJ0VITfNOlOC4JgteykFK0MNad6bKXg/viewform?usp=sf_link
 	
