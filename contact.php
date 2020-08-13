@@ -75,7 +75,7 @@
 
         <div class="col-12 mb-5 order-2">
 		  <!-- add action="#" to change redirect after submitting-->
-          <form name="contact" method="POST" action="/api/contact.php" onsubmit="return required()">
+          <form name="contact" method="POST" action="/api/contact" onsubmit="return required()">
             <div class="row">
             
               <div class="col-md-6 form-group">
