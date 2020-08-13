@@ -100,8 +100,8 @@
         <div class="col-md-8 text-center">
           <h2 class="mb-4 section-title">What We Do</h2>
           <p>
-            Incline Education hosts panel discussions and digital coffee chats for high school students 
-            across Canada to help continue their development in post-secondary education and beyond. 
+            Incline Education provides panel discussions, mentorship services and educational blog articles to 
+            communicate key insights about how high school students can prepare for higher education and beyond.
           </p>
           <p data-aos="fade-up" style="text-align: center;"><a href="about" class="btn btn-outline-black">Learn More</a></p>
           <!-- <p><a href="#">View All Portfolio</a></p> -->
