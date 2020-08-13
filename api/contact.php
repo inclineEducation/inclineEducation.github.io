@@ -40,7 +40,7 @@ if (count($_POST) > 0) {
     require_once "Mail.php";
 
     $from = "Website Contact Form <education.incline@gmail.com>";
-    $to = "Contact <contact@inclineedu.org>";
+    $to = "Roy <zeleidu@gmail.com>";
 
     $host = 'smtp.gmail.com:587';
     $username = 'education.incline@gmail.com';
