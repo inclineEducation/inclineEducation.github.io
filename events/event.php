@@ -15,9 +15,10 @@ class Person {
   public $link = 'N/A';
   public $delay = 'N/A';
   public $mod = '';
+  public $email = '';
 
   function __construct($iname = 'no name', $idescription = 'no description', $ischool = 'no school', $ifaculty = 'no faculty',
-            $iimage = '"no image"', $ilink = 'no link', $imod = false, $idelay = '100'){
+            $iimage = '"no image"', $ilink = 'no link', $imod = false, $iemail = NULL, $idelay = '100'){
     $this->name = $iname;
     $this->description = $idescription;
     $this->image = $iimage;
@@ -26,6 +27,7 @@ class Person {
     $this->school = $ischool;
     $this->faculty = $ifaculty;
     $this->mod = $imod ? '[mod]' : '';
+    $this->email = $iemail;
   }
 
   function output() {
@@ -41,7 +43,8 @@ class Person {
         </div>
         <div class="media-body">
           <h3 class="mt-0 mb-0 text-black">$this->name $this->mod</h3>
-          <p><b>$this->school </b>∣<b> $this->faculty</b></p>
+          <p class="mb-0"><b>$this->school </b>∣<b> $this->faculty</b></p>
+          <a href="mailto:$this->email"><p>$this->email</p></a>
           <p>$this->description</p>
         </div>
       </div>
@@ -130,7 +133,7 @@ $login = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT']."/misc/mysql_lo
 //connect to MySQL
 $conn = new mysqli($login['server'], $login['username'], $login['password']);
 
-$teamTable = $conn->query("SELECT people.firstName,people.lastName,people.description,people.imageURI,people.linkedin,people.school,people.faculty
+$teamTable = $conn->query("SELECT people.firstName,people.lastName,people.description,people.imageURI,people.linkedin,people.school,people.faculty,people.email
 FROM inclineeducation.eventpeople link
 	JOIN inclineeducation.events events
 	ON link.eventID=events.eventID
@@ -169,7 +172,8 @@ if (mysqli_num_rows($eventTable) != 0){
           $row['faculty'],
           $row['imageURI'],
           $row['linkedin'],
-          true
+          true,
+          $row['email']
         )
       );
     } else {
@@ -181,6 +185,8 @@ if (mysqli_num_rows($eventTable) != 0){
           $row['faculty'],
           $row['imageURI'],
           $row['linkedin'],
+          false,
+          $row['email']
         )
       );
     }
