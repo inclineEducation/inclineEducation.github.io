@@ -75,7 +75,7 @@
 
         <div class="col-12 mb-5 order-2">
 		  <!-- add action="#" to change redirect after submitting-->
-          <form name="contact" method="POST" action="contactsub" onsubmit="return required()">
+          <form name="contact" method="POST" action="/api/contact.php" onsubmit="return required()">
             <div class="row">
             
               <div class="col-md-6 form-group">
@@ -96,17 +96,20 @@
             <div class="row">
               <div class="col-md-12 form-group">
                 <label for="email">Email<span style="color: red";>*</span></label>
-                <input name="email" type="email" id="email" class="form-control " placeholder = "Masli.Sunria@gmail.com">
+                <input name="email" type="email" id="email" class="form-control " placeholder = "Masli.Sunria@gmail.com" required>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12 form-group">
                 <label for="message">Write Message<span style="color: red";>*</span></label>
-                <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
+                <textarea name="message" id="message" class="form-control " cols="30" rows="8" required></textarea>
               </div>
 			      </div>
-            <div class="row">
-              <div class="col-md-6 form-group">
+            <div class="row" style="justify-content: center;">
+              <div class="col-md-4 form-group">
+                <div class="g-recaptcha" data-sitekey="6LeeorIZAAAAAK5qG2Htekytn_dbu2UZMqW_rccS"></div>
+              </div>
+              <div class="col-md-4 form-group">
                 <input type="submit" value="Send Message" class="btn btn-outline-black px-3 py-3">
               </div>
             </div>
@@ -115,24 +118,11 @@
         <script>
         function required()
         {
-        var empt = document.forms["contact"]["message"].value;
-        var email = document.forms["contact"]["email"].value;
-        if (empt == "" || email == "")
-        {
-          if (empt == "")
-            document.forms["contact"]["message"].style.background = 'LightPink';
-          else
-            document.forms["contact"]["message"].style.background = 'White';
-          if (email == "")
-            document.forms["contact"]["email"].style.background = 'LightPink';
-          else
-            document.forms["contact"]["email"].style.background = 'white';
-        return false;
-        }
-        else 
-        {
-        return true; 
-        }
+          var recaptcha = $("#g-recaptcha-response").val();
+          if (recaptcha === "") {
+              event.preventDefault();
+              alert("Are you a robot?");
+          }
         }
         </script>
       </div>
@@ -215,6 +205,7 @@
         stroke="#ffc107" /></svg></div>
 
   <?php include "./components/commonScripts.html" ?>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
   
 </body>
 

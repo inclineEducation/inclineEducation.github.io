@@ -1,56 +1,78 @@
 <?php
-    /*
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
-    */
-    if (count($_POST) > 0) {
-      $name = htmlspecialchars($_POST['name']);
-      $email = htmlspecialchars($_POST['email']);
-      $message = htmlspecialchars($_POST['message']);
-      $phone = htmlspecialchars($_POST['phone']);
-      if ($phone == ''){
-        $phone = '<Not Provided>';
-      }
-      if ($name == ''){
-        $name = '<Not Provided>';
-      }
-      $body="From: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
-      $subject = "Contact Form Submission From $name";
-  
-      require_once "Mail.php";
-  
-      $from = "Website Contact Form <education.incline@gmail.com>";
-      $to = "Contact <contact@inclineedu.org>";
-  
-      $host = 'smtp.gmail.com:587';
-      $username = 'education.incline@gmail.com';
-      $password = 'abc123ABC123';
-  
-      $headers = array('from' => $from,
-                      'To' => $to,
-                      'Subject' => $subject);
-      
-      $smtp = Mail::factory('smtp',
-      array ('host' => $host,
-        'auth' => "LOGIN",
-        'socket_options' => array('ssl' => array('verify_peer_name' => false)),
-        'username' => $username,
-        'password' => $password));
-  
-      $mail = $smtp->send($to, $headers, $body);
-  
-      if (PEAR::isError($mail)) {
-          $mailmessage = $mail->getMessage();
-         } else {
-          $mailmessage = "Thank you! We have received your message!";
-         }
-    } else {
-      $mailmessage = "OOPS a wild error appeared! Please email contact@inclineedu.org!";
+/*
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+*/
+if (count($_POST) > 0) {
+  require_once $_SERVER['DOCUMENT_ROOT']."/src/recaptchalib.php";
+  //Verify Captcha
+  $captcha = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT']."/misc/secrets/reCaptcha_keys.json"), true);
+  $recaptcha = new ReCaptcha($captcha['secret']);
+  if ($_POST["g-recaptcha-response"]) {
+    $response = $recaptcha->verifyResponse(
+      $_SERVER["REMOTE_ADDR"],
+      $_POST["g-recaptcha-response"]
+    );
+  }
+
+  if ($response != null && $response->success){
+    //sanitize html
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $message = htmlspecialchars($_POST['message']);
+    $phone = htmlspecialchars($_POST['phone']);
+
+    //check phone number
+    if ($phone == ''){
+      $phone = '<Not Provided>';
     }
+
+    //check name
+    if ($name == ''){
+      $name = '<Not Provided>';
+    }
+
+    //format email message
+    $body="From: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
+    $subject = "Contact Form Submission From $name";
+
+    require_once "Mail.php";
+
+    $from = "Website Contact Form <education.incline@gmail.com>";
+    $to = "Contact <contact@inclineedu.org>";
+
+    $host = 'smtp.gmail.com:587';
+    $username = 'education.incline@gmail.com';
+    $password = 'abc123ABC123';
+
+    $headers = array('from' => $from,
+                    'To' => $to,
+                    'Subject' => $subject);
     
-    
-    header("refresh:10; /contact");
+    $smtp = Mail::factory('smtp',
+    array ('host' => $host,
+      'auth' => "LOGIN",
+      'socket_options' => array('ssl' => array('verify_peer_name' => false)),
+      'username' => $username,
+      'password' => $password));
+
+    $mail = $smtp->send($to, $headers, $body);
+
+    if (PEAR::isError($mail)) {
+      $mailmessage = $mail->getMessage();
+    } else {
+      $mailmessage = "Thank you! We have received your message!";
+    }
+  } else {
+    $mailmessage = "An error occured while processing the Captcha. Please email contact@inclineedu.org!";
+  }
+} else {
+  $mailmessage = "OOPS a wild error appeared! Please email contact@inclineedu.org!";
+}
+
+
+header("refresh:10; /contact");
 ?>
 
 <!DOCTYPE html>
