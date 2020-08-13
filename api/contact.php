@@ -62,7 +62,7 @@ if (count($_POST) > 0) {
     if (PEAR::isError($mail)) {
       $mailmessage = $mail->getMessage();
     } else {
-      $mailmessage = "Thank you! We have received your message!";
+      $mailmessage = "Thank you! We have received your message! ". $mail->getMessage();
     }
   } else {
     $mailmessage = "An error occured while processing the Captcha. Please email contact@inclineedu.org!";
