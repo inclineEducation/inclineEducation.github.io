@@ -77,7 +77,7 @@
           <p data-aos="fade-right" data-aos-delay="100">
             Incline Education hosts in-person and digital panel discussions for high school students transitioning 
             into post-secondary education. To date, our panel discussions have engaged over 1000 parents, students and 
-            teachers in the Greater Vancouver Area through partnerships with numerous schools and educational organizations.  
+            teachers across Canada through partnerships with numerous schools and educational organizations.  
           </p>
           <br>
           <p data-aos="fade-right" data-aos-delay="100">
