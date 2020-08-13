@@ -5,7 +5,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 */
 if (count($_POST) > 0) {
-  require_once $_SERVER['DOCUMENT_ROOT']."/src/recaptchalib";
+  require_once $_SERVER['DOCUMENT_ROOT']."/src/recaptchalib.php";
   //Verify Captcha
   $captcha = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT']."/misc/secrets/reCaptcha_keys.json"), true);
   $recaptcha = new ReCaptcha($captcha['secret']);
