@@ -42,9 +42,10 @@ if (count($_POST) > 0) {
     $from = "Website Contact Form <education.incline@gmail.com>";
     $to = "Contact <contact@inclineedu.org>";
 
+    $login = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT']."/misc/secrets/gmail.json"), true);
     $host = 'smtp.gmail.com:587';
-    $username = 'education.incline@gmail.com';
-    $password = 'abc123ABC123';
+    $username = $login['username'];
+    $password = $login['password'];
 
     $headers = array('from' => $from,
                     'To' => $to,
