@@ -205,7 +205,7 @@ input:focus{
 <p>
     <?php echo "id: $id";?>
 </p>
-<form method="post" id="postdata" action="submitHTML">
+<form method="post" id="postdata" action="submitHTML" style="padding-bottom: 1rem">
     <?php
     $uriField = $new ? '<input id="uri" name="URI" type="text" placeholder="URI" style="font-size: 1.5rem">' : '';
     //set "Is Live" radio button things
