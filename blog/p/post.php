@@ -11,7 +11,11 @@ if (mysqli_num_rows($post) == 1) {
     $lastName = $row['authorLastName'];
     $date = $row['date'];
     $content = $row['content'];
+    if ($row['titleImage']){
     $titleImage = $row['titleImage'];
+    } else {
+      $titleImage = "/blog/i/".$row['id']."/title.jpg";
+    }
 }else{
     $title = "";
     $subtitle = "";
