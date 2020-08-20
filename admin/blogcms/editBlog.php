@@ -108,6 +108,7 @@ post,high,students,teachers,parents,community,advancing,charity,blog,university,
 <link rel="stylesheet" href="/fonts/fontawesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="/fonts/flaticon/font/flaticon.css">
 <link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/blog/p/css/blogpage.css">
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 
