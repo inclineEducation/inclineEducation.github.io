@@ -27,38 +27,39 @@ ErrorDocument 404 /404.php
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 #             301 (permanent redirects)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    # General Redirects for pages
-    Redirect 301 /home /
+# General Redirects for pages
+Redirect 301 /home /
 
-    # admin
+# admin
 
-    # Surveys
-    Redirect 301 /teacherSurvey https://forms.gle/8uNjQ2AV5bH2UHtV9
-    Redirect 301 /teachersurvey https://forms.gle/8uNjQ2AV5bH2UHtV9
-    Redirect 301 /studentSurvey https://forms.gle/LTucpsvXc2jUCrKH7
-    Redirect 301 /studentsurvey https://forms.gle/LTucpsvXc2jUCrKH7
-    Redirect 301 /parentsurvey https://forms.gle/duKmwA42Ub8SCVm16
-    Redirect 301 /parentSurvey  https://forms.gle/duKmwA42Ub8SCVm16
+# Surveys
+Redirect 301 /teacherSurvey https://forms.gle/8uNjQ2AV5bH2UHtV9
+Redirect 301 /teachersurvey https://forms.gle/8uNjQ2AV5bH2UHtV9
+Redirect 301 /studentSurvey https://forms.gle/LTucpsvXc2jUCrKH7
+Redirect 301 /studentsurvey https://forms.gle/LTucpsvXc2jUCrKH7
+Redirect 301 /parentsurvey https://forms.gle/duKmwA42Ub8SCVm16
+Redirect 301 /parentSurvey  https://forms.gle/duKmwA42Ub8SCVm16
 
 
-    # analytics tools
-    Redirect 301 /analytics https://analytics.google.com/analytics/web/#/report-home/a158958448w223443638p212005635
-    Redirect 301 /searchconsole https://search.google.com/u/3/search-console?resource_id=sc-domain%3Ainclineedu.org
-    Redirect 301 /production https://inclineeducation.github.io
+# analytics tools
+Redirect 301 /analytics https://analytics.google.com/analytics/web/#/report-home/a158958448w223443638p212005635
+Redirect 301 /searchconsole https://search.google.com/u/3/search-console?resource_id=sc-domain%3Ainclineedu.org
+Redirect 301 /production https://inclineeducation.github.io
 
-    # general tools
-    Redirect 301 /mail https://mail.inclineedu.org/
+# general tools
+Redirect 301 /mail https://mail.inclineedu.org/
+Redirect 301 /requestfeature https://github.com/inclineEducation/inclineEducation.github.io/issues/new
 
-    # Chris messed up here
-    Redirect 301 /mentorship. /mentorship
+# Chris messed up here
+Redirect 301 /mentorship. /mentorship
 
-    Redirect 301 /lol https://www.youtube.com/watch?v=dQw4w9WgXcQ
+Redirect 301 /lol https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 #             302 (temporary redirects)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	Redirect 302 /mentee https://docs.google.com/forms/d/e/1FAIpQLSc7Kdp6-0geraB_RLXVhsIuAGxHz5W-FQ2u4vDt3l99rJGEBA/viewform?usp=sf_link
-	Redirect 302 /mentor https://docs.google.com/forms/d/e/1FAIpQLSd0B5L0qCNIVcSolACKJm3sZoLeLgvmG02GUYvuw7cRY4rQOw/viewform?usp=sf_link
-	Redirect 302 /calendar https://calendar.google.com/event?action=TEMPLATE&tmeid=MGNwYTdkZHJ0ZnI1Ymg1MmNoMHZja3ZqbWUgY2hyaXN0b3BoZXIubmdAaW5jbGluZWVkdS5vcmc&tmsrc=christopher.ng%40inclineedu.org
-	Redirect 302 /survey https://docs.google.com/forms/d/e/1FAIpQLSdFLP8nB-u1YmJdD7gIJ0VITfNOlOC4JgteykFK0MNad6bKXg/viewform?usp=sf_link
+Redirect 302 /mentee https://docs.google.com/forms/d/e/1FAIpQLSc7Kdp6-0geraB_RLXVhsIuAGxHz5W-FQ2u4vDt3l99rJGEBA/viewform?usp=sf_link
+Redirect 302 /mentor https://docs.google.com/forms/d/e/1FAIpQLSd0B5L0qCNIVcSolACKJm3sZoLeLgvmG02GUYvuw7cRY4rQOw/viewform?usp=sf_link
+Redirect 302 /calendar https://calendar.google.com/event?action=TEMPLATE&tmeid=MGNwYTdkZHJ0ZnI1Ymg1MmNoMHZja3ZqbWUgY2hyaXN0b3BoZXIubmdAaW5jbGluZWVkdS5vcmc&tmsrc=christopher.ng%40inclineedu.org
+Redirect 302 /survey https://docs.google.com/forms/d/e/1FAIpQLSdFLP8nB-u1YmJdD7gIJ0VITfNOlOC4JgteykFK0MNad6bKXg/viewform?usp=sf_link
 	
