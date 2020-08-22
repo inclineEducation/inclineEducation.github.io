@@ -133,7 +133,14 @@
     </div>
   </div>
 
+  <style>
+    .services{
+      padding-bottom: 0;
+    }
+  </style>
   <?php include $_SERVER['DOCUMENT_ROOT']."/components/services.html" ?>
+
+  <?php include $_SERVER['DOCUMENT_ROOT']."/components/media.php"?>
 
 
   <?php include $_SERVER['DOCUMENT_ROOT']."/components/testimonials.html" ?>

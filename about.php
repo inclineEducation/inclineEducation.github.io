@@ -98,7 +98,15 @@
 
 <!--Services-->
 
+<style>
+  .services{
+    padding-bottom: 0;
+  }
+</style>
+
 <?php include "./components/services.html" ?>
+
+<?php include "./components/media.php"?>
 
 <?php include "./components/testimonials.html" ?>
 
