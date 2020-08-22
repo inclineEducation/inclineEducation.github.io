@@ -53,7 +53,8 @@ if (count($_POST) > 0) {
 
     $from = "Website Contact Form <education.incline@gmail.com>";
     $to = "Contact <contact@inclineedu.org>";
-
+    
+    //login with gmail secret -> store in gmail.json
     $login = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT']."/misc/secrets/gmail.json"), true);
     $host = 'smtp.gmail.com:587';
     $username = $login['username'];
@@ -72,14 +73,17 @@ if (count($_POST) > 0) {
 
     $mail = $smtp->send($to, $headers, $body);
 
+    //show error on redirect page if there is an error, otherwise confirmation message
     if (PEAR::isError($mail)) {
       $mailmessage = $mail->getMessage();
     } else {
       $mailmessage = "Thank you! We have received your message! ";
     }
+  //show error on redirect page for captcha errors
   } else {
     $mailmessage = "An error occured while processing the Captcha. Please email contact@inclineedu.org!";
   }
+//show error on redirect page in case of posts not received
 } else {
   $mailmessage = "OOPS a wild error appeared! Please email contact@inclineedu.org!";
 }

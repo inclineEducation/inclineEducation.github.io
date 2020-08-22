@@ -5,3 +5,7 @@
 User-agent: *
 Disallow: /404.html
 Disallow: /admin
+Disallow: /images/color
+Disallow: /images/icons
+Disallow: /images/misc
+Disallow: /images/blog
