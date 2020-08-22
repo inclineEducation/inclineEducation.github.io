@@ -1,5 +1,17 @@
 <?php
 /*
+~~~~~CONTACT API DOCUMENTATION~~~~~
+Contact API uses education.incline@gmail.com email to send contact form submissions to contact@inclineedu.org
+Params (POST):
+  name (optional): name of sender to include in body of email
+  email: email address of sender
+  message: message to include in body of email
+  phone (optional): phone number to include in body of email
+  g-recaptcha-response: recaptcha response to verify human status
+*/
+
+
+/*
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
