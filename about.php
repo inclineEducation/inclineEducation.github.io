@@ -104,9 +104,9 @@
   }
 </style>
 
-<?php include "./components/services.html" ?>
-
 <?php include "./components/media.php"?>
+
+<?php include "./components/services.html" ?>
 
 <?php include "./components/testimonials.html" ?>
 
