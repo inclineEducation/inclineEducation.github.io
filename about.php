@@ -99,7 +99,7 @@
 <!--Services-->
 
 <style>
-  .services{
+  .media{
     padding-bottom: 0;
   }
 </style>
