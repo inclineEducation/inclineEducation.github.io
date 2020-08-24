@@ -2,7 +2,7 @@
 <!-- TODO: MAKE DYNAMIC-->
 <div class="section media" data-aos="fade-up" data-aos-delay="">
   <div class="container">
-    <h2 class="mb-4 section-title" style="text-align: center; color: black;">Media Mentions</h2>
+    <h2 class="mb-4 section-title" style="text-align: center; color: black;">As Seen In</h2>
     <div class="row" style="justify-content:center">
 
       <div class="col-lg-4 mb-4 text-center">
