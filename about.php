@@ -67,7 +67,7 @@
   </div>
 
   
-  <div class="section portfolio-section" style="padding-bottom: 1em;">
+  <div class="section portfolio-section" style="padding-bottom: 0;">
     <div class="container">
       <div class="row mb-5 justify-content-center">
         <div class="col-md-8 text-center">
