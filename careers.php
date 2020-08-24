@@ -92,7 +92,7 @@
           <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Who Are We Looking For?</h2>
           <p data-aos="fade-right" data-aos-delay="100">
           We are looking for motivated individuals who are passionate about education. At Incline Education, no two team members are alike. Our team consists 
-          of individuals from 8+ countries around the world and spanning 10+ different post-secondary programs. 
+          of students from 8+ countries around the world and 10+ different post-secondary programs. 
           </p>
 
           <br>
