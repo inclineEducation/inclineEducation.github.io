@@ -101,6 +101,7 @@
 <style>
   .media{
     padding-bottom: 0;
+    padding-top: 5em;
   }
 </style>
 
