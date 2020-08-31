@@ -2,11 +2,12 @@ rewriteEngine on
 
 Options -Indexes
 
+#getting rid of php extensions
 RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
 RewriteRule ^ /%1 [NC,L,R]
 
 RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^ %{REQUEST_URI}.php [NC,L]
+RewriteRule ^ %{REQUEST_URI}.php [NC]
 
 #Redirect inclineedu.org/events/PARAM to inclineedu.org/events/event?e=PARAM
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -30,6 +31,11 @@ RewriteRule ^blogschedule$ /documents/blogschedule_september.pdf [NC]
 
 
 ErrorDocument 404 /404.php
+
+#Remove trailing slashes on directories - keep at end
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L]
+
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 #             301 (permanent redirects)
