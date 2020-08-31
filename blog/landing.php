@@ -59,11 +59,12 @@ $numPosts = $conn->query("SELECT COUNT(*) FROM inclineeducation.blog")->fetch_al
 
 $upperRange = $numPosts - ( ( $postsPerPage * ($page - 1) ) );
 $lowerRange = $numPosts - ( $postsPerPage * ($page) - 1);
+$offset = $postsPerPage*($page - 1);
 
-$blogTable = $conn->query("SELECT * FROM inclineeducation.blog 
-                            WHERE (id BETWEEN $lowerRange AND $upperRange) AND (`live`='1')
-                            ORDER BY date DESC");
-
+$blogTable = $conn->query("SELECT * FROM inclineeducation.blog ".
+                            ((array_key_exists('hidden',$_GET)) ? "" : "WHERE `live`='1' ")
+                            ."ORDER BY `date` DESC 
+                            LIMIT $postsPerPage OFFSET $offset");
 $conn->close();
 
 $numPages = ceil ( (float) $numPosts / $postsPerPage );
