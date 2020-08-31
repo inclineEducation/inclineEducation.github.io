@@ -61,12 +61,12 @@ ul{
 	float: right;
 }
 
-.fig-left img, .fig-left img {
+.fig-left img, .fig-right img {
 	width: 100%;
 	height: 80%;
 }
 
-.fig-left figcaption, .fig-left figcaption {
+.fig-left figcaption, .fig-right figcaption {
 	text-align: center;
 }
 
