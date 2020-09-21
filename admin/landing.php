@@ -9,14 +9,15 @@ include $_SERVER['DOCUMENT_ROOT']."/admin/components/autoLogin.php";
 
 <head>
   <title>Landing - Incline Admin</title>
-  <meta name="keywords" content="incline,education,mentorship,panel,discussions,secondary,education,school,
-  post,high,students,teachers,parents,community,advancing,charity,blog,university,panel">
+
+  <meta name="robots" content="noindex">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
   <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Roboto+Mono&display=swap" rel="stylesheet">
   <link rel="icon" href="/images/favicon.png">
 
+  <!--stylesheets-->
   <link rel="stylesheet" href="/css/animate.css">
   <link rel="stylesheet" href="/css/owl.carousel.min.css">
   <link rel="stylesheet" href="/css/jquery.fancybox.min.css">

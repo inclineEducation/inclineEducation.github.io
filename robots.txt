@@ -4,7 +4,7 @@
 
 User-agent: *
 Disallow: /404.html
-Disallow: /admin
+# Disallow: /admin  - allowed, but indexing disabled with meta tags
 Disallow: /images/color
 Disallow: /images/icons
 Disallow: /images/misc

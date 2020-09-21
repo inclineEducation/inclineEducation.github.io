@@ -92,8 +92,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.55.0/mode/css/css.js"></script>
 
 <title>Landing - Incline Admin</title>
-<meta name="keywords" content="incline,education,mentorship,panel,discussions,secondary,education,school,
-post,high,students,teachers,parents,community,advancing,charity,blog,university,panel">
+<meta name="robots" content="noindex">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
