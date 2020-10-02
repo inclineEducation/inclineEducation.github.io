@@ -24,7 +24,7 @@ RewriteRule ^blog/([^/]+)$ /blog/p/post?p=$1 [NC]
 
 #blog schedule redirects
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^blogschedule/([^/]+)$ /documents/blogscheule/$1.pdf [NC]
+RewriteRule ^blogschedule/([^/]+)$ /documents/blogschedule/$1.pdf [NC]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^blogschedule$ /documents/blogschedule/october.pdf [NC]
