@@ -24,10 +24,10 @@ RewriteRule ^blog/([^/]+)$ /blog/p/post?p=$1 [NC]
 
 #blog schedule redirects
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^blogschedule/([^/]+)$ /documents/blogschedule_$1.pdf [NC]
+RewriteRule ^blogschedule/([^/]+)$ /documents/blogscheule/$1.pdf [NC]
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^blogschedule$ /documents/blogschedule_september.pdf [NC]
+RewriteRule ^blogschedule$ /documents/blogschedule/october.pdf [NC]
 
 
 ErrorDocument 404 /404.php
