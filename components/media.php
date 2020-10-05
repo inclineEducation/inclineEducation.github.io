@@ -12,6 +12,14 @@
           </div>
         </a>
       </div>
+
+      <div class="col-lg-3 mb-4 text-center">
+        <a href="https://whatsyourtech.ca/2020/09/29/ubc-students-help-high-school-students-transition-to-university-life/">
+          <div class="service">
+            <img src="/images/misc/media/WYT_logo.jpg" target="_blank" alt="BCBusiness" width="100%"><img>
+          </div>
+        </a>
+      </div>
       
     </div>
   </div>
