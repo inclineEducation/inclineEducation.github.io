@@ -73,27 +73,27 @@ ul{
 	text-align: center;
 }
 
-blockquote {
+.quote {
     margin: 0;
 	background: #eee;
 }
 
-blockquote p {
+.quote p {
     padding: 15px;
     border-radius: 3px;
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
 
-blockquote p::before {
+.quote p::before {
     content: '\201C';
 }
 
-blockquote p::after {
+.quote p::after {
     content: '\201D';
 }
 
-blockquote footer {
+.quote footer {
 	padding: 15px;
 	border-radius: 3px;
 }
