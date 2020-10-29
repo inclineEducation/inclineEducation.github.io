@@ -24,7 +24,7 @@ if (mysqli_num_rows($post) == 1) {
     $date = "";
     $content = "";
 }
-$dateString = date_format(date_create($date), 'F dS, Y');
+$dateString = date_format(date_create($date), 'F jS, Y');
 ?>
 
 <!DOCTYPE html>
