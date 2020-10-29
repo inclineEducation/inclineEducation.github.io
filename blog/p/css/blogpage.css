@@ -66,6 +66,7 @@ ul{
 	max-width: 100%;
 	max-height: 64vh;
 	min-height: 480px;
+	object-fit: contain;
 }
 
 .fig-left figcaption, .fig-right figcaption {
