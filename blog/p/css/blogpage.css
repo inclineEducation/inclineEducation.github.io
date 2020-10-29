@@ -92,3 +92,8 @@ blockquote p::before {
 blockquote p::after {
     content: '\201D';
 }
+
+blockquote footer {
+	padding: 15px;
+	border-radius: 3px;
+}
