@@ -75,11 +75,11 @@ ul{
 
 blockquote {
     margin: 0;
+	background: #eee;
 }
 
 blockquote p {
     padding: 15px;
-    background: #eee;
     border-radius: 3px;
 }
 
