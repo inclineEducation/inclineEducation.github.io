@@ -81,6 +81,8 @@ blockquote {
 blockquote p {
     padding: 15px;
     border-radius: 3px;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 blockquote p::before {
