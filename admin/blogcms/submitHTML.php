@@ -108,7 +108,7 @@ if ($authLevel >= 5){
     }
 }else{
    echo "oops you're not logged in";
-   echo "auth level:".$_SESSION["authLevel"];
+   echo "auth level: ".$_SESSION["authLevel"];
 }
 
 ?>
