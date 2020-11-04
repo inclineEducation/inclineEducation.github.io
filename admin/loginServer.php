@@ -39,7 +39,7 @@
           $_SESSION["authlevel"] = $user['access'];
         } else {
           //TODO: CREATE NEW USER
-          $access = ($domain == 'inclineedu.org' ? '5', '0');
+          $access = ($domain == 'inclineedu.org' ? '5': '0');
           $conn->query("INSERT INTO `inclineeducation`.`users` (`uuid`,`email`, `access`, `team`) VALUES ((SELECT UUID()),'$email', '0', $access)");
           $_SESSION["authlevel"] = 0;
         }
