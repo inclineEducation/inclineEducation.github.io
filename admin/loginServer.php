@@ -35,7 +35,7 @@
         $user = $conn->query("SELECT * FROM inclineeducation.users WHERE email = '$email'");
         if ( mysqli_num_rows($user) >= 1 ){
         // LOGIN
-          $user = $user.fetch_assoc();
+          $user = $user->fetch_assoc();
           $_SESSION["authLevel"] = $user['access'];
         } else {
           // CREATE NEW USER
