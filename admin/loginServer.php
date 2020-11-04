@@ -32,7 +32,7 @@
         $conn = new mysqli($login['server'], $login['username'], $login['password']);
 
         //TEST IF USER EXISTS
-        $user = $conn->query("SELECT * FROM inclineeducation.users WHERE email = $email");
+        $user = $conn->query("SELECT * FROM inclineeducation.users WHERE email = '$email'");
         if ( mysqli_num_rows($user) >= 1 ){
         // LOGIN
           $user = $user.fetch_assoc();
