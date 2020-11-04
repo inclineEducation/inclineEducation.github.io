@@ -36,7 +36,7 @@
         if ( mysqli_num_rows($user) >= 1 ){
         // LOGIN
           $user = $user.fetch_assoc();
-          $_SESSION["authlevel"] = $user['access'];
+          $_SESSION["authLevel"] = $user['access'];
         } else {
           // CREATE NEW USER
           // AUTOMATICALLY GRANT PERMISSIONS TO INCLINE GMAIL ACCOUNTS
@@ -44,7 +44,7 @@
 
           // TODO: AUTOMATICALLY SET TEAM FLAG (AND CLAIM TEAM ACCOUNT)
           $conn->query("INSERT INTO `inclineeducation`.`users` (`uuid`,`email`, `access`, `team`) VALUES ((SELECT UUID()),'$email', '$access', '0')");
-          $_SESSION["authlevel"] = 0;
+          $_SESSION["authLevel"] = 0;
         }
         
         if ($domain == 'inclineedu.org'){
