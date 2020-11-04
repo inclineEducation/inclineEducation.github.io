@@ -38,8 +38,11 @@
           $user = $user.fetch_assoc();
           $_SESSION["authlevel"] = $user['access'];
         } else {
-          //TODO: CREATE NEW USER
+          // CREATE NEW USER
+          // AUTOMATICALLY GRANT PERMISSIONS TO INCLINE GMAIL ACCOUNTS
           $access = ($domain == 'inclineedu.org' ? '5': '0');
+
+          // TODO: AUTOMATICALLY SET TEAM FLAG (AND CLAIM TEAM ACCOUNT)
           $conn->query("INSERT INTO `inclineeducation`.`users` (`uuid`,`email`, `access`, `team`) VALUES ((SELECT UUID()),'$email', '$access', '0')");
           $_SESSION["authlevel"] = 0;
         }
