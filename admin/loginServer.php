@@ -40,16 +40,16 @@
         } else {
           // CREATE NEW USER
           // AUTOMATICALLY GRANT PERMISSIONS TO INCLINE GMAIL ACCOUNTS
-          $access = ($domain == 'inclineedu.org' ? '5': '0');
+          $access = ($domain == 'inclineedu.org' ? 6: 0);
 
           // TODO: AUTOMATICALLY SET TEAM FLAG (AND CLAIM TEAM ACCOUNT)
           $conn->query("INSERT INTO `inclineeducation`.`users` (`uuid`,`email`, `access`, `team`) VALUES ((SELECT UUID()),'$email', '$access', '0')");
-          $_SESSION["authLevel"] = 0;
+          $_SESSION["authLevel"] = $access;
         }
         
         if ($domain == 'inclineedu.org'){
-            echo '<p>Incline Education Email Signed In<p>';
-            $_SESSION["authLevel"] = 5;
+          echo '<p>Incline Education Email Signed In<p>';
+          $_SESSION["authLevel"] = 5;
         }
       } else {
         // Invalid ID token
