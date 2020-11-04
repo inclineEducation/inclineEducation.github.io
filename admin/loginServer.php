@@ -26,6 +26,23 @@
         echo var_dump($payload);
         // If request specified a G Suite domain:
         $domain = $payload['hd'];
+        $email = strtolower($payload['email']);
+
+        $login = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT']."/misc/mysql_login.json"), true);
+        $conn = new mysqli($login['server'], $login['username'], $login['password']);
+
+        //TEST IF USER EXISTS
+        $user = $conn->query("SELECT * FROM inclineeducation.users WHERE email = $email");
+        if ( mysqli_num_rows($user) >= 1 ){
+        // LOGIN
+          $user = $user.fetch_assoc();
+          $_SESSION["authlevel"] = $user['access'];
+        } else {
+          //TODO: CREATE NEW USER
+          $conn->query("INSERT INTO `inclineeducation`.`users` (`uuid`,`email`, `access`, `team`) VALUES ((SELECT UUID()),'$email', '0', '0')");
+          $_SESSION["authlevel"] = 0;
+        }
+        
         if ($domain == 'inclineedu.org'){
             echo '<p>Incline Education Email Signed In<p>';
             $_SESSION["authLevel"] = 5;
