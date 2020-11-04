@@ -57,9 +57,6 @@ include $_SERVER['DOCUMENT_ROOT']."/admin/components/autoLogin.php";
   <div class="section portfolio-section">
     <div class="container">
       <div class="row mb-5 justify-content-center" style="height:100vh;">
-      <p>
-      <?php echo "auth level: ".$_SESSION['authLevel'] ?>
-      </p>
         <div class="col-md-25 text-center">
             <!--CONTENT-->
             <a class="btn btn-outline-black" href="/admin/blogcms/landing">Blog Editor (HTML)</a>
