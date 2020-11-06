@@ -60,6 +60,7 @@ include $_SERVER['DOCUMENT_ROOT']."/admin/components/autoLogin.php";
         <h2>
           <?php echo "Welcome, ".$_SESSION['user']['name'] ?>
         </h2>
+		<hr>
       </div>
       <div class="row mb-5 justify-content-center">
         <div class="col-md-3 text-center mb-4">
