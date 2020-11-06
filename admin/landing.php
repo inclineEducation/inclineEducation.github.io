@@ -56,10 +56,14 @@ include $_SERVER['DOCUMENT_ROOT']."/admin/components/autoLogin.php";
   
   <div class="section portfolio-section">
     <div class="container">
-      <div class="row mb-5 justify-content-center" style="height:100vh;">
+      <div class="row mb-5 justify-content-center">
         <div class="col-md-25 text-center">
             <!--CONTENT-->
             <a class="btn btn-outline-black" href="/admin/blogcms/landing">Blog Editor (HTML)</a>
+        </div>
+		<div class="col-md-25 text-center">
+            <!--CONTENT-->
+            <a class="btn btn-outline-black" href="/blogschedule">Blog Schedule</a>
         </div>
       </div>
     </div>
