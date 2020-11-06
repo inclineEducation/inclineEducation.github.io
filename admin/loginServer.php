@@ -26,10 +26,27 @@
         echo var_dump($payload);
         // If request specified a G Suite domain:
         $domain = $payload['hd'];
-        if ($domain == 'inclineedu.org'){
-            echo '<p>Incline Education Email Signed In<p>';
-            $_SESSION["authLevel"] = 5;
+        $email = strtolower($payload['email']);
+
+        $login = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT']."/misc/mysql_login.json"), true);
+        $conn = new mysqli($login['server'], $login['username'], $login['password']);
+
+        //TEST IF USER EXISTS
+        $user = $conn->query("SELECT * FROM inclineeducation.users WHERE email = '$email'");
+        if ( mysqli_num_rows($user) >= 1 ){
+        // LOGIN
+          $user = $user->fetch_assoc();
+          $_SESSION["authLevel"] = $user['access'];
+        } else {
+          // CREATE NEW USER
+          // AUTOMATICALLY GRANT PERMISSIONS TO INCLINE GMAIL ACCOUNTS
+          $access = ($domain == 'inclineedu.org' ? 6: 0);
+
+          // TODO: AUTOMATICALLY SET TEAM FLAG (AND CLAIM TEAM ACCOUNT)
+          $conn->query("INSERT INTO `inclineeducation`.`users` (`uuid`,`email`, `access`, `team`) VALUES ((SELECT UUID()),'$email', '$access', '0')");
+          $_SESSION["authLevel"] = $access;
         }
+        
       } else {
         // Invalid ID token
         echo "failed";

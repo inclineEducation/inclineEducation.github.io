@@ -57,6 +57,11 @@ include $_SERVER['DOCUMENT_ROOT']."/admin/components/autoLogin.php";
   <div class="section portfolio-section">
     <div class="container">
       <div class="row mb-5 justify-content-center">
+        <h2>
+          <?php echo "Welcome, ".$_SESSION['user']['name'] ?>
+        </h2>
+      </div>
+      <div class="row mb-5 justify-content-center">
         <div class="col-md-25 text-center">
             <!--CONTENT-->
             <a class="btn btn-outline-black" href="/admin/blogcms/landing">Blog Editor (HTML)</a>
