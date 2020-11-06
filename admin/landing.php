@@ -62,11 +62,11 @@ include $_SERVER['DOCUMENT_ROOT']."/admin/components/autoLogin.php";
         </h2>
       </div>
       <div class="row mb-5 justify-content-center">
-        <div class="col-md-25 text-center" style="margin: 1rem;">
+        <div class="col-md-3 text-center mb-4">
             <!--Blog Editor-->
             <a class="btn btn-outline-black" href="/admin/blogcms/landing">Blog Editor (HTML)</a>
         </div>
-		<div class="col-md-25 text-center" style="margin: 1rem;">
+		<div class="col-md-3 text-center mb-4">
             <!--Blog Schedule-->
             <a class="btn btn-outline-black" href="/blogschedule">Blog Schedule</a>
         </div>
