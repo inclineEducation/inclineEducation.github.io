@@ -27,7 +27,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^blogschedule/([^/]+)$ /documents/blogschedule/$1.pdf [NC]
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^blogschedule$ /documents/blogschedule/november.pdf [NC]
+RewriteRule ^blogschedule$ /documents/blogschedule/december.pdf [NC]
 
 
 ErrorDocument 404 /404.php
