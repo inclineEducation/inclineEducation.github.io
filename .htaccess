@@ -55,7 +55,7 @@ Redirect 301 /parentSurvey  https://forms.gle/duKmwA42Ub8SCVm16
 
 # Accelerator
 Redirect 301 /acceleratorinfo https://drive.google.com/file/d/1IKjyh74qaBXm--aILVD0pvsuINDXsWyB/view?usp=sharing
-Redirect 301 /acceleratorsignup https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2F1tTkOL7mo_DIk4bAg6pTOzRY9rdmOF9VPPIhOUEXHr0Y%2Fedit
+Redirect 301 /acceleratorsignup https://forms.gle/xD2dVa75yx2Lkv3eA
 
 # analytics tools
 Redirect 301 /analytics https://analytics.google.com/analytics/web/#/report-home/a158958448w223443638p212005635
