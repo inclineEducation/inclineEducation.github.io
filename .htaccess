@@ -22,6 +22,10 @@ RewriteRule ^panels/([^/]+)$ /events/event?e=$1 [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^blog/([^/]+)$ /blog/p/post?p=$1 [NC]
 
+#Team Redirects Redirect (RECURSIVE REDIRECT?!?)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^r/([^/]+)$ /redirect?r=$1 [NC]
+
 #blog schedule redirects
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^blogschedule/([^/]+)$ /documents/blogschedule/$1.pdf [NC]
