@@ -11,7 +11,7 @@ class Redirect {
     function __construct($sourceurl = '', $desturl = '', $author = ''){
         $this->sourceurl = $sourceurl;
         $this->desturl = $desturl;
-        $this->authur = is_null($author) ? '' : $author;
+        $this->author = is_null($author) ? '4everalone' : $author;
     }
 
 }
@@ -30,16 +30,10 @@ while ($row = $redirectsTable->fetch_assoc()){
     array_push($redirects, new Redirect(
                 $row['sourceurl'],
                 $row['desturl'],
-                $row['author']   
+                $row['author']
     ));
 }
-
-print_r($redirects);
-
 ?>
-
-<?php
-/*
 <!DOCTYPE html>
 <html lang="en">
 
@@ -90,38 +84,61 @@ print_r($redirects);
   
   <div class="section portfolio-section"  style="height:100vh;">
     <div class="container">
-      <div class="row mb-5 justify-content-center">
-        <div class="col-md-25 text-center">
+      <div class="row mb-5 justify-content-center text-center">
+        <div class="col-md-25 justify-content-center text-center">
             <!--CONTENT-->
-            <form method="get" id="editBlog" action="editBlog">
-                <div class="form-group">
-                   <input type="radio" id="new" name="action" value="new" required>
-                   <label for="new">New</label>
-                   <input type="radio" id="edit" name="action" value="edit" required>
-                   <label for="edit">Edit</label>
+            <h3>Current Redirects</h3>
+            <div style="overflow-y: auto; overflow-x: hidden; max-height: 70vh">
+                <style>
+                th {
+                    border-bottom: 1px solid black;
+                }
+                </style>
+                <hr>
+                <table style="width: 90vw">
+                <tr>
+                    <th>Source URL</th>
+                    <th>Destination URL</th>
+                    <th>Author</th>
+                </tr>
+                <?php
+                foreach($redirects as $redirect){
+                    echo <<<STRING
+                    <tr>
+                        <td>$redirect->sourceurl</td>
+                        <td>$redirect->desturl</td>
+                        <td>$redirect->author</td>
+                    </tr>
+                    STRING;
+                }
+                ?>
+                </table>
+            </div>
+            <br>
+            <h3>Add new redirect</h3>
+            <hr>
+            <form id="redirectForm">
+                <div class="row mb-1 justify-content-center text-center">
+                    <div class="col-md-4 text-center mb-4">
+                    <label for="sourceurl">https://inclineedu.org/r/</label>
+                    <input id="sourceurl" name="sourceurl" placeholder="Source URL">
+                    </div>
+                    <div class="col-md-2 text-center mb-4">
+                    <input id="desturl" name="desturl" placeholder="Destination URL">
+                    </div>
                 </div>
-
-                <div class="form-group" id="editGroup">
-                    <label for="editTitle">Blog Post:</label>
-                    <select id="editTitle" name="URI" style="max-width:90vw;" required>
-                        <option hidden disabled selected value> -- select an option -- </option>
-                        <?php
-                            while ($row = $posts->fetch_assoc()) {
-                                echo '<option value='.$row["URI"].'>'.$row["title"].'</option>';
-                            }
-                        ?>
-                    </select>
+                <div class="row mb-5 justify-content-center text-center">
+                    <div class="col-md-2 text-center mb-4">
+                        <input type="submit" value="Submit">
+                    </div>
                 </div>
-
-                <input type="submit" value="Next">
-
             </form>
+
         </div>
       </div>
     </div>
   </div>
 
-  <?php include $_SERVER['DOCUMENT_ROOT']."./components/footer.html" ?>
   <!-- loader -->
     <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
       <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
@@ -131,37 +148,43 @@ print_r($redirects);
         
   <?php include $_SERVER['DOCUMENT_ROOT']."/components/commonScripts.html" ?>
     <script>
-        $("#new").change(function(){
-            if ($(this).is(':checked')){
-              console.log("Blog Post Selector Hidden");
-              $('#editGroup').hide();
-              $('#editTitle').removeAttr('required');
-              $('#editTitle').val("");
+        window.addEventListener( "load", function () {
+            function sendData() {
+                const XHR = new XMLHttpRequest();
+                const FD = new FormData( form );
+
+                // Define what happens on successful data submission
+                XHR.addEventListener( "load", function(event) {
+                    if (event.target.status == 201){
+                        if (alert(event.target.responseText)) {}
+                        else window.location.reload();
+                    } else {
+                        alert(event.target.responseText);
+                    }
+                } );
+
+                // Define what happens in case of error
+                XHR.addEventListener( "error", function( event ) {
+                alert( 'Oops! Something went wrong.' );
+                } );
+
+                // Set up our request
+                XHR.open( "POST", "/admin/redirects/newredirect" );
+
+                // The data sent is what the user provided in the form
+                XHR.send( FD );
             }
-        });
-        $("#edit").change(function(){
-            if ($(this).is(':checked')){
-              console.log("Blog Post Selector Shown");
-              $('#editGroup').show();
-              $('#editTitle').attr('required', '');
-            }
-        });
-        
-        $( document ).ready(function() {
-          if ($("#edit").is(':checked')){
-            console.log("Blog Post Selector Shown");
-            $('#editGroup').show();
-            $('#editTitle').attr('required', '');
-          } else {
-            console.log("Blog Post Selector Hidden");
-            $('#editGroup').hide();
-            $('#editTitle').removeAttr('required');
-            $('#editTitle').val("");
-          }
-        });
+
+        // Access the form element...
+        const form = document.getElementById( "redirectForm" );
+
+        // ...and take over its submit event.
+        form.addEventListener( "submit", function ( event ) {
+            event.preventDefault();
+            sendData();
+        } );
+    } );
     </script>
 
 </body>
 </html>
-*/
-?>
