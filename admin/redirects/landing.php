@@ -87,6 +87,24 @@ while ($row = $redirectsTable->fetch_assoc()){
       <div class="row mb-5 justify-content-center text-center">
         <div class="col-md-25 justify-content-center text-center">
             <!--CONTENT-->
+            <h3>Add new redirect</h3>
+            <hr>
+            <form id="redirectForm">
+                <div class="row mb-1 justify-content-center text-center">
+                    <div class="col-md-4 text-center mb-4">
+                    <label for="sourceurl">https://inclineedu.org/r/</label>
+                    <input id="sourceurl" name="sourceurl" placeholder="Source URL">
+                    </div>
+                    <div class="col-md-2 text-center mb-4">
+                    <input id="desturl" name="desturl" placeholder="Destination URL">
+                    </div>
+                </div>
+                <div class="row mb-5 justify-content-center text-center">
+                    <div class="col-md-2 text-center mb-4">
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
             <h3>Current Redirects</h3>
             <div style="overflow-y: auto; overflow-x: hidden; max-height: 70vh">
                 <style>
@@ -114,26 +132,6 @@ while ($row = $redirectsTable->fetch_assoc()){
                 ?>
                 </table>
             </div>
-            <br>
-            <h3>Add new redirect</h3>
-            <hr>
-            <form id="redirectForm">
-                <div class="row mb-1 justify-content-center text-center">
-                    <div class="col-md-4 text-center mb-4">
-                    <label for="sourceurl">https://inclineedu.org/r/</label>
-                    <input id="sourceurl" name="sourceurl" placeholder="Source URL">
-                    </div>
-                    <div class="col-md-2 text-center mb-4">
-                    <input id="desturl" name="desturl" placeholder="Destination URL">
-                    </div>
-                </div>
-                <div class="row mb-5 justify-content-center text-center">
-                    <div class="col-md-2 text-center mb-4">
-                        <input type="submit" value="Submit">
-                    </div>
-                </div>
-            </form>
-
         </div>
       </div>
     </div>

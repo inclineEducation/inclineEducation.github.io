@@ -66,9 +66,13 @@ include $_SERVER['DOCUMENT_ROOT']."/admin/components/autoLogin.php";
             <!--Blog Editor-->
             <a class="btn btn-outline-black" href="/admin/blogcms/landing">Blog Editor (HTML)</a>
         </div>
-		<div class="col-md-3 text-center mb-4">
+		    <div class="col-md-3 text-center mb-4">
             <!--Blog Schedule-->
             <a class="btn btn-outline-black" href="/blogschedule">Blog Schedule</a>
+        </div>
+        <div class="col-md-3 text-center mb-4">
+            <!--Redirect Creator-->
+            <a class="btn btn-outline-black" href="/admin/redirects">Redirects</a>
         </div>
       </div>
     </div>
