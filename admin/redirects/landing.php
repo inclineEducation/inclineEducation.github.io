@@ -1,4 +1,21 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+class Redirect {
+    public $sourceurl = '';
+    public $desturl = '';
+    public $author = '';
+
+    function __construct($sourceurl = '', $desturl = '', $author = ''){
+        $this->sourceurl = $sourceurl;
+        $this->desturl = $desturl;
+        $this->authur = is_null($author) ? '' : $author;
+    }
+
+}
+
 session_start();
 include $_SERVER['DOCUMENT_ROOT']."/admin/components/autoLogin.php";
 
@@ -6,16 +23,28 @@ include $_SERVER['DOCUMENT_ROOT']."/admin/components/autoLogin.php";
 $login = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT']."/misc/mysql_login.json"), true);
 $conn = new mysqli($login['server'], $login['username'], $login['password']);
 
-$posts = $conn->query("SELECT title, URI FROM inclineeducation.blog ORDER BY id DESC");
+$redirectsTable = $conn->query("SELECT * FROM inclineeducation.redirects");
+
+$redirects = array();
+while ($row = $redirectsTable->fetch_assoc()){
+    array_push($redirects, new Redirect(
+                $row['sourceurl'],
+                $row['desturl'],
+                $row['author']   
+    ));
+}
+
+print_r($redirects);
 
 ?>
 
-
+<?php
+/*
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>Blog Editor - Incline Admin</title>
+  <title>Redirects - Incline Admin</title>
   <meta name="robots" content="noindex">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -134,3 +163,5 @@ $posts = $conn->query("SELECT title, URI FROM inclineeducation.blog ORDER BY id 
 
 </body>
 </html>
+*/
+?>

@@ -1,7 +1,4 @@
 <?php
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
     if (!array_key_exists('r', $_GET)){
         include($_SERVER['DOCUMENT_ROOT']."/404.php");
         exit();
@@ -14,9 +11,7 @@
     $conn = new mysqli($login['server'], $login['username'], $login['password']);
     $sourceurl = $_GET['r'];
 
+    //fetch destination URL, and redirect.
     $desturl = $conn->query("SELECT desturl FROM inclineeducation.redirects WHERE sourceurl = '$sourceurl'")->fetch_assoc()['desturl'];
-    print('hello world');
-    print($sourceurl);
     header("Location: $desturl");
-
 ?>
