@@ -73,7 +73,7 @@
     <div class="container">
       <div class="row mb-5 justify-content-center">
         <div class="col-md-10 text-center">
-        <h2 class="mb-4 section-title" data-aos-delay="" id="table_of_contents">Quick Links</h2>
+        <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" id="table_of_contents">Quick Links</h2>
           <p data-aos="fade-right"><a href="#purpose">Purpose Of This Program<a></p>
           <p data-aos="fade-right"><a href="#provide">What We Provide<a></p>
           <p data-aos="fade-right"><a href="#goal">Our Goal For You<a></p>
