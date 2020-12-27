@@ -73,13 +73,11 @@
     <div class="container">
       <div class="row mb-5 justify-content-center">
         <div class="col-md-10 text-center">
-        <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" id="table_of_contents">Quick Links</h2>
-          <ul style="list-style-type: none">
-            <p><a href="#purpose">Purpose Of This Program<a></p>
-            <p><a href="#provide">What We Provide<a></p>
-            <p><a href="#goal">Our Goal For You<a></p>
-            <p><a href="#application">Application<a></p>
-          </ul>
+        <h2 class="mb-4 section-title" data-aos-delay="" id="table_of_contents">Quick Links</h2>
+          <p data-aos="fade-right"><a href="#purpose">Purpose Of This Program<a></p>
+          <p data-aos="fade-right"><a href="#provide">What We Provide<a></p>
+          <p data-aos="fade-right"><a href="#goal">Our Goal For You<a></p>
+          <p data-aos="fade-right"><a href="#application">Application<a></p>
           <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" id="purpose">Purpose Of This Program</h2>
           <p data-aos="fade-right">
             The Incline Education Accelerator Program is a one-of-a-kind program
