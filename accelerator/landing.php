@@ -61,7 +61,7 @@
       <div class="row slider-text align-items-center justify-content-center text-center">
         <div class="col-lg-12 col-sm-12">
           <h1 class="mb-1" data-aos="fade-up">Accelerator Program</h1>
-          <h2 class="mb-3" data-aos="fade-up" style="font-family:'DM Serif Display, sans-serif'; font-size: 5rem; color: #fff">Helping you find your next internship</h2>
+          <h2 class="mb-3" data-aos="fade-up" style="font-family:'DM Serif Display, sans-serif'; font-size: 2rem; color: #fff">Helping you find your next internship</h2>
           <p data-aos="fade-up" style="text-align: center;" class="mb-2"><a href="/acceleratorsignup" class="btn btn-title" style="text-decoration: none;">Apply Here!</a></p>
 		      <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><a href="/index.php">Home</a> <span class="mx-3">/</span>Accelerator Program</p>
         </div>
@@ -69,7 +69,7 @@
     </div>
   </div>
 
-  <div class="section portfolio-section" style="padding-bottom: 0;">
+  <div class="section portfolio-section" style="padding-bottom: 0; padding-top: 2rem">
     <div class="container">
       <div class="row mb-5 justify-content-center">
         <div class="col-md-10 text-center">
@@ -129,7 +129,7 @@
           <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" id="application">Application</h2>
           <p data-aos="fade-right">We are looking for highly motivated 1st year students from all faculties at the University of British Columbia.</p>
             <p data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
-              <a href="https://inclineedu.org/accelerator.signup" class="btn btn-outline-black" style="text-decoration: none;">Apply Here!</a>
+              <a href="https://inclineedu.org/acceleratorsignup" class="btn btn-outline-black" style="text-decoration: none;">Apply Here!</a>
             </p>
         </div>
       </div>
