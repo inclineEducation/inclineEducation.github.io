@@ -122,7 +122,7 @@
           </p>
           <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Timeline Of Program</h2>
             <p data-aos="fade-right">December 15: Application Opens</p>
-            <p data-aos="fade-right">January 4: Deadline for Application</p>
+            <p data-aos="fade-right">January 12: Deadline for Application</p>
             <p data-aos="fade-right">January 12-19: Interviews</p>
             <p data-aos="fade-right">January 21: Offers Sent Out</p>
             <p data-aos="fade-right">January 24 - March 7: Program Sessions</p>
