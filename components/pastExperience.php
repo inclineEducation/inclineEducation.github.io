@@ -1,6 +1,6 @@
 <!-- STARRING IN-->
 <!-- TODO: MAKE DYNAMIC-->
-<div class="section media" data-aos="fade-up" data-aos-delay="">
+<div class="section experience" data-aos="fade-up" data-aos-delay="" style="padding-top: 2rem">
     <div class="container">
       <h2 class="mb-4 section-title" style="text-align: center; color: black;">Our Mentors Have Been At</h2>
       <div class="row" style="justify-content:center">
@@ -8,14 +8,14 @@
         <!-- 3M -->
         <div class="col-lg-2 mb-4 text-center Aligner">
           <div class="service aligner-item--top">
-            <img src="/images/misc/logos/3M._2png.png" target="_blank" alt="3M" width="100%"><img>
+            <img src="/images/misc/logos/3M._2png.png" target="_blank" alt="3M" width="100%" style="max-width: 80vw"><img>
           </div>
         </div>
 
         <!-- Apple -->
         <div class="col-lg-1 mb-4 text-center Aligner">
           <div class="service aligner-item--top">
-            <img src="/images/misc/logos/Apple.png" target="_blank" alt="Apple" width="100%" style="max-width: 20vw"><img>
+            <img src="/images/misc/logos/Apple.png" target="_blank" alt="Apple" width="100%" style="max-width: 40vw"><img>
           </div>
         </div>
 
@@ -29,7 +29,7 @@
         <!--Intel-->
         <div class="col-lg-2 mb-4 text-center Aligner">
           <div class="service aligner-item--top">
-            <img src="/images/misc/logos/Intel.png" target="_blank" alt="Intel" width="100%"><img>
+            <img src="/images/misc/logos/Intel.png" target="_blank" alt="Intel" width="100%" style="max-width: 85vw"><img>
           </div>
         </div>
 
@@ -43,7 +43,7 @@
         <!-- Lilly -->
         <div class="col-lg-3 mb-4 text-center Aligner">
           <div class="service aligner-item--top">
-            <img src="/images/misc/logos/Lilly.png" target="_blank" alt="BCBusiness" width="100%"><img>
+            <img src="/images/misc/logos/Lilly.png" target="_blank" alt="Lilly" width="100%"><img>
           </div>
         </div>
 
@@ -64,7 +64,7 @@
         <!-- RBC -->
         <div class="col-lg-3 mb-4 text-center Aligner">
           <div class="service aligner-item--top">
-            <img src="/images/misc/logos/RBC_2.png" target="_blank" alt="RBC" width="100%" style="max-width: 20vw"><img>
+            <img src="/images/misc/logos/RBC_2.png" target="_blank" alt="RBC" width="100%"><img>
           </div>
         </div>
 

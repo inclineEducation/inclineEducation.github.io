@@ -62,14 +62,14 @@
         <div class="col-lg-12 col-sm-12">
           <h1 class="mb-1" data-aos="fade-up">Accelerator Program</h1>
           <h2 class="mb-3" data-aos="fade-up" style="font-family:'DM Serif Display, sans-serif'; font-size: 2rem; color: #fff">Helping you find your next internship</h2>
-          <p data-aos="fade-up" style="text-align: center;" class="mb-2"><a href="/acceleratorsignup" class="btn btn-title" style="text-decoration: none;">Apply Here!</a></p>
+          <p data-aos="fade-up" style="text-align: center;" class="mb-2"><div href="/acceleratorsignup" class="btn btn-title-disabled" style="text-decoration: none; cursor: auto;" disabled>Applications Open Sept. 2021</div></p>
 		      <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><a href="/index.php">Home</a> <span class="mx-3">/</span>Accelerator Program</p>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="section portfolio-section" style="padding-bottom: 0; padding-top: 2rem">
+  <div class="section portfolio-section" style="padding-bottom: 0;">
     <div class="container">
       <div class="row mb-5 justify-content-center">
         <div class="col-md-10 text-center">
@@ -121,22 +121,29 @@
             chances of securing spots are uniquely maximized.
           </p>
           <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Timeline Of Program</h2>
-            <p data-aos="fade-right">December 15: Application Opens</p>
-            <p data-aos="fade-right">January 12: Deadline for Application</p>
-            <p data-aos="fade-right">January 12-19: Interviews</p>
-            <p data-aos="fade-right">January 21: Offers Sent Out</p>
-            <p data-aos="fade-right">January 24 - March 7: Program Sessions</p>
+            <p data-aos="fade-right">September 7: Application Opens</p>
+            <p data-aos="fade-right">September 21: Deadline for Application</p>
+            <p data-aos="fade-right">September 22-29: Interviews</p>
+            <p data-aos="fade-right">September 30: Offers Sent Out</p>
+            <p data-aos="fade-right">October 3 - November 21: Program Sessions</p>
           <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" id="application">Application</h2>
-          <p data-aos="fade-right">We are looking for highly motivated 1st year students from all faculties at the University of British Columbia.</p>
+          <p data-aos="fade-right">
+            <!--We are looking for highly motivated 1st year students from all faculties at the University of British Columbia.-->
+            Applications to the Incline Education Accelerator program will open in September 2021!
+          </p>
+          <!-- Application button
             <p data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
               <a href="https://inclineedu.org/acceleratorsignup" class="btn btn-outline-black" style="text-decoration: none;">Apply Here!</a>
             </p>
+          -->
         </div>
       </div>
     </div>
   </div>
 
 <!--Services-->
+
+<?php include "./components/pastExperience.php"?>
 
 <?php include "../components/services.html" ?>
 

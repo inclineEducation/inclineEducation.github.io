@@ -100,7 +100,7 @@
           <!-- MOVE TO AUTOPOPULATE -->
           <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Job Postings</h2>
           <p data-aos="fade-right" data-aos-delay="100">
-          We are not currently hiring. Check back later!
+            We're always looking for new talent! Please send your resume and cover letter to <a href="mailto:humanresources@inclineedu.org?subject=Incline Education ~HIRE ME~">humanresources@inclineedu.org</a>!</p>
           </p>
 
           <!--

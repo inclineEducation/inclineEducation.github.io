@@ -163,6 +163,9 @@
   
 <!--Services-->
 
+
+<?php include "./components/pastExperience.php"?>
+
 <?php include "./components/services.html" ?>
 
 <?php include "./components/testimonials.html" ?>

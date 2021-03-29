@@ -9,6 +9,13 @@
     color: white !important;
 }
 
+.btn-title-disabled{
+    color: white !important;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: solid 2px white;
+}
+
 .Aligner {
     display: flex;
     align-items: center;
