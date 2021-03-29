@@ -143,7 +143,7 @@
 
 <!--Services-->
 
-<?php include "./components/pastExperience.php"?>
+<?php include "../components/pastExperience.php"?>
 
 <?php include "../components/services.html" ?>
 
