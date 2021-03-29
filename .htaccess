@@ -22,6 +22,10 @@ RewriteRule ^panels/([^/]+)$ /events/event?e=$1 [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^blog/([^/]+)$ /blog/p/post?p=$1 [NC]
 
+#Team Redirects Redirect (RECURSIVE REDIRECT?!?)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^r/([^/]+)$ /redirect?r=$1 [NC]
+
 #blog schedule redirects
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^blogschedule/([^/]+)$ /documents/blogschedule/$1.pdf [NC]
@@ -53,6 +57,9 @@ Redirect 301 /studentsurvey https://forms.gle/LTucpsvXc2jUCrKH7
 Redirect 301 /parentsurvey https://forms.gle/duKmwA42Ub8SCVm16
 Redirect 301 /parentSurvey  https://forms.gle/duKmwA42Ub8SCVm16
 
+# Accelerator
+Redirect 301 /acceleratorinfo https://drive.google.com/file/d/1IKjyh74qaBXm--aILVD0pvsuINDXsWyB/view?usp=sharing
+Redirect 301 /acceleratorsignup https://forms.gle/xD2dVa75yx2Lkv3eA
 
 # analytics tools
 Redirect 301 /analytics https://analytics.google.com/analytics/web/#/report-home/a158958448w223443638p212005635

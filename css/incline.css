@@ -1,0 +1,10 @@
+.btn-title{
+    color: white !important;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: solid 2px white;
+}
+.btn-title:hover{
+    background-color: rgba(255,193,7,0.8);
+    color: white !important;
+}

@@ -33,6 +33,7 @@
 
         //TEST IF USER EXISTS
         $user = $conn->query("SELECT * FROM inclineeducation.users WHERE email = '$email'");
+        $mysql_date_time = date("Y-m-d H:i:s");
         if ( mysqli_num_rows($user) >= 1 ){
         // LOGIN
           $user = $user->fetch_assoc();
@@ -40,10 +41,10 @@
         } else {
           // CREATE NEW USER
           // AUTOMATICALLY GRANT PERMISSIONS TO INCLINE GMAIL ACCOUNTS
-          $access = ($domain == 'inclineedu.org' ? 6: 0);
+          $access = ($domain == 'inclineedu.org' ? 7: 0);
 
           // TODO: AUTOMATICALLY SET TEAM FLAG (AND CLAIM TEAM ACCOUNT)
-          $conn->query("INSERT INTO `inclineeducation`.`users` (`uuid`,`email`, `access`, `team`) VALUES ((SELECT UUID()),'$email', '$access', '0')");
+          $conn->query("INSERT INTO `inclineeducation`.`users` (`uuid`,`email`, `access`, `team`,`lastlogin`) VALUES ((SELECT UUID()),'$email', '$access', '0', $mysql_date_time)");
           $_SESSION["authLevel"] = $access;
         }
         

@@ -15,7 +15,7 @@ $posts = $conn->query("SELECT title, URI FROM inclineeducation.blog ORDER BY id 
 <html lang="en">
 
 <head>
-  <title>Landing - Incline Admin</title>
+  <title>Blog Editor - Incline Admin</title>
   <meta name="robots" content="noindex">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

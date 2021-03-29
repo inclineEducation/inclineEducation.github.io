@@ -5,8 +5,8 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 session_start();
-$authLevel = $_SERVER['REMOTE_ADDR'] == '127.0.0.1' ? 5 : (array_key_exists("authLevel", $_SESSION) ? $_SESSION["authLevel"] : 0);
-if ($authLevel >= 5){
+$authLevel = $_SERVER['REMOTE_ADDR'] == '127.0.0.1' ? 7 : (array_key_exists("authLevel", $_SESSION) ? $_SESSION["authLevel"] : 0);
+if ($authLevel >= 7){
     include($_SERVER['DOCUMENT_ROOT']."/src/filterText.php");
 
         $login = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT']."/misc/mysql_login.json"), true);
