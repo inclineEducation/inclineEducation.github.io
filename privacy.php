@@ -76,7 +76,7 @@
 		<p data-aos="fade-right" data-aos-delay="">This Privacy Policy, together with the Terms and conditions posted on our Website, set forth the general rules and policies governing your use of our Website. Depending on your activities when visiting our 
 		Website, you may be required to agree to additional terms and conditions.</p>
     
-					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Website Visitors</h3>
+					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" id="visitors">Website Visitors</h3>
 		<p data-aos="fade-right" data-aos-delay="">Like most website operators, Incline Education collects non-personally-identifying information of the sort that web browsers and servers typically make available, such as the browser type, language preference, 
 		referring site, and the date and time of each visitor request. Incline Education's purpose in collecting non-personally identifying information is to better understand how Incline Education's visitors use its website. From time to time, Incline 
 		Education may release non-personally-identifying information in the aggregate, e.g., by publishing a report on trends in the usage of its website.</p>
@@ -84,11 +84,11 @@
 		<p>Incline Education also collects potentially personally-identifying information like Internet Protocol (IP) addresses for logged in users and for users leaving comments on http://inclineedu.org blog posts. Incline Education only discloses logged 
 		in user and commenter IP addresses under the same circumstances that it uses and discloses personally-identifying information as described below.</p>
 		-->
-					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Gathering of Personally-Identifying Information</h3>
+					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" id="personal_info">Gathering of Personally-Identifying Information</h3>
 		<p data-aos="fade-right" data-aos-delay="">Certain visitors to Incline Education's websites choose to interact with Incline Education in ways that require Incline Education to gather personally-identifying information. The amount and type of 
 		information that Incline Education gathers depends on the nature of the interaction. For example, we ask visitors who utilize our <a href="contact">contact form</a> to provide an email for response purposes.</p>
 
-					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Security</h3>
+					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" id="security">Security</h3>
 		<p data-aos="fade-right" data-aos-delay="">The security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use 
 		commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security.</p>
 
@@ -99,13 +99,13 @@
 		and does not cover the use of cookies by any advertisers.</p>
 	-->
 
-					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Links to External Sites</h3>
+					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" id="links">Links to External Sites</h3>
 		<p data-aos="fade-right" data-aos-delay="">Our Service may contain links to external sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy 
 		Policy and terms and conditions of every site you visit.</p>
 		<p data-aos="fade-right" data-aos-delay="">We have no control over, and assume no responsibility for the content, privacy policies or practices of any third party sites, products or services.</p>
 
 
-					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Protection of Certain Personally-Identifying Information</h3>
+					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" id="use_protection">Protection of Certain Personally-Identifying Information</h3>
 		<p data-aos="fade-right" data-aos-delay="">Incline Education discloses potentially personally-identifying and personally-identifying information only to those of its employees, contractors and affiliated organizations that (i) need to know that 
 		information in order to process it on Incline Education's behalf or to provide services available at Incline Education's website, and (ii) that have agreed not to disclose it to others. Some of those employees, contractors and affiliated organizations 
 		may be located outside of your home country; by using Incline Education's website, you consent to the transfer of such information to them. Incline Education will not rent or sell potentially personally-identifying and personally-identifying 
@@ -116,7 +116,7 @@
 		the right to publish it in order to help us clarify or respond to your request or to help us support other users. Incline Education takes all measures reasonably necessary to protect against the unauthorized access, use, alteration or destruction of 
 		potentially personally-identifying and personally-identifying information.</p>
 
-					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Aggregated Statistics</h3>
+					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" id="stats">Aggregated Statistics</h3>
 		<p data-aos="fade-right" data-aos-delay="">Incline Education may collect statistics about the behavior of visitors to its website. Incline Education may display this information publicly or provide it to others. However, Incline Education does not 
 		disclose your personally-identifying information.</p>
 		<p data-aos="fade-right" data-aos-delay="">In an effort to improve the services provided to all of its users, Incline Education uses Google Analytics to collect information on how our website is being used. Incline Education does not have 
@@ -127,19 +127,19 @@
 					<h2>Affiliate Disclosure</h2>
 		<p>This site uses affiliate links and does earn a commission from certain links. This does not affect your purchases or the price you may pay.</p>
 	-->
-					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Cookies</h3>
+					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" id="cookies">Cookies</h3>
 		<p data-aos="fade-right" data-aos-delay="">To enrich and perfect your online experience, Incline Education uses "Cookies", similar technologies and services provided by others to display personalized content and store your preferences on your computer.</p>
 		<p data-aos="fade-right" data-aos-delay="">A cookie is a string of information that a website stores on a visitor's computer, and that the visitor's browser provides to the website each time the visitor returns. Incline Education uses cookies to 
 		help Incline Education identify and track visitors, their usage of http://inclineedu.org, and their website access preferences. Incline Education visitors who do not wish to have cookies placed on their computers should set their browsers to refuse 
 		cookies before using Incline Education's websites, with the drawback that certain features of Incline Education's websites may not function properly without the aid of cookies.</p>
 		<p data-aos="fade-right" data-aos-delay="">By continuing to navigate our website without changing your cookie settings, you hereby acknowledge and agree to Incline Education's use of cookies.</p>
 
-					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Privacy Policy Changes</h3>
+					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" id="changes">Privacy Policy Changes</h3>
 		<p data-aos="fade-right" data-aos-delay="">Although most changes are likely to be minor, Incline Education may change its Privacy Policy from time to time, and in Incline Education's sole discretion. Incline Education encourages visitors to frequently 
 		check this page for any changes to its Privacy Policy. Your continued use of this site after any change in this Privacy Policy will constitute your acceptance of such change.</p>
 		
 
-					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Contact Information</h3>
+					<br><h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" id="contact">Contact Information</h3>
 		<p data-aos="fade-right" data-aos-delay="">If you have any questions about this Privacy Policy, please contact us via <a href="mailto:contact@inclineedu.org"target="_blank">email</a><!-- or <a href="tel:4036180178">phone</a>-->.</p>
 
 			</div>
