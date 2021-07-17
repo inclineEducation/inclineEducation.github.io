@@ -1,5 +1,3 @@
-<?php
-/*
 <style>
     .work-thumb .work-text {
         text-align: center;
@@ -51,12 +49,26 @@
     echo <<<TEXT
             <div class="row mb-5 no-gutters justify-content-center">
                 <div class="col-sm-4 col-md-4 col-lg-4 text-center" style = "float: left;">
-                <a href=/events/summerpanel2020 class="work-thumb">
+                <a href=/events/summerstempanel2020 class="work-thumb">
                     <div class="work-text">
                         <h2>VIRTUAL PANEL</h2>
                         <p>Youtube Live</p>
-                        <p>Sunday, August 9</p>
-                        <p>RIGHT NOW!</p>
+                        <p>Sunday, August 14</p>
+                        <p>1pm pst</p>
+                    </div>
+                    <img src=/images/event/vln11032020/25/vln6.jpg alt="Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover"></img>
+                </a>
+                </div>
+            </div>
+
+            <div class="row mb-5 no-gutters justify-content-center">
+                <div class="col-sm-4 col-md-4 col-lg-4 text-center" style = "float: left;">
+                <a href=/events/summerartspanel2020 class="work-thumb">
+                    <div class="work-text">
+                        <h2>VIRTUAL PANEL</h2>
+                        <p>Youtube Live</p>
+                        <p>Sunday, August 15</p>
+                        <p>1pm pst</p>
                     </div>
                     <img src=/images/event/vln11032020/25/vln6.jpg alt="Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover"></img>
                 </a>
@@ -66,5 +78,3 @@
 ?>
     </div>
 </div>
-*/
-?>
