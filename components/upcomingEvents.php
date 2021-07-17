@@ -48,7 +48,7 @@
 <?php
     echo <<<TEXT
             <div class="row mb-5 no-gutters justify-content-center">
-                <div class="col-sm-4 col-md-4 col-lg-4 text-center" style = "float: left;">
+                <div class="col-sm-3 col-md-3 col-lg-3 text-center" style = "float: left;">
                 <a href=/events/summerstempanel2020 class="work-thumb">
                     <div class="work-text">
                         <h2>VIRTUAL PANEL</h2>
@@ -59,10 +59,7 @@
                     <img src=/images/event/vln11032020/25/vln6.jpg alt="Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover"></img>
                 </a>
                 </div>
-            </div>
-
-            <div class="row mb-5 no-gutters justify-content-center">
-                <div class="col-sm-4 col-md-4 col-lg-4 text-center" style = "float: left;">
+                <div class="col-sm-3 col-md-3 col-lg-3 text-center" style = "float: left;">
                 <a href=/events/summerartspanel2020 class="work-thumb">
                     <div class="work-text">
                         <h2>VIRTUAL PANEL</h2>
