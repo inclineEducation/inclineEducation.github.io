@@ -360,21 +360,12 @@ if (mysqli_num_rows($eventTable) != 0){
             <div class="row" style="display:flex; justify-content: center; align-items: center;"data-aos="fade-right" data-aos-delay="100">
 
               <div class="col-lg-4 mb-4" style="text-align:center;">
-                <div style="padding-bottom: 100%; position: relative; height:100%">
-                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
-                    <img src="/images/partners/gyu_kaku.jpg" alt="Gyu Kaku Japanese BBQ" style="width: 100%; max-height: 100%; margin:auto;">
-                  </div>
-                </div>
-                <p>Gyu Kaku Japanese BBQ Gift Vouchers</p>   
-              </div>
-
-              <div class="col-lg-4 mb-4" style="text-align:center;">
                 <div style="padding-bottom: 100%; position: relative; height:100%;">
                   <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
-                    <img src="/images/misc/giveaway/google_home.jpg" alt="Google Home Mini" style="width: 90%; max-height: 90%; margin:auto;">
+                    <img src="/images/misc/giveaway/saltyLobsers.png" alt="Google Home Mini" style="width: 90%; max-height: 90%; margin:auto;">
                   </div>
                 </div>
-                <p>Google Home Mini</p>
+                <p>Salty's Lobster Shack gift cards</p>
               </div>
 
               <div class="col-lg-4 mb-4" style="text-align:center;">
@@ -384,15 +375,6 @@ if (mysqli_num_rows($eventTable) != 0){
                   </div>
                 </div>
                 <p>Lush Gift Basket</p> 
-              </div>
-
-              <div class="col-lg-4 mb-4" style="text-align:center;">
-                <div style="padding-bottom: 100%; position: relative; height:100%">
-                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
-                    <img src="/images/partners/virtuous_pie.jpg" alt="Virtuous Pie" style="width: 90%; max-height: 90%; margin:auto;">
-                  </div>
-                </div>
-                <p>Virtuous Pie Gift Card</p> 
               </div>
 
             </div>
