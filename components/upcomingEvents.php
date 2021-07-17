@@ -56,7 +56,7 @@
                         <p>Sunday, August 14</p>
                         <p>1pm PST / 2pm MST / 4pm EST</p>
                     </div>
-                    <img src=/images/event/vln11032020/25/vln6.jpg alt="Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover"></img>
+                    <img src=/images/misc/backgrounds/alexandre-debieve-tech.jpg alt="Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover"></img>
                 </a>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3 text-center" style = "float: left;">
@@ -67,7 +67,7 @@
                         <p>Sunday, August 15</p>
                         <p>1pm PST / 2pm MST / 4pm EST</p>
                     </div>
-                    <img src=/images/event/vln11032020/25/vln6.jpg alt="Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover"></img>
+                    <img src=/images/misc/backgrounds/green-chameleon-arts.jpg alt="Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover"></img>
                 </a>
                 </div>
             </div>
