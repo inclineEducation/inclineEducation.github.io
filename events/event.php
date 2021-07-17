@@ -362,7 +362,7 @@ if (mysqli_num_rows($eventTable) != 0){
               <div class="col-lg-4 mb-4" style="text-align:center;">
                 <div style="padding-bottom: 100%; position: relative; height:100%;">
                   <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
-                    <img src="/images/misc/giveaway/saltyLobsers.png" alt="Google Home Mini" style="width: 90%; max-height: 90%; margin:auto;">
+                    <img src="/images/misc/giveaway/saltyLobsters.png" alt="Salty's Lobster Shack gift cards" style="width: 90%; max-height: 90%; margin:auto;">
                   </div>
                 </div>
                 <p>Salty's Lobster Shack gift cards</p>
