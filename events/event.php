@@ -117,7 +117,7 @@ class People {
   }
 
   function output(){
-    if (empty($this>people)) {
+    if (empty($this->people)) {
       echo <<<EMPTY_PEOPLE
       <div class="col-md-8 text-center" data-aos="fade-up">
         <p>Panelists will be announced soon</p>
