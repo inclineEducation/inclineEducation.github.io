@@ -341,7 +341,7 @@ if (mysqli_num_rows($eventTable) != 0){
 
         <!--PANELISTS-->
         <div class="row justify-content-center mb-5">
-            <div class="col-md-8 text-center" data-aos="fade-up">
+            <div class="col-md-8 text-center" data-aos="fade-right">
             <h2 class="mb-4 section-title">Panelists</h2>
             </div>
         </div>
