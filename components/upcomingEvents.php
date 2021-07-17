@@ -49,7 +49,7 @@
     echo <<<TEXT
             <div class="row mb-5 no-gutters justify-content-center">
                 <div class="col-sm-3 col-md-3 col-lg-3 text-center" style = "float: left;">
-                <a href=/events/summerstempanel2020 class="work-thumb">
+                <a href=/events/summerstempanel2021 class="work-thumb">
                     <div class="work-text">
                         <h2>STEM VIRTUAL PANEL</h2>
                         <p>Youtube Live</p>
@@ -60,7 +60,7 @@
                 </a>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3 text-center" style = "float: left;">
-                <a href=/events/summerartspanel2020 class="work-thumb">
+                <a href=/events/summerartspanel2021 class="work-thumb">
                     <div class="work-text">
                         <h2>BUSINESS + ARTS VIRTUAL PANEL</h2>
                         <p>Youtube Live</p>
