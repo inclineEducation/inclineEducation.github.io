@@ -51,7 +51,7 @@
                 <div class="col-sm-3 col-md-3 col-lg-3 text-center" style = "float: left;">
                 <a href=/events/summerstempanel2020 class="work-thumb">
                     <div class="work-text">
-                        <h2>VIRTUAL PANEL</h2>
+                        <h2>STEM VIRTUAL PANEL</h2>
                         <p>Youtube Live</p>
                         <p>Sunday, August 14</p>
                         <p>1pm pst</p>
@@ -62,7 +62,7 @@
                 <div class="col-sm-3 col-md-3 col-lg-3 text-center" style = "float: left;">
                 <a href=/events/summerartspanel2020 class="work-thumb">
                     <div class="work-text">
-                        <h2>VIRTUAL PANEL</h2>
+                        <h2>Business + Arts VIRTUAL PANEL</h2>
                         <p>Youtube Live</p>
                         <p>Sunday, August 15</p>
                         <p>1pm pst</p>
