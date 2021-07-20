@@ -53,7 +53,7 @@
                     <div class="work-text">
                         <h2>STEM VIRTUAL PANEL</h2>
                         <p>Youtube Live</p>
-                        <p>Sunday, August 14</p>
+                        <p>Saturday, August 14</p>
                         <p>1pm PST / 2pm MST / 4pm EST</p>
                     </div>
                     <img src=/images/misc/backgrounds/alexandre-debieve-tech.jpg alt="Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover"></img>

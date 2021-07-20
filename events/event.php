@@ -351,13 +351,15 @@ if (mysqli_num_rows($eventTable) != 0){
         <!--END PANELISTS-->
         
         <!--TODO: MAKE THIS DYNAMIC-->
-        <!--GIVEAWAY / SPONSOR INFO-->
+        <!-- GIVEAWAY INFO -->
         <div class="row mb-5 justify-content-center" style="text-align: center;">
           <div class="col-md-12 text-center">
 
             <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="100">Giveaway Prizes</h2>
             <h3 class="mb-4 section-title" data-aos="fade-right">Sign up and attend our panel for the chance to win:</h3>
             <div class="row" style="display:flex; justify-content: center; align-items: center;"data-aos="fade-right" data-aos-delay="100">
+
+            
 
               <div class="col-lg-4 mb-4" style="text-align:center;">
                 <div style="padding-bottom: 100%; position: relative; height:100%;">
@@ -380,7 +382,41 @@ if (mysqli_num_rows($eventTable) != 0){
             </div>
           </div>
         </div>
-        <!--END SPONSOR-->
+        <!-- END GIVEAWAYS -->
+
+        <!-- SPONSOR INFO -->
+        <div class="row mb-5 justify-content-center" style="text-align: center;">
+          <div class="col-md-12 text-center">
+
+            <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="100">Sponsored by</h2>
+            <div class="row" style="display:flex; justify-content: center; align-items: center;"data-aos="fade-right" data-aos-delay="100">
+
+              <div class="col-lg-4 mb-4" style="text-align:center;">
+                <div style="padding-bottom: 100%; position: relative; height:100%;">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                    <img src="/images/misc/logos/byc-min.png" alt="Beat Your Course" style="width: 90%; max-height: 90%; margin:auto;">
+                  </div>
+                </div>
+                <p>Beat Your Course</p>
+              </div>
+
+              <div class="col-lg-4 mb-4" style="text-align:center;">
+                <div style="padding-bottom: 100%; position: relative; height:100%;">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                    <img src="/images/misc/logos/wize-min.png" alt="Wize" style="width: 90%; max-height: 90%; margin:auto;">
+                  </div>
+                </div>
+                <p>Wize</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- END SPONSORS -->
+
 
         <div class="row justify-content-center mb-5" style="margin-top: 3rem;">
           <div class="col-md-8 text-center" data-aos="fade-up">
