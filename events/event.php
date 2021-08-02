@@ -367,7 +367,7 @@ if (mysqli_num_rows($eventTable) != 0){
                     <img src="/images/misc/giveaway/saltyLobsters.png" alt="Salty's Lobster Shack gift cards" style="width: 90%; max-height: 90%; margin:auto;">
                   </div>
                 </div>
-                <p>2x Salty's $50 Gift Card</p>
+                <p>2x Salty's $50 Gift Cards</p>
               </div>
 
               <div class="col-lg-4 mb-4" style="text-align:center;">
@@ -376,7 +376,7 @@ if (mysqli_num_rows($eventTable) != 0){
                   <img src="/images/partners/lush.jpeg" alt="Lush Cosmetics" style="width: 90%; max-height: 90%; margin:auto;">
                   </div>
                 </div>
-                <p>3x Lush Gift Basket</p> 
+                <p>3x Lush Gift Baskets</p> 
               </div>
 
               <div class="col-lg-4 mb-4" style="text-align:center;">
@@ -394,7 +394,7 @@ if (mysqli_num_rows($eventTable) != 0){
                   <img src="/images/misc/giveaway/alexa.png" alt="Amazon Alexa" style="width: 90%; max-height: 90%; margin:auto;">
                   </div>
                 </div>
-                <p>3x Amazon Alexa</p> 
+                <p>3x Amazon Echo Dots</p> 
               </div>
 
               <div class="col-lg-4 mb-4" style="text-align:center;">
