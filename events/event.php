@@ -364,7 +364,7 @@ if (mysqli_num_rows($eventTable) != 0){
               <div class="col-lg-4 mb-4" style="text-align:center;">
                 <div style="padding-bottom: 100%; position: relative; height:100%;">
                   <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
-                    <img src="/images/misc/giveaway/saltyLobsters.png" alt="Salty's Lobster Shack gift cards" style="width: 90%; max-height: 90%; margin:auto;">
+                    <a href="https://streetfoodapp.com/vancouver/saltys-lobster-shack" target="_blank"><img src="/images/misc/giveaway/saltyLobsters.png" alt="Salty's Lobster Shack gift cards" style="width: 90%; max-height: 90%; margin:auto;"></a>
                   </div>
                 </div>
                 <p>Salty's Lobster Shack gift cards</p>
@@ -373,7 +373,7 @@ if (mysqli_num_rows($eventTable) != 0){
               <div class="col-lg-4 mb-4" style="text-align:center;">
                 <div style="padding-bottom: 100%; position: relative; height:100%">
                   <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
-                    <img src="/images/partners/lush.jpg" alt="Lush Cosmetics" style="width: 90%; max-height: 90%; margin:auto;">
+                  <a href="https://www.lush.ca/en/gifts/all-gift-sets/" target="_blank"><img src="/images/partners/lush.jpeg" alt="Lush Cosmetics" style="width: 90%; max-height: 90%; margin:auto;"></a>
                   </div>
                 </div>
                 <p>Lush Gift Basket</p> 
