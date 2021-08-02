@@ -359,7 +359,14 @@ if (mysqli_num_rows($eventTable) != 0){
             <h3 class="mb-4 section-title" data-aos="fade-right">Sign up and attend our panel for the chance to win:</h3>
             <div class="row" style="display:flex; justify-content: center; align-items: center;"data-aos="fade-right" data-aos-delay="100">
 
-            
+              <div class="col-lg-4 mb-4" style="text-align:center;">
+                <div style="padding-bottom: 100%; position: relative; height:100%">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                  <img src="/images/misc/giveaway/2021gp.png" alt="Uni Survival Basket" style="width: 90%; max-height: 90%; margin:auto;">
+                  </div>
+                </div>
+                <p>Uni Survival Basket - $250 value</p> 
+              </div>
 
               <div class="col-lg-4 mb-4" style="text-align:center;">
                 <div style="padding-bottom: 100%; position: relative; height:100%;">
@@ -377,15 +384,6 @@ if (mysqli_num_rows($eventTable) != 0){
                   </div>
                 </div>
                 <p>3x Lush Gift Baskets</p> 
-              </div>
-
-              <div class="col-lg-4 mb-4" style="text-align:center;">
-                <div style="padding-bottom: 100%; position: relative; height:100%">
-                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
-                  <img src="/images/misc/giveaway/2021gp.png" alt="Uni Survival Basket" style="width: 90%; max-height: 90%; margin:auto;">
-                  </div>
-                </div>
-                <p>Uni Survival Basket - $250 value</p> 
               </div>
 
               <div class="col-lg-4 mb-4" style="text-align:center;">
