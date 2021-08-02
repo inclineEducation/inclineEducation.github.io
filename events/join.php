@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>404-PAGE NOT FOUND</title>
+  <title>Incline x COUHR Panel</title>
   <meta name="keywords" content="incline,education,mentorship,panel,discussions,secondary,education,school,
   post,high,students,teachers,parents,community,advancing,charity,blog,university,panel">
   <meta charset="utf-8">
