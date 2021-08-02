@@ -364,20 +364,76 @@ if (mysqli_num_rows($eventTable) != 0){
               <div class="col-lg-4 mb-4" style="text-align:center;">
                 <div style="padding-bottom: 100%; position: relative; height:100%;">
                   <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
-                    <a href="https://streetfoodapp.com/vancouver/saltys-lobster-shack" target="_blank"><img src="/images/misc/giveaway/saltyLobsters.png" alt="Salty's Lobster Shack gift cards" style="width: 90%; max-height: 90%; margin:auto;"></a>
+                    <img src="/images/misc/giveaway/saltyLobsters.png" alt="Salty's Lobster Shack gift cards" style="width: 90%; max-height: 90%; margin:auto;">
                   </div>
                 </div>
-                <p>Salty's Lobster Shack gift cards</p>
+                <p>3x Salty's Lobster Shack $50 gc</p>
               </div>
 
               <div class="col-lg-4 mb-4" style="text-align:center;">
                 <div style="padding-bottom: 100%; position: relative; height:100%">
                   <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
-                  <a href="https://www.lush.ca/en/gifts/all-gift-sets/" target="_blank"><img src="/images/partners/lush.jpeg" alt="Lush Cosmetics" style="width: 90%; max-height: 90%; margin:auto;"></a>
+                  <img src="/images/partners/lush.jpeg" alt="Lush Cosmetics" style="width: 90%; max-height: 90%; margin:auto;">
                   </div>
                 </div>
-                <p>Lush Gift Basket</p> 
+                <p>2x Lush Gift Basket</p> 
               </div>
+
+              <div class="col-lg-4 mb-4" style="text-align:center;">
+                <div style="padding-bottom: 100%; position: relative; height:100%">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                  <img src="/images/misc/giveaway/2021gp.png" alt="Uni Survival Basket" style="width: 90%; max-height: 90%; margin:auto;">
+                  </div>
+                </div>
+                <p>Uni Survival Basket - $250 value</p> 
+              </div>
+
+              <div class="col-lg-4 mb-4" style="text-align:center;">
+                <div style="padding-bottom: 100%; position: relative; height:100%">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                  <img src="/images/misc/giveaway/alexa.png" alt="Amazon Alexa" style="width: 90%; max-height: 90%; margin:auto;">
+                  </div>
+                </div>
+                <p>3x Amazon Alexa</p> 
+              </div>
+
+              <div class="col-lg-4 mb-4" style="text-align:center;">
+                <div style="padding-bottom: 100%; position: relative; height:100%">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                  <img src="/images/misc/giveaway/ue.png" alt="Uber Eats Giftcards" style="width: 90%; max-height: 90%; margin:auto;">
+                  </div>
+                </div>
+                <p>4x Uber Eats Giftcards - $15</p> 
+              </div>
+
+              <div class="col-lg-4 mb-4" style="text-align:center;">
+                <div style="padding-bottom: 100%; position: relative; height:100%">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                  <img src="/images/misc/logos/byc-min.png" alt="BYC Course" style="width: 90%; max-height: 90%; margin:auto;">
+                  </div>
+                </div>
+                <p>2x Free BYC Courses</p> 
+              </div>
+
+              <div class="col-lg-4 mb-4" style="text-align:center;">
+                <div style="padding-bottom: 100%; position: relative; height:100%">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                  <img src="/images/misc/logos/wize-min.png" alt="Wize Pass" style="width: 90%; max-height: 90%; margin:auto;">
+                  </div>
+                </div>
+                <p>3x Wize 8mo Passes</p> 
+              </div>
+
+              <div class="col-lg-4 mb-4" style="text-align:center;">
+                <div style="padding-bottom: 100%; position: relative; height:100%">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                  <img src="/images/misc/logos/princetonReview.jpg" alt="SAT Prep Resources - Princeton Review" style="width: 90%; max-height: 90%; margin:auto;">
+                  </div>
+                </div>
+                <p>SAT Prep resources</p> 
+              </div>
+
+
 
             </div>
           </div>
@@ -391,22 +447,59 @@ if (mysqli_num_rows($eventTable) != 0){
             <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="100">Sponsored by</h2>
             <div class="row" style="display:flex; justify-content: center; align-items: center;"data-aos="fade-right" data-aos-delay="100">
 
-              <div class="col-lg-4 mb-4" style="text-align:center;">
+              <div class="col-lg-2 mb-2" style="text-align:center;">
+              <a href="https://www.princetonreview.com/" target="_blank">
+                <div style="padding-bottom: 100%; position: relative; height:100%">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                  <img src="/images/misc/logos/princetonReview.jpg" alt="Princeton Review" style="width: 90%; max-height: 90%; margin:auto;">
+                  </div>
+                </div>
+                <p>Princeton Review</p> 
+              </a>
+              </div>
+
+              <div class="col-lg-2 mb-2" style="text-align:center;">
+              <a href="https://beatyourcourse.com/" target="_blank">
                 <div style="padding-bottom: 100%; position: relative; height:100%;">
                   <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
                     <img src="/images/misc/logos/byc-min.png" alt="Beat Your Course" style="width: 90%; max-height: 90%; margin:auto;">
                   </div>
                 </div>
                 <p>Beat Your Course</p>
+              </a>
               </div>
 
-              <div class="col-lg-4 mb-4" style="text-align:center;">
+              <div class="col-lg-2 mb-2" style="text-align:center;">
+              <a href="https://www.wizeprep.com/" target="_blank">
                 <div style="padding-bottom: 100%; position: relative; height:100%;">
                   <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
-                    <img src="/images/misc/logos/wize-min.png" alt="Wize" style="width: 90%; max-height: 90%; margin:auto;">
+                  <img src="/images/misc/logos/wize-min.png" alt="Wize" style="width: 90%; max-height: 90%; margin:auto;">
                   </div>
                 </div>
                 <p>Wize</p>
+                </a>
+              </div>
+
+              <div class="col-lg-2 mb-2" style="text-align:center;">
+              <a href="https://www.lush.ca/" target="_blank">
+                <div style="padding-bottom: 100%; position: relative; height:100%;">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                  <img src="/images/partners/lush.jpeg" alt="Lush" style="width: 90%; max-height: 90%; margin:auto;">
+                  </div>
+                </div>
+                <p>Lush</p>
+                </a>
+              </div>
+
+              <div class="col-lg-2 mb-2" style="text-align:center;">
+              <a href="https://www.instagram.com/saltyslobster/" target="_blank">
+                <div style="padding-bottom: 100%; position: relative; height:100%;">
+                  <div style="position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; display:flex; align-items:center;">
+                  <img src="/images/misc/giveaway/saltyLobsters.png" alt="Salty's Lobster Shack" style="width: 90%; max-height: 90%; margin:auto;">
+                  </div>
+                </div>
+                <p>Salty's</p>
+                </a>
               </div>
 
             </div>
