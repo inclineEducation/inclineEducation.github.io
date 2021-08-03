@@ -59,7 +59,7 @@
         <div class="col-md-25 text-center">
 		  <h1 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" style="font-size:8vh">Hi There!</h1>
 		  <h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" style="font-size:3vh">
-          Our August 14 and 15 livestream will take place here! Come back when we're then to tune in to our virtual panel and win some prizes!
+          Our August 14 and 15 livestream will take place here! Come back when then to tune in to our virtual panel and win some prizes!
           </h3>
 
       <div data-aos="fade-right" data-aos-delay="">
