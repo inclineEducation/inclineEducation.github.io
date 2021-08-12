@@ -56,19 +56,15 @@
     <div class="container">
       <div class="row mb-5 justify-content-center">
         <img data-aos="fade-right" data-aos-delay="" src="/images/brand_space/IE_B_Text.png" style="width:30vh;">
-        <div class="col-md-25 text-center">
-		  <h1 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" style="font-size:8vh">Hi There!</h1>
-		  <h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" style="font-size:3vh">
-          Our August 14 and 15 livestream will take place here! Come back then to tune in to our virtual panel and win some prizes!
-          </h3>
+        <div class="col-md-25 text-center" style="width:100%">
+          <h1 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" style="font-size:8vh">Hi There!</h1>
+          <h3 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" style="font-size:3vh">
+              Our August 14 and 15 livestream will take place here! Come back then to tune in to our virtual panel and win some prizes!
+              </h3>
 
-      <div data-aos="fade-right" data-aos-delay="">
-        <p style="text-align: center;"><a href="/panels" class="btn btn-outline-black">Learn more about our upcoming panels here!</a></p>
-      </div>
-
-      
-          
-
+          <div data-aos="fade-right" data-aos-delay="" style="width: 80%; margin: 0 auto;">
+            <p style="text-align: center;"><a href="/panels" class="btn btn-outline-black" style="white-space: normal">Learn more about our upcoming panels here!</a></p>
+          </div>
         </div>
       </div>
     </div>
