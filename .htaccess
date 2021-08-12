@@ -83,4 +83,6 @@ Redirect 302 /mentor https://docs.google.com/forms/d/e/1FAIpQLSd0B5L0qCNIVcSolAC
 Redirect 302 /calendar https://calendar.google.com/event?action=TEMPLATE&tmeid=MGNwYTdkZHJ0ZnI1Ymg1MmNoMHZja3ZqbWUgY2hyaXN0b3BoZXIubmdAaW5jbGluZWVkdS5vcmc&tmsrc=christopher.ng%40inclineedu.org
 Redirect 302 /survey https://forms.gle/7PdAB3dwcsBratbJ6
 Redirect 302 /signup https://forms.gle/oTpewRuLvKtk7JCVA
+Redirect 302 /stemnetwork https://mcgill.zoom.us/j/81427284995?pwd=aElXRk82VVo1SW90YmFwWkJZRGhKQT09
+Redirect 302 /banetwork https://mcgill.zoom.us/j/83636663570?pwd=ZUVwSlNPMjJYRHkvb0dWU2FVQTFIdz09
 	
