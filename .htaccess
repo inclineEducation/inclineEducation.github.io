@@ -84,6 +84,6 @@ Redirect 302 /calendar https://calendar.google.com/event?action=TEMPLATE&tmeid=M
 Redirect 302 /survey https://forms.gle/7PdAB3dwcsBratbJ6
 Redirect 302 /signup https://forms.gle/oTpewRuLvKtk7JCVA
 Redirect 302 /stemnetwork https://mcgill.zoom.us/j/81427284995?pwd=aElXRk82VVo1SW90YmFwWkJZRGhKQT09
-Redirect 302 /banetwork https://westernuniversity.zoom.us/j/92709803403
+Redirect 302 /banetwork https://meet.google.com/cxa-egmg-wxi
 Redirect 302 /join /r/join
 	
