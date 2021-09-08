@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
     .work-thumb .work-text {
         text-align: center;
         position: absolute;
@@ -74,4 +74,4 @@
     TEXT;
 ?>
     </div>
-</div>
+</div> -->
