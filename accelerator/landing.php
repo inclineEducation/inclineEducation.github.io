@@ -62,7 +62,7 @@
         <div class="col-lg-12 col-sm-12">
           <h1 class="mb-1" data-aos="fade-up">Accelerator Program</h1>
           <h2 class="mb-3" data-aos="fade-up" style="font-family:'DM Serif Display, sans-serif'; font-size: 2rem; color: #fff">Helping you find your next internship</h2>
-          <a data-aos="fade-up" class="btn btn-title mb-3" href="/">
+          <a data-aos="fade-up" class="btn btn-title mb-3" href="/accelerator-signup">
           <p style="text-align: center;">Applications Open<br>Sept. 2021</p></a>
 		      <p class="custom-breadcrumbs" data-aos="fade-up" data-aos-delay="100"><a href="/index.php">Home</a> <span class="mx-3">/</span>Accelerator Program</p>
         </div>
