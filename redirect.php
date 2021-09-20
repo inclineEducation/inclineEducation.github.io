@@ -14,5 +14,9 @@
     //fetch destination URL, and redirect.
     $desturl = $conn->query("SELECT desturl FROM inclineeducation.redirects WHERE sourceurl = '$sourceurl'")->fetch_assoc()['desturl'];
     $conn->close();
+
     header("Location: $desturl");
+
+    
+    include($_SERVER['DOCUMENT_ROOT']."/404.php");
 ?>
