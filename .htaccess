@@ -33,6 +33,9 @@ RewriteRule ^blogschedule/([^/]+)$ /documents/blogschedule/$1.pdf [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^blogschedule$ /documents/blogschedule/december.pdf [NC]
 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)$ /redirect?r=$1 [NC]
 
 ErrorDocument 404 /404.php
 
