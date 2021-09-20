@@ -122,11 +122,11 @@
             chances of securing spots are uniquely maximized.
           </p>
           <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="">Timeline Of Program</h2>
-            <p data-aos="fade-right">September 7: Application Opens</p>
-            <p data-aos="fade-right">September 21: Deadline for Application</p>
-            <p data-aos="fade-right">September 22-29: Interviews</p>
-            <p data-aos="fade-right">September 30: Offers Sent Out</p>
-            <p data-aos="fade-right">October 3 - November 21: Program Sessions</p>
+            <p data-aos="fade-right">September 20: Application Opens</p>
+            <p data-aos="fade-right">October 4: Deadline for Application</p>
+            <p data-aos="fade-right">October 5-9: Interviews</p>
+            <p data-aos="fade-right">October 10: Offers Sent Out</p>
+            <p data-aos="fade-right">October 17 - November 22: Program Sessions</p>
           <h2 class="mb-4 section-title" data-aos="fade-right" data-aos-delay="" id="application">Application</h2>
           <p data-aos="fade-right">
             <!--We are looking for highly motivated 1st year students from all faculties at the University of British Columbia.-->
