@@ -60,10 +60,6 @@ Redirect 301 /studentsurvey https://forms.gle/LTucpsvXc2jUCrKH7
 Redirect 301 /parentsurvey https://forms.gle/duKmwA42Ub8SCVm16
 Redirect 301 /parentSurvey  https://forms.gle/duKmwA42Ub8SCVm16
 
-# Accelerator
-Redirect 301 /acceleratorinfo https://drive.google.com/file/d/1IKjyh74qaBXm--aILVD0pvsuINDXsWyB/view?usp=sharing
-Redirect 301 /acceleratorsignup https://forms.gle/xD2dVa75yx2Lkv3eA
-
 # analytics tools
 Redirect 301 /analytics https://analytics.google.com/analytics/web/#/report-home/a158958448w223443638p212005635
 Redirect 301 /searchconsole https://search.google.com/u/3/search-console?resource_id=sc-domain%3Ainclineedu.org
